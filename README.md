@@ -1,7 +1,7 @@
 TERA-Guide
 ======
 
-# Informaçoes das DGs incluidas
+# Información de dungeon incluidas
 
 (Demon's Wheel)
 
@@ -37,4 +37,4 @@ TERA-Guide
 
 
 
-Este guia foi traduzido com base no https://github.com/tera-mod/TERA-Guide
+Este guia fue traducido con base en https://github.com/tera-mod/TERA-Guide
