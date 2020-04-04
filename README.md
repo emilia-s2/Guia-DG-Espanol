@@ -32,5 +32,4 @@ TERA-Guide
 
 (Forbidden Arena)
 
-
 Este guia fue traducido con base en https://github.com/tera-mod/TERA-Guide
