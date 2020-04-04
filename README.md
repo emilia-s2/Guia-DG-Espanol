@@ -3,7 +3,6 @@ TERA-Guide
 
 # Información de dungeon incluidas
 
-(Demon's Wheel)
 
 (Ruinous Manor)
 
@@ -25,11 +24,9 @@ TERA-Guide
 
 (Demokron Factory)
 
-(Forsaken Island)
-
 (Akalath Quarantine)
 
-(Sailing Instance)
+(Sea Of Honor)
 
 (Corrupted Skynest)
 
