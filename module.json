@@ -1,0 +1,12 @@
+{
+    "name": "Tera-Guide",
+    "options": {
+        "niceName": "Guide-DG",
+        "guiName": "Emilia(Tera-Guide)"
+    },
+    "author": "ZC",
+    "description": "Guia de DGs",
+    "servers": ["https://raw.githubusercontent.com/emilia-s2/Guia-DG-Espanol/master/"],
+    "supportUrl": "https://github.com/emilia-s2/Guia-DG-Espanol/issues",
+    "version": "92.03"
+}
