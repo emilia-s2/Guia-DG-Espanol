@@ -1,0 +1,22 @@
+{
+    "files": {
+        "boss-Custom.js": {
+            "overwrite": false,
+            "hash": "d86d5895bc04ebe7e92987810bc2c939994b766451f4d8b5e07189a2cfaebd16"
+        },
+        "boss.js": "B49521B8A7587855C46747E85B1F295472890BA87E3AB7AAF15800504240555B",
+        "index.js": "87947B757012CFF611E3D936B11B938E540DE0E38A3FE14E06E79B55656B0F43",
+        "module.json": "36F603693643018AD563A2F23C5A0E08FECCFF7B7C0BC9D79DD092CE804021E7"
+    },
+    "defs": {
+        "S_ABNORMALITY_BEGIN": 4,
+        "S_ABNORMALITY_END": 1,
+        "S_ACTION_STAGE": 9,
+        "S_BOSS_GAGE_INFO": 3,
+        "S_CHAT": 3,
+        "S_CREATURE_ROTATE": 2,
+        "S_DUNGEON_EVENT_MESSAGE": 2,
+        "S_PARTY_MARKER": 1,
+        "S_QUEST_BALLOON": 1
+    }
+}
