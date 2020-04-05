@@ -40,7 +40,7 @@ module.exports = {
 		{id: 218, msg: 'Empujar'},
 		{id: 211, msg: 'Difusion (Dentro-> Fuera)'},
 		{id: 212, msg: 'Difusion (Fuera-> Dentro)'},
-		{id: 219, msg: 'Dentro e fuera'}
+		{id: 219, msg: 'Dentro e Fuera'}
 	],
 	// 拉坎里斯的废墟 (Ruinous Manor)
 	RM_BOSS_1 : [
