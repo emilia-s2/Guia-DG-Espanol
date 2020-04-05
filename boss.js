@@ -378,8 +378,8 @@ module.exports = {
 		{id: 159, msg: 'Giro a la izquierda (Derribo!!)'},
 		{id: 118, msg: '~Jugar al Alto~'},
 		{id: 160, msg: '~Jugar al Alto~'},
-		{id: 137, msg: '[Rugido] preparate para Correr 50m'},
-		{id: 138, msg: 'Ataque amplio Alejarse 50m!!'},
+		{id: 137, msg: '[Rugido] Alejate 50m'},
+		{id: 138, msg: 'Ataque amplio!!'},
 		{id: 110, msg: 'Mano de Fuego (Alejate)'},
 		{id: 112, msg: 'Mano de Hielo (Alejate)'},
 		{id: 114, msg: 'Fuego Quemadura Adelante (Alejate)'},
@@ -395,10 +395,10 @@ module.exports = {
 		// 107 双脚_快
 		// 157 双脚_快
 		{id: 145, msg: 'Ataque Lento (Stun)'},
-		{id: 104, msg: 'AOE-Magia de Hielo (Grande)'},
-		{id: 154, msg: 'AOE-Magia de Hielo (Chico)'},
-		{id: 105, msg: 'AOE-Magia de Fuego (Grande)'},
-		{id: 155, msg: 'AOE-Magia de Fuego (Chico)'},
+		{id: 104, msg: 'AOE-Magia de HIELO (Grande)'},
+		{id: 154, msg: 'AOE-Magia de HIELO (Chico)'},
+		{id: 105, msg: 'AOE-Magia de FUEGO (Grande)'},
+		{id: 155, msg: 'AOE-Magia de FUEGO (Chico)'},
 		// 内外鉴定
 		{id: 212, msg: 'Fuego Adentro '}, // 212 -> 141
 		{id: 213, msg: 'Hielo Adentro '}, // 213 -> 143
