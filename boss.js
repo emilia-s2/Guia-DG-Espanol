@@ -378,7 +378,7 @@ module.exports = {
 		{id: 159, msg: 'Giro a la izquierda (Derribo!!)'},
 		{id: 118, msg: '~Jugar al Alto~'},
 		{id: 160, msg: '~Jugar al Alto~'},
-		{id: 137, msg: '[Rugido] Kelsaik se fortalece'},
+		{id: 137, msg: '[Rugido] preparate para Correr 50m'},
 		{id: 138, msg: 'Ataque amplio Alejarse 50m!!'},
 		{id: 110, msg: 'Mano de Fuego (Alejate)'},
 		{id: 112, msg: 'Mano de Hielo (Alejate)'},
@@ -400,10 +400,10 @@ module.exports = {
 		{id: 105, msg: 'AOE-Magia de Fuego (Grande)'},
 		{id: 155, msg: 'AOE-Magia de Fuego (Chico)'},
 		// 内外鉴定
-		{id: 212, msg: 'Rojo Adentro '}, // 212 -> 141
-		{id: 213, msg: 'Azul Adentro '}, // 213 -> 143
-		{id: 214, msg: 'Azul Adentro '}, // 214 -> 142
-		{id: 215, msg: 'Rojo Adentro '}, // 215 -> 144
+		{id: 212, msg: 'Fuego Adentro '}, // 212 -> 141
+		{id: 213, msg: 'Hielo Adentro '}, // 213 -> 143
+		{id: 214, msg: 'Hielo Adentro '}, // 214 -> 142
+		{id: 215, msg: 'Fuego Adentro '}, // 215 -> 144
 	// 以下未知
 		{id: 119, msg: 'Rugido Debil'},
 		{id: 161, msg: 'Rugido Debil'},
@@ -440,7 +440,7 @@ module.exports = {
 		{id: 302, msg: 'Random Buff Invencible'}// "무적버프_wait_노멀"
 	],
 	//            0     1
-	CK_TipMsg : ["(Entrar)", "(Salir)"],
+	CK_TipMsg : ["(ENTRAR)", "(SALIR)"],
 	// 狂气竞技场 (Forbidden Arena)
 	FA_BOSS : [
 		{id: 108, msg: 'Espadazo Frontal (Lento)'},    // 101 121 122 連續攻擊 -> 108 One size兩斷(坦)
