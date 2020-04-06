@@ -40,7 +40,7 @@ module.exports = {
 		{id: 218, msg: 'Empujar'},
 		{id: 211, msg: 'Difusion (Dentro-> Fuera)'},
 		{id: 212, msg: 'Difusion (Fuera-> Dentro)'},
-		{id: 219, msg: 'Dentro e Fuera'}
+		{id: 219, msg: 'Ataque Dentro e Fuera'}
 	],
 	// 拉坎里斯的废墟 (Ruinous Manor)
 	RM_BOSS_1 : [
@@ -55,12 +55,12 @@ module.exports = {
 		{id: 103, msg: 'Empujar (manos)'},
 		// 101 102 104 105     不推
 		// 101 102 104 106 107 推坦
-		{id: 106, msg: 'Empujar hacia adelante(Bronceado)'},
+		{id: 106, msg: 'Empujar adelante(Bronceado)'},
 		{id: 110, msg: 'Barrido de la cola!!'}, // 108 110 111
 		// 317 分散吃球
 		// 319 分散吃球 愤怒
 		{id: 113, msg: 'FUEORA do circulo'}, // 113  114 115
-		{id: 116, msg: 'DENTRO Circulo'}, // 116  117 118
+		{id: 116, msg: 'DENTRO do Circulo'}, // 116  117 118
 		// < 30% 
 		{id: 311, msg: 'EMPUJANDO personas!!'},
 		{id: 322, msg: 'Destino!!(buff)'}
@@ -91,7 +91,7 @@ module.exports = {
 		{id: 103, msg: 'Rayos (Alejarse)'},
 		{id: 301, msg: 'Bomb (Juntar) Cleanse'},
 		{id: 404, msg: 'Debuff (Cerca)'},
-		{id: 105, msg: 'Rayoos (Juntar)'},
+		{id: 105, msg: 'Rayos (Juntar)'},
 		{id: 302, msg: 'Bomb (Juntar) Cleanse'},
 		{id: 405, msg: 'Debuff (Lejos)'},
 		{id: 401, msg: 'Disipar!!'},
@@ -342,12 +342,12 @@ module.exports = {
 	SI_BOSS_3 : [
 		{id: 108, msg: 'Carga (Halo Tan)'},
 		{id: 128, msg: 'Golfe (volar)'},
-		{id: 129, msg: 'Sigue recto el craneo del enemigo'},
+		{id: 129, msg: 'Ataque Fuerte a Frente'},
 		{id: 135, msg: "saltar la cuerda"},
 		{id: 204, msg: "30% Transformar"},
 		{id: 137, msg: 'Difundir'},
 		{id: 139, msg: 'Encogerse'},
-		{id: 133, msg: 'Difundir (voar)'},
+		{id: 133, msg: 'Difundir (volar)'},
 		{id: 127, msg: '', TIP: ["Sigue el BOS", "Antes de aplastar"]},
 		
 		{id: 121, msg: ''},         // Antes de esmagar(Fora) | Circulo (dentro) (verde)_venha  +No.1 buff
