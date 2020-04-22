@@ -10,8 +10,6 @@ TERA-Guide
 
 (Antaroth's Abyss)
 
-(Grotto of Lost Souls)
-
 (Akalath Quarantine)
 
 (Sea Of Honor)
