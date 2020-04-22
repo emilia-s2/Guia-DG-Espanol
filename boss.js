@@ -212,49 +212,6 @@ module.exports = {
 		{id: 315, msg: 'Miedo (succion de sangre)'}
 	],
 	DRC_TipMsg : ["100%Energia!!"],
-	// 里安的地下殿堂 (Grotto of Lost Souls)
-	GLS_BOSS_1 : [
-		{id: 106, msg: 'Golpe pesado'},
-		{id: 107, msg: 'EMPUJAR (repelir)'},
-		{id: 109, msg: 'ROCK (Chica)'},
-		{id: 110, msg: 'ROCK (Grande)'},
-		{id: 116, msg: 'Ataque en Patalla completa!!'},
-		{id: 301, msg: 'Flor Canibal (STUN)'},
-		{id: 307, msg: 'Jaula (proibhida)'},
-		{id: 309, msg: '1 FLOR - Identificada!!'},
-		{id: 310, msg: '2 FLORES - Identificada!!'},
-		{id: 312, msg: 'Flor Dorada!!'}
-	],
-	GLS_BOSS_2 : [
-		{id: 105, msg: 'GIRAR Atras'},
-		{id: 113, msg: 'Manos (STUN)'},
-		{id: 114, msg: 'ENTRAR'},
-		{id: 116, msg: 'Frente - Atras'},
-		{id: 301, msg: 'SALIR + ESQUIVAR'},
-		{id: 302, msg: 'ENTRAR + ESQUIVAR'}
-	],
-	GLS_BOSS_3 : [
-		{id: 118, msg: 'Frente triple (spray Esquerdo-Direito)'},
-		{id: 143, msg: '<<<<IZQUIERDO Atras'},
-		{id: 145, msg: '<<<<IZQUIERDO Atras'},
-		{id: 146, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
-		{id: 154, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
-		{id: 144, msg: 'DERECHA Atras>>>>'},
-		{id: 147, msg: 'DERECHA Atras>>>>'},
-		{id: 148, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
-		{id: 155, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
-		{id: 161, msg: 'Frente - Atras'},
-		{id: 162, msg: 'Frente - Atras'},
-		{id: 213, msg: 'Cola!!'},
-		{id: 215, msg: 'Cola!!'},
-		{id: 139, msg: '<--IZQUIERDA Segura'}, //151
-		{id: 150, msg: '<--IZQUIERDA Segura'}, //151
-		{id: 141, msg: 'DERECHO SEGURO-->'}, //153
-		{id: 152, msg: 'DERECHO SEGURO-->'}, //153
-		{id: 300, msg: 'DESPIERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
-		{id: 399, msg: 'Despiertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
-		{id: 360, msg: 'Explosion !! Explosion!!'}
-	],
 	// 费尔奎娜巢穴 (Gossamer Vault)
 	GV_BOSS_1 : [
 		{id: 124, msg: 'Esputo Frente'},
