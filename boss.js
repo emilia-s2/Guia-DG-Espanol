@@ -17,6 +17,9 @@ module.exports = {
 		{zone: 9783, string: 'Bien-venido a <font color="#56B4E9">Dark Reach Citadel</font> <font color="#E69F00">Normal</font>'},
 		{zone: 9983, string: 'Bien-venido a <font color="#56B4E9">Dark Reach Citadel</font> <font color="#b603fc">Dificil</font>'},
 		{zone: 3018, string: 'Bien-venido a <font color="#56B4E9">Dark Reach Citadel</font> <font color="#FF0000"> 7 Pessoas</font>'},
+		{zone: 9782, string: 'Bien-venido a <font color="#56B4E9">Grotto of Lost Souls</font> <font color="#E69F00">Normal</font>'},
+		{zone: 9982, string: 'Bien-venido a <font color="#56B4E9">Grotto of Lost Souls</font> <font color="#b603fc">Dificil</font>'},
+		{zone: 3019, string: 'Bien-venido a <font color="#56B4E9">Grotto of Lost Souls</font> <font color="#FF0000"> 7 Pessoas</font>'},
 		{zone: 3101, string: 'Bien-venido a <font color="#56B4E9">Gossamer Vault</font> <font color="#E69F00">Normal</font>'},
 		{zone: 3201, string: 'Bien-venido a <font color="#56B4E9">Gossamer Vault</font> <font color="#b603fc">Dificil</font>'},
 		{zone: 3023, string: 'Bien-venido a <font color="#56B4E9">Akalath Quarantine</font>'},
@@ -89,7 +92,7 @@ module.exports = {
 		{id: 301, msg: 'Bomb (Juntar) Cleanse'},
 		{id: 404, msg: 'Debuff (Cerca)'},
 		{id: 105, msg: 'Rayos (Juntar)'},
-		{id: 302, msg: 'Bomb (Juntar) Cleanse'},
+		{id: 302, msg: 'Bomb (Juntar) No Cleanse'},
 		{id: 405, msg: 'Debuff (Lejos)'},
 		{id: 401, msg: 'Disipar!!'},
 		{id: 402, msg: 'Halo!!'}
@@ -161,24 +164,29 @@ module.exports = {
 	AA_BOSS_1 : [
 		{id: 116, msg: 'Fuera del circulo'},
 		{id: 117, msg: 'Dentro del circulo'},
-		{id: 300, msg: 'Esquivar (Jugar al Alto)'}
+		{id: 300, msg: 'Jugar al Alto(Iframe)'}
 	],
 	AA_BOSS_2 : [
-		{id: 119, msg: 'Maldicion !!'}
+        {id: 106, msg: 'GIRO'},
+        {id: 106, msg: 'GIRO'}, // rage
+        {id: 119, msg: 'Rojo - SALIR'},
+        {id: 220, msg: 'Azul - ENTRAR'} 
 	],
 	AA_BOSS_3 : [
-		{id: 104, msg: 'ATRAS STURN'},
-		{id: 113, msg: 'Frente - ATRAS STURN'},
-		{id: 202, msg: 'Retirada - Circulo'},
-		{id: 109, msg: ' <<<IZQUIERDO SEGURO'},
-		{id: 111, msg: 'DERECHO SEGURO>>>'},
-		{id: 310, msg: 'OLA de agua'},
-		{id: 311, msg: 'OLA de agua'},
-		{id: 312, msg: 'OLA de agua'},
-		{id: 313, msg: 'OLA de agua'},
-		{id: 314, msg: 'OLA de agua'},
+	    {id: 113, msg: 'Frente - ATRAS STURN'},
+        {id: 111, msg: 'DERECHO Seguro, SALIR Seguro'}, //msgForTanks: 'Left Safe, OUT safe'},
+        {id: 111, msg: 'DERECHO Seguro, SALIR Seguro'}, //msgForTanks: 'Left Safe, OUT safe'}, // rage
+        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR Seguro'},   //msgForTanks: 'Right Safe, IN safe'},
+        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR Seguro'},   //msgForTanks: 'Right Safe, IN safe'}, // rage
+		{id: 310, msg: 'Ola de agua'},
+		{id: 311, msg: 'Ola de agua'},
+		{id: 312, msg: 'Ola de agua'},
+		{id: 313, msg: 'Ola de agua'},
+		{id: 314, msg: 'Ola de agua'},
 		{id: 400, msg: 'Fantasma x3'}, // 三幻影-剑气 205 500 400 204 204
-		{id: 401, msg: 'Circulo fantasma x3'}  // 三幻影-转圈 205 500 401 115 309
+		{id: 401, msg: 'Circulo fantasma x3'},  // 三幻影-转圈 205 500 401 115 309
+        {id: 104, msg: 'Atras Stun'}, //checkTwoUp: true}, // HM
+        {id: 104, msg: 'Atras stun'} //checkTwoUp: true} // HM Rage
 	],
 	// 泰内布利斯城堡 (Dark Reach Citadel)
 	DRC_BOSS_1 : [
@@ -209,6 +217,49 @@ module.exports = {
 		{id: 315, msg: 'Miedo (succion de sangre)'}
 	],
 	DRC_TipMsg : ["100%Energia!!"],
+		// 里安的地下殿堂 (Grotto of Lost Souls)
+	GLS_BOSS_1 : [
+		{id: 106, msg: 'Golpe pesado'},
+		{id: 107, msg: 'EMPUJAR (repelir)'},
+		{id: 109, msg: 'ROCK (Chica)'},
+		{id: 110, msg: 'ROCK (Grande)'},
+		{id: 116, msg: 'Ataque en Patalla completa!!'},
+		{id: 301, msg: 'Flor Canibal (STUN)'},
+		{id: 307, msg: 'Jaula (proibhida)'},
+		{id: 309, msg: '1 FLOR - Identificada!!'},
+		{id: 310, msg: '2 FLORES - Identificada!!'},
+		{id: 312, msg: 'Flor Dorada!!'}
+	],
+	GLS_BOSS_2 : [
+		{id: 105, msg: 'GIRAR Atras'},
+		{id: 113, msg: 'Manos (STUN)'},
+		{id: 114, msg: 'ENTRAR'},
+		{id: 116, msg: 'Frente - Atras'},
+		{id: 301, msg: 'SALIR + ESQUIVAR'},
+		{id: 302, msg: 'ENTRAR + ESQUIVAR'}
+	],
+	GLS_BOSS_3 : [
+		{id: 118, msg: 'Frente triple (spray Esquerdo-Direito)'},
+		{id: 143, msg: '<<<<IZQUIERDO Atras'},
+		{id: 145, msg: '<<<<IZQUIERDO Atras'},
+		{id: 146, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
+		{id: 154, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
+		{id: 144, msg: 'DERECHA Atras>>>>'},
+		{id: 147, msg: 'DERECHA Atras>>>>'},
+		{id: 148, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
+		{id: 155, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
+		{id: 161, msg: 'Frente - Atras'},
+		{id: 162, msg: 'Frente - Atras'},
+		{id: 213, msg: 'Cola!!'},
+		{id: 215, msg: 'Cola!!'},
+		{id: 139, msg: '<--IZQUIERDA Segura'}, //151
+		{id: 150, msg: '<--IZQUIERDA Segura'}, //151
+		{id: 141, msg: 'DERECHO SEGURO-->'}, //153
+		{id: 152, msg: 'DERECHO SEGURO-->'}, //153
+		{id: 300, msg: 'DESPIERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
+		{id: 399, msg: 'Despiertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
+		{id: 360, msg: 'Explosion !! Explosion!!'}
+	],
 	// 费尔奎娜巢穴 (Gossamer Vault)
 	GV_BOSS_1 : [
 		{id: 124, msg: 'Esputo Frente'},
@@ -294,7 +345,7 @@ module.exports = {
 		{id: 103, msg: 'Succion Azul (Esquivar)'}
 	],
 	SI_BOSS_3 : [
-		{id: 108, msg: 'Carga (Halo Tan)'},
+		{id: 108, msg: 'Ataque (Halo Tan)'},
 		{id: 128, msg: 'Golfe (volar)'},
 		{id: 129, msg: 'Ataque Fuerte a Frente'},
 		{id: 135, msg: "saltar la cuerda"},
@@ -314,7 +365,7 @@ module.exports = {
 	//  {id: 134, msg: 'Grande circulo'},  // Terceiro Hit
 	],
 	//           121+120=241 122+120=242           121+123=244 122+123=245
-	SI_TipMsg : ["FUERA-DENTRO-DENTRO", "Dentro-Fuera-Dentro 1","Stun(ESQUIVAR)!!!", "FUERA-DENTRO-FUERA", "Dentro-Fuera-Dentro 2"],
+	SI_TipMsg : ["SALIR-ENTRAR-ENTRAR", "ENTRAR-SALIR-ENTRAR","Stun(ESQUIVAR)!!!", "SALIR-ENTRAR-SALIR", "ENTRAR-SALIR-SALIR"],
 	// 凯尔赛克隐藏地(Corrupted Skynest)
 	CK_BOSS : [
 		// 120 猛烈的咆哮
@@ -354,10 +405,10 @@ module.exports = {
 		{id: 105, msg: 'AOE-Magia de FUEGO (Grande)'},
 		{id: 155, msg: 'AOE-Magia de FUEGO (Chico)'},
 		// 内外鉴定
-		{id: 212, msg: ''}, // 212 -> 141
-		{id: 213, msg: ''}, // 213 -> 143
-		{id: 214, msg: ''}, // 214 -> 142
-		{id: 215, msg: ''}, // 215 -> 144
+		{id: 212, msg: 'Rojo Adentro'}, // 212 -> 141(FOGO)
+		{id: 213, msg: 'Azul Adentro'}, // 213 -> 143(GELO)
+		{id: 214, msg: 'Azul Adentro'}, // 214 -> 142(FOGO)
+		{id: 215, msg: 'Rojo Adentro'}, // 215 -> 144(GELO)
 	// 以下未知
 		{id: 119, msg: 'Rugido Debil'},
 		{id: 161, msg: 'Rugido Debil'},
@@ -393,8 +444,8 @@ module.exports = {
 		{id: 211, msg: 'Fin de rotacion'},// "회전종료용_ModeAlarm_노멀"
 		{id: 302, msg: 'Random Buff Invencible'}// "무적버프_wait_노멀"
 	],
-	//            0     1
-	CK_TipMsg : ["(ENTRAR)", "(SALIR)"],
+			//            0     1     2      3
+	CK_TipMsg : ["ENTRAR", "SALIR", "Seguro", "Seguro"],
 	// 狂气竞技场 (Forbidden Arena)
 	FA_BOSS : [
 		{id: 108, msg: 'Espadazo Frontal (Lento)'},    // 101 121 122 連續攻擊 -> 108 One size兩斷(坦)
