@@ -162,28 +162,26 @@ module.exports = {
 	],
 	// 安塔洛斯的深渊 (Antaroth's Abyss)
 	AA_BOSS_1 : [
-		{id: 116, msg: 'Fuera del circulo'},
-		{id: 117, msg: 'Dentro del circulo'},
 		{id: 300, msg: 'Jugar al Alto(Iframe)'}
 	],
 	AA_BOSS_2 : [
         {id: 106, msg: 'GIRO'},
         {id: 106, msg: 'GIRO'}, // rage
-        {id: 119, msg: 'Rojo - SALIR'},
-        {id: 220, msg: 'Azul - ENTRAR'} 
+        {id: 119, msg: 'SALIR seguro'},
+        {id: 220, msg: 'ENTRAR seguro'} 
 	],
 	AA_BOSS_3 : [
 	    {id: 113, msg: 'Frente - ATRAS STURN'},
-        {id: 111, msg: 'DERECHO Seguro, SALIR Seguro'}, //msgForTanks: 'Left Safe, OUT safe'},
-        {id: 111, msg: 'DERECHO Seguro, SALIR Seguro'}, //msgForTanks: 'Left Safe, OUT safe'}, // rage
-        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR Seguro'},   //msgForTanks: 'Right Safe, IN safe'},
-        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR Seguro'},   //msgForTanks: 'Right Safe, IN safe'}, // rage
+        {id: 111, msg: 'DERECHO Seguro, SALIR ->'}, //msgForTanks: 'Left Safe, OUT safe'},
+        {id: 111, msg: 'DERECHO Seguro, SALIR ->'}, //msgForTanks: 'Left Safe, OUT safe'}, // rage
+        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR'},   //msgForTanks: 'Right Safe, IN safe'},
+        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR'},   //msgForTanks: 'Right Safe, IN safe'}, // rage
 		{id: 310, msg: 'Ola de agua'},
 		{id: 311, msg: 'Ola de agua'},
 		{id: 312, msg: 'Ola de agua'},
 		{id: 313, msg: 'Ola de agua'},
 		{id: 314, msg: 'Ola de agua'},
-		{id: 400, msg: 'Fantasma x3'}, // 三幻影-剑气 205 500 400 204 204
+		{id: 400, msg: 'Fantasma Slash x3'}, // 三幻影-剑气 205 500 400 204 204
 		{id: 401, msg: 'Circulo fantasma x3'},  // 三幻影-转圈 205 500 401 115 309
         {id: 104, msg: 'Atras Stun'}, //checkTwoUp: true}, // HM
         {id: 104, msg: 'Atras stun'} //checkTwoUp: true} // HM Rage
@@ -244,8 +242,8 @@ module.exports = {
 		{id: 145, msg: '<<<<IZQUIERDO Atras'},
 		{id: 146, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
 		{id: 154, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
-		{id: 144, msg: 'DERECHA Atras>>>>'},
-		{id: 147, msg: 'DERECHA Atras>>>>'},
+		{id: 144, msg: 'DERECHA Atras>>'},
+		{id: 147, msg: 'DERECHA Atras>>'},
 		{id: 148, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
 		{id: 155, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
 		{id: 161, msg: 'Frente - Atras'},
@@ -381,8 +379,8 @@ module.exports = {
 		{id: 158, msg: 'Giro a la derecha (Derribo!!)'},
 		{id: 109, msg: 'Giro a la izquierda (Derribo!!)'},
 		{id: 159, msg: 'Giro a la izquierda (Derribo!!)'},
-		{id: 118, msg: '~Jugar al Alto~'},
-		{id: 160, msg: '~Jugar al Alto~'},
+		{id: 118, msg: '~Jugar al Alto~(Iframe)'},
+		{id: 160, msg: '~Jugar al Alto~(Iframe)'},
 		{id: 137, msg: '[Rugido] Alejate 50m'},
 		{id: 138, msg: 'Ataque amplio!!'},
 		{id: 110, msg: 'Mano de Fuego (Alejate)'},
@@ -399,7 +397,7 @@ module.exports = {
 		// 152 左脚(冰_格挡)
 		// 107 双脚_快
 		// 157 双脚_快
-		{id: 145, msg: 'Ataque Lento (Stun)'},
+		{id: 145, msg: 'PES-Lento (Stun)'},
 		{id: 104, msg: 'AOE-Magia de HIELO (Grande)'},
 		{id: 154, msg: 'AOE-Magia de HIELO (Chico)'},
 		{id: 105, msg: 'AOE-Magia de FUEGO (Grande)'},
@@ -445,11 +443,11 @@ module.exports = {
 		{id: 302, msg: 'Random Buff Invencible'}// "무적버프_wait_노멀"
 	],
 			//            0     1     2      3
-	CK_TipMsg : ["ENTRAR", "SALIR", "Seguro", "Seguro"],
+	CK_TipMsg : ["ENTRAR", "SALIR", "IZQUIERDO Seguro", "DERECHO Seguro"],
 	// 狂气竞技场 (Forbidden Arena)
 	FA_BOSS : [
 		{id: 108, msg: 'Espadazo Frontal (Lento)'},    // 101 121 122 連續攻擊 -> 108 One size兩斷(坦)
-		{id: 355, msg: 'Rompemandibulas'},    // 102 121 103 連續攻擊 -> 355 右手蓄力 -> 114 下巴粉碎
+		{id: 355, msg: 'Rompe mandibulas'},    // 102 121 103 連續攻擊 -> 355 右手蓄力 -> 114 下巴粉碎
 		{id: 135, msg: 'Espadazo Frontal (Lento)'},    //         104 連續攻擊 -> 135 左手蓄力 -> 130 One size兩斷
 		{id: 111, msg: 'Stun - Espadazo Frontal'}, //         104 連續攻擊 -> 111 刀背打擊 -> 130 One size兩斷
 		{id: 112, msg: 'Salto Detras - Espadazo'}, //     121 102 連續攻擊 -> 112 後退踢擊 -> 130 One size兩斷
@@ -471,8 +469,8 @@ module.exports = {
 		{id: 356, msg: 'Flash (Iframe)'},  //    356 瞬閃点名 -> 147 One size兩斷
 		{id: 134, msg: 'Cuidado (Ataque hacia atras)'},  //    134 要害攻擊 -> 147 One size兩斷
 		
-		{id: 357, msg: 'Morado-> Explosion (Salir!!)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
-		{id: 350, msg: 'Rojo-> Donas'},     // 350 吸收力量                 -> 302 甜甜圈
+		{id: 357, msg: 'SALIR-> Explosion (Iframe!!)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
+		{id: 350, msg: 'SALIR-> ENTRAR'},     // 350 吸收力量                 -> 302 甜甜圈
 		
 		{id: 351, msg: 'Romper Escudo !!'},       // 护盾开始 环形爆发
 		{id: 401, msg: '30% (Iframe)'}           // 开始
