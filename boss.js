@@ -69,14 +69,14 @@ module.exports = {
 	VS_BOSS_1 : [
 		{id: 301, msg: 'Veneno(General)'},
 		{id: 304, msg: 'Ataque Dentro y Fuera'},
-		{id: 401, msg: '<<<<IZQUIERDO Seguro'},
-		{id: 402, msg: 'DERECHO Seguro>>>>'}
+		{id: 401, msg: 'IZQUIERDO Seguro----->> (T)'},
+		{id: 402, msg: '(T) <<-----DERECHO Seguro'}
 	],
 	VS_BOSS_2 : [
 		{id: 106, msg: 'Atras'},
 		{id: 108, msg: 'Frente'},
-		{id: 131, msg: '<--IZQUIERDO seguro'},
-		{id: 130, msg: 'DERECHO Seguro-->'},
+		{id: 131, msg: 'IZQUIERDO seguro----->> (T)'},
+		{id: 130, msg: '(T) <<-----DERECHO Seguro'},
 		{id: 134, msg: 'Debuff'}
 	],
 	VS_BOSS_3 : [
@@ -135,10 +135,10 @@ module.exports = {
 		{id: 304, msg: 'Explosion (Lejo)!!'}
 	],
 	RK_BOSS_3 : [
-		{id: 117, msg: 'S Mano IZQUIERDA'}, // 117 121 123
-		{id: 118, msg: 'S Mano IZQUIERDA'}, // 118 121 123
-		{id: 116, msg: 'S Mano DERECHA'}, // 116 120 122
-		{id: 119, msg: 'S Mano DERECHA'}, // 119 120 122
+		{id: 117, msg: 'S Mano IZQUIERDA----->> (T)'}, // 117 121 123
+		{id: 118, msg: 'S Mano IZQUIERDA----->> (T)'}, // 118 121 123
+		{id: 116, msg: '(T) <<-----S Mano DERECHA'}, // 116 120 122
+		{id: 119, msg: '(T) <<-----S Mano DERECHA'}, // 119 120 122
 		{id: 128, msg: 'Puno de Cohete - Atras'},
 		// 128 129 火箭拳 | 130 131 后喷
 		{id: 321, msg: 'Escudo!!'},
@@ -172,10 +172,10 @@ module.exports = {
 	],
 	AA_BOSS_3 : [
 	    {id: 113, msg: 'Frente - ATRAS STURN'},
-        {id: 111, msg: 'DERECHO Seguro, SALIR ->'}, //msgForTanks: 'Left Safe, OUT safe'},
-        {id: 111, msg: 'DERECHO Seguro, SALIR ->'}, //msgForTanks: 'Left Safe, OUT safe'}, // rage
-        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR'},   //msgForTanks: 'Right Safe, IN safe'},
-        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR'},   //msgForTanks: 'Right Safe, IN safe'}, // rage
+        {id: 111, msg: '(T) <<-----DERECHO Seguro, SALIR'}, //msgForTanks: 'Left Safe, OUT safe'},
+        {id: 111, msg: '(T) <<-----DERECHO Seguro, SALIR'}, //msgForTanks: 'Left Safe, OUT safe'}, // rage
+        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR----->> (T)'},   //msgForTanks: 'Right Safe, IN safe'},
+        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR----->> (T)'},   //msgForTanks: 'Right Safe, IN safe'}, // rage
 		{id: 310, msg: 'Ola de agua'},
 		{id: 311, msg: 'Ola de agua'},
 		{id: 312, msg: 'Ola de agua'},
@@ -250,10 +250,10 @@ module.exports = {
 		{id: 162, msg: 'Frente - Atras'},
 		{id: 213, msg: 'Cola!!'},
 		{id: 215, msg: 'Cola!!'},
-		{id: 139, msg: '<--IZQUIERDA Segura'}, //151
-		{id: 150, msg: '<--IZQUIERDA Segura'}, //151
-		{id: 141, msg: 'DERECHO SEGURO-->'}, //153
-		{id: 152, msg: 'DERECHO SEGURO-->'}, //153
+		{id: 139, msg: 'IZQUIERDA Segura----->> (T)'}, //151
+		{id: 150, msg: 'IZQUIERDA Segura----->> (T)'}, //151
+		{id: 141, msg: '(T) <<-----DERECHO SEGURO'}, //153
+		{id: 152, msg: '(T) <<-----DERECHO SEGURO'}, //153
 		{id: 300, msg: 'DESPIERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
 		{id: 399, msg: 'Despiertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
 		{id: 360, msg: 'Explosion !! Explosion!!'}
