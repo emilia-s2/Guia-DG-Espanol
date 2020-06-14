@@ -443,7 +443,7 @@ module.exports = {
 		{id: 302, msg: 'Random Buff Invencible'}// "무적버프_wait_노멀"
 	],
 			//            0     1     2      3
-	CK_TipMsg : ["ENTRAR", "SALIR", "IZQUIERDO Seguro", "DERECHO Seguro"],
+	CK_TipMsg : ["", "", "", ""],
 	// 狂气竞技场 (Forbidden Arena)
 	FA_BOSS : [
 		{id: 108, msg: 'Espadazo Frontal (Lento)'},    // 101 121 122 連續攻擊 -> 108 One size兩斷(坦)
