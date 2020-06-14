@@ -1,4 +1,4 @@
-TERA-Guide
+Guide-DG
 ======
 
 # Información de dungeon incluidas
