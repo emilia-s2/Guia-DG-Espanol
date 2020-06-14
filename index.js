@@ -631,12 +631,12 @@ module.exports = function Tera_Guide(mod) {
 			if (!(bossSkillID = CK_BOSS.find(obj => obj.id==skillid))) return;
 			if ([212, 215].includes(skillid)) { // 内火(火爪)
 				mod.command.message("内火 |" + ((bossWord%2)?"恐惧(相同)":"愤怒(不同)") + "| 内冰");
-				SendMessage((myDeBuff?CK_TipMsg[(0+bossWord+myDeBuff)%2]:"X") + "->" + CK_TipMsg[(0+bossWord)%2+2]);
+				SendMessage((myDeBuff?CK_TipMsg[(0+bossWord+myDeBuff)%2]:"") + "" + CK_TipMsg[(0+bossWord)%2+2]);
 				return;
 			}
 			if ([213, 214].includes(skillid)) { // 内冰(冰爪)
 				mod.command.message("内冰 |" + ((bossWord%2)?"恐惧(相同)":"愤怒(不同)") + "| 内火");
-				SendMessage((myDeBuff?CK_TipMsg[(1+bossWord+myDeBuff)%2]:"X") + "->" + CK_TipMsg[(1+bossWord)%2+2]);
+				SendMessage((myDeBuff?CK_TipMsg[(1+bossWord+myDeBuff)%2]:"") + "" + CK_TipMsg[(1+bossWord)%2+2]);
 				return;
 			}
 			SendMessage(bossSkillID.msg);
