@@ -162,29 +162,29 @@ module.exports = {
 	],
 	// 安塔洛斯的深渊 (Antaroth's Abyss)
 	AA_BOSS_1 : [
-		{id: 300, msg: 'Jugar al Alto(Iframe)'}
+		//{id: 300, msg: 'Jugar al Alto(Iframe)'}
 	],
 	AA_BOSS_2 : [
-        {id: 106, msg: 'GIRO'},
-        {id: 106, msg: 'GIRO'}, // rage
-        {id: 119, msg: 'SALIR seguro'},
-        {id: 220, msg: 'ENTRAR seguro'} 
+       // {id: 106, msg: 'GIRO'},
+       // {id: 106, msg: 'GIRO'}, // rage
+       // {id: 119, msg: 'SALIR seguro'},
+       // {id: 220, msg: 'ENTRAR seguro'} 
 	],
 	AA_BOSS_3 : [
-	    {id: 113, msg: 'Frente - ATRAS STURN'},
-        {id: 111, msg: '(T) <<-----DERECHO Seguro, SALIR'}, //msgForTanks: 'Left Safe, OUT safe'},
-        {id: 111, msg: '(T) <<-----DERECHO Seguro, SALIR'}, //msgForTanks: 'Left Safe, OUT safe'}, // rage
-        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR----->> (T)'},   //msgForTanks: 'Right Safe, IN safe'},
-        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR----->> (T)'},   //msgForTanks: 'Right Safe, IN safe'}, // rage
+	    //{id: 113, msg: 'Frente - ATRAS STURN'},
+       // {id: 111, msg: '(T) <<-----DERECHO Seguro, SALIR'},
+       // {id: 111, msg: '(T) <<-----DERECHO Seguro, SALIR'},
+       // {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR----->> (T)'},
+       // {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR----->> (T)'},
 		{id: 310, msg: 'Ola de agua'},
 		{id: 311, msg: 'Ola de agua'},
 		{id: 312, msg: 'Ola de agua'},
 		{id: 313, msg: 'Ola de agua'},
-		{id: 314, msg: 'Ola de agua'},
-		{id: 400, msg: 'Fantasma Slash x3'}, // 三幻影-剑气 205 500 400 204 204
-		{id: 401, msg: 'Circulo fantasma x3'},  // 三幻影-转圈 205 500 401 115 309
-        {id: 104, msg: 'Atras Stun'}, //checkTwoUp: true}, // HM
-        {id: 104, msg: 'Atras stun'} //checkTwoUp: true} // HM Rage
+		{id: 314, msg: 'Ola de agua'}
+		//{id: 400, msg: 'Fantasma Slash x3'}, // 三幻影-剑气 205 500 400 204 204
+		//{id: 401, msg: 'Circulo fantasma x3'},  // 三幻影-转圈 205 500 401 115 309
+        //{id: 104, msg: 'Atras Stun'},
+        //{id: 104, msg: 'Atras stun'}
 	],
 	// 泰内布利斯城堡 (Dark Reach Citadel)
 	DRC_BOSS_1 : [
