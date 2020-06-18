@@ -661,7 +661,7 @@ module.exports = function Tera_Guide(mod) {
 		} else {
 			mod.send('S_CHAT', 3 , {
 				channel: chl ? chl : 21, // 21 = 队长通知, 1 = 组队, 2 = 公会, 25 = 团长通知
-				name: 'DG-Guide',
+				name: 'Guide-DG',
 				message: msg
 			});
 		}
