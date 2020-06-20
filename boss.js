@@ -24,6 +24,9 @@ module.exports = {
 		{zone: 3201, string: 'Bien-venido a <font color="#56B4E9">Gossamer Vault</font> <font color="#b603fc">Dificil</font>'},
 		{zone: 3023, string: 'Bien-venido a <font color="#56B4E9">Akalath Quarantine</font>'},
 		{zone: 3020, string: 'Bien-venido a <font color="#56B4E9">Sea Of Honor</font>'},
+		{zone: 9044, string: 'Bien-Venido a <font color="#56B4E9">Bahaars Sanctum</font>'},
+		{zone: 3102, string: 'Bien-venido a <font color="#56B4E9">Draakon Arena</font> <font color="#E69F00">Normal</font>'},
+		{zone: 3202, string: 'Bien-Venido a <font color="#56B4E9">Draakon Arena</font> <font color="#E69F00">Dificil</font>'},		
 		{zone: 3026, string: 'Bien-venido a <font color="#56B4E9">Corrupted Skynest</font> <font color="#E69F00">Normal</font>'},
 		{zone: 3126, string: 'Bien-venido a <font color="#56B4E9">Corrupted Skynest</font> <font color="#b603fc">Dificil</font>'},
 		{zone: 3027, string: 'Bien-venido a <font color="#56B4E9">Forbidden Arena Challenge</font>'}
