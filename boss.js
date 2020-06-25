@@ -71,28 +71,28 @@ module.exports = {
 	// 贝里克神殿 (Velik's Sanctuary)
 	VS_BOSS_1 : [
 		{id: 301, msg: 'Veneno(General)'},
-		{id: 304, msg: 'Ataque Dentro y Fuera'},
-		{id: 401, msg: 'IZQUIERDO Seguro----->> (T)'},
-		{id: 402, msg: '(T) <<-----DERECHO Seguro'}
+//		{id: 304, msg: 'Ataque Dentro y Fuera'},
+//		{id: 401, msg: 'IZQUIERDO Seguro----->> (T)'},
+//		{id: 402, msg: '(T) <<-----DERECHO Seguro'}
 	],
 	VS_BOSS_2 : [
-		{id: 106, msg: 'Atras'},
-		{id: 108, msg: 'Frente'},
-		{id: 131, msg: 'IZQUIERDO seguro----->> (T)'},
-		{id: 130, msg: '(T) <<-----DERECHO Seguro'},
+//		{id: 106, msg: 'Atras'},
+//		{id: 108, msg: 'Frente'},
+//		{id: 131, msg: 'IZQUIERDO seguro----->> (T)'},
+//		{id: 130, msg: '(T) <<-----DERECHO Seguro'},
 		{id: 134, msg: 'Debuff'}
 	],
 	VS_BOSS_3 : [
-		{id: 116, msg: 'Escudo Adelante Donut (Volando)'},
-		{id: 138, msg: 'Ataque Circulo -Preparate-!!'},
+		{id: 116, msg: 'Stun Frontal'},
+		{id: 138, msg: 'Cuidado!!'},
 		{id: 144, msg: 'Fuera Seguro'},
 		{id: 145, msg: 'Dentro seguro'},
 		// 149 前刺(坦)
 		{id: 151, msg: 'Stun + Tres capturas)'},
-		{id: 152, msg: 'Escudo Adelante - Empujar Atras (repeler)'},
+		{id: 152, msg: 'Stun Frontal - Empujar Atras (repeler)'},
 		{id: 701, msg: 'Empujar atras - Ataque Frontal '},
 		{id: 103, msg: 'Rayos (Alejarse)'},
-		{id: 301, msg: 'Bomb (Juntar) Cleanse'},
+		{id: 301, msg: 'Bomb (Juntar) + Cleanse'},
 		{id: 404, msg: 'Debuff (Cerca)'},
 		{id: 105, msg: 'Rayos (Juntar)'},
 		{id: 302, msg: 'Bomb (Juntar) No Cleanse'},
@@ -101,7 +101,7 @@ module.exports = {
 		{id: 402, msg: 'Halo!!'}
 	],
 	//            0           1           2           3           1+3=4       2+3=5       3+3=6
-	VS_TipMsg : ["Next -> ", "(Cercax2)", "Flash(Dispersos)", "Bomb(Decolar)", "Atencion(Lejosx2)", "Flash(Concentracion)", "Bomb(Agregar Sangre)"],
+	VS_TipMsg : ["Seguiente -> ", "Bebuff (Cerca)", "Rayos (Alejarse)", "Bomb (Juntar + Cleanse)", "Debuff (Lejos)", "Rayos (Juntar)", "Bomb (Juntar No Cleanse)"],
 	// RK-9机库 (RK-9 Kennel)
 	RK_BOSS_1 : [
 		{id: 104, msg: 'Stun Adelantente'},
@@ -135,7 +135,7 @@ module.exports = {
 		{id: 105, msg: 'Rotar (Repeler)'},
 		// 上级
 		{id: 305, msg: 'Adsorcin (Cerrar)'},
-		{id: 304, msg: 'Explosion (Lejo)!!'}
+		{id: 304, msg: 'Explosion (Alejate)!!'}
 	],
 	RK_BOSS_3 : [
 		{id: 117, msg: 'S Mano IZQUIERDA----->> (T)'}, // 117 121 123
@@ -149,7 +149,7 @@ module.exports = {
 		{id: 324, msg: 'SALIR Circulo'}
 		// 305 鉴定
 	],
-	RK_TipMsg : ["Siguiente -> ", "SALIR", "ENTRAR", "OLA", "BOSS Activara ESCUDO en 10s"],
+	RK_TipMsg : ["Siguiente -> ", "SALIR", "ENTRAR", "OLA", "ESCUDO en 10s"],
 	// 革命团总部 (Red Refuge)
 	RR_BOSS_1 : [
 	
@@ -240,54 +240,54 @@ module.exports = {
 		{id: 302, msg: 'ENTRAR + ESQUIVAR'}
 	],
 	GLS_BOSS_3 : [
-		{id: 118, msg: 'Frente triple (spray Esquerdo-Direito)'},
-		{id: 143, msg: '<<<<IZQUIERDO Atras'},
-		{id: 145, msg: '<<<<IZQUIERDO Atras'},
-		{id: 146, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
-		{id: 154, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
-		{id: 144, msg: 'DERECHA Atras>>'},
-		{id: 147, msg: 'DERECHA Atras>>'},
-		{id: 148, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
-		{id: 155, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
-		{id: 161, msg: 'Frente - Atras'},
-		{id: 162, msg: 'Frente - Atras'},
-		{id: 213, msg: 'Cola!!'},
-		{id: 215, msg: 'Cola!!'},
-		{id: 139, msg: 'IZQUIERDA Segura----->> (T)'}, //151
-		{id: 150, msg: 'IZQUIERDA Segura----->> (T)'}, //151
-		{id: 141, msg: '(T) <<-----DERECHO SEGURO'}, //153
-		{id: 152, msg: '(T) <<-----DERECHO SEGURO'}, //153
-		{id: 300, msg: 'DESPIERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
-		{id: 399, msg: 'Despiertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
-		{id: 360, msg: 'Explosion !! Explosion!!'}
+//		{id: 118, msg: 'Frente triple (spray Esquerdo-Direito)'},
+//		{id: 143, msg: '<<<<IZQUIERDO Atras'},
+//		{id: 145, msg: '<<<<IZQUIERDO Atras'},
+//		{id: 146, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
+//		{id: 154, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
+//		{id: 144, msg: 'DERECHA Atras>>'},
+//		{id: 147, msg: 'DERECHA Atras>>'},
+//		{id: 148, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
+//		{id: 155, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
+//		{id: 161, msg: 'Frente - Atras'},
+//		{id: 162, msg: 'Frente - Atras'},
+//		{id: 213, msg: 'Cola!!'},
+//		{id: 215, msg: 'Cola!!'},
+//		{id: 139, msg: 'IZQUIERDA Segura----->> (T)'}, //151
+//		{id: 150, msg: 'IZQUIERDA Segura----->> (T)'}, //151
+//		{id: 141, msg: '(T) <<-----DERECHO SEGURO'}, //153
+//		{id: 152, msg: '(T) <<-----DERECHO SEGURO'}, //153
+//		{id: 300, msg: 'DESPIERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
+//		{id: 399, msg: 'Despiertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
+//		{id: 360, msg: 'Explosion !! Explosion!!'}
 	],
 	// 费尔奎娜巢穴 (Gossamer Vault)
 	GV_BOSS_1 : [
-		{id: 124, msg: 'Esputo Frente'},
-		{id: 104, msg: 'Esputo Frente'},
-		{id: 133, msg: 'SALTAR'},
-		{id: 113, msg: '(Lento) SALTAR (Volar)'},
-		{id: 138, msg: 'SALTAR'},
-		{id: 118, msg: '(Lento) PSALTAR (Volar)'},
+		{id: 124, msg: 'Stun a Frente'},
+		{id: 104, msg: 'Stun a Frente'},
+		{id: 133, msg: 'Salto (Rapido)'},
+		{id: 113, msg: 'Salto (Lento)'},
+		{id: 138, msg: 'Salto (Rapido)'},
+		{id: 118, msg: 'Salto (Lento)'},
 		// 147 向前连续攻击
 		{id: 149, msg: 'Poder de la mano IZQUIERDA (volando)'},
 		{id: 148, msg: 'Poder de la mano DERECHA (volando)'},
 		
-		{id: 127, msg: '|EMPUJAR ATRAS|'},
-		{id: 107, msg: '(Lento) | EMPUJAR ATRAS|'},
-		{id: 131, msg: 'SPRAY ATRAS'},
-		{id: 111, msg: '(Lento) SPRAY ATRAS'},
+		{id: 127, msg: 'Empujar ATRAS (Rapido)'},
+		{id: 107, msg: 'Empujar ATRAS (Lento)'},
+		{id: 131, msg: 'SPRAY ATRAS (Rapido)'},
+		{id: 111, msg: 'SPRAY ATRAS (Lento)'},
 		{id: 132, msg: '<-Spray IZQUIERDO e DERECHO->'},
 		{id: 112, msg: '<-Spray IZQUIERDO e DERECHO->'},
 		{id: 139, msg: 'Spray FRENTE e ATRAS'},
 		{id: 119, msg: 'Spray FRENTE e ATRAS'},
-		{id: 314, msg: 'Circulo DENTRO e FUERA'},
-		{id: 313, msg: 'Circulo DENTRO e FUERA'},
+		{id: 314, msg: 'Circulo DENTRO e FUERA (Rapido)'},
+		{id: 313, msg: 'Circulo DENTRO e FUERA (Lento)'},
 		
 		{id: 305, msg: 'Pizza'}, // 143 / 145
 		
-		{id: 312, msg: 'Pantalla completa (Repeler)'},
-		{id: 311, msg: '(LENTO) Tela cheia (Repeler)'}
+		{id: 312, msg: 'Pantalla completa (Repeler) (RAPIDO'},
+		{id: 311, msg: 'Pantalla completa (Repeler) (LENTO'}
 	],
 	GV_BOSS_2 : [
 		{id: 105, msg: 'Espina delantera'}, // 104 105
@@ -315,8 +315,8 @@ module.exports = {
 		{id: 1114, msg: 'Derecho Slash'}, // 1111 1114
 		{id: 2112, msg: 'Derecho Slash'},
 		{id: 2114, msg: 'Derecho Slash'}, // 2111 2114
-		{id: 1115, msg: 'Semicirculo trasero'},
-		{id: 2115, msg: 'Semicirculo trasero'},
+		{id: 1115, msg: 'Semi-circulo trasero'},
+		{id: 2115, msg: 'Semi-circulo trasero'},
 		{id: 1116, msg: 'Explosion (Shield/Kaias)'}, // 1117
 		{id: 2116, msg: 'Explosion (Shield/Kaias)'}, // 2117
 		{id: 3107, msg: 'Onda Delantera'},
