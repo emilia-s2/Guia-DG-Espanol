@@ -382,8 +382,8 @@ module.exports = {
 		{id: 158, msg: 'Giro a la derecha (Derribo!!)'},
 		{id: 109, msg: 'Giro a la izquierda (Derribo!!)'},
 		{id: 159, msg: 'Giro a la izquierda (Derribo!!)'},
-		{id: 118, msg: '~Jugar al Alto~(Iframe)'},
-		{id: 160, msg: '~Jugar al Alto~(Iframe)'},
+		{id: 118, msg: '~Jugar al Alto~ (Iframe)'},
+		{id: 160, msg: '~Jugar al Alto~ (Iframe)'},
 		{id: 137, msg: '[Rugido] Alejate 50m'},
 		{id: 138, msg: 'Ataque amplio!!'},
 		{id: 110, msg: 'Mano de Fuego (Alejate)'},
@@ -453,29 +453,29 @@ module.exports = {
 		{id: 355, msg: 'Rompe mandibulas'},    // 102 121 103 連續攻擊 -> 355 右手蓄力 -> 114 下巴粉碎
 		{id: 135, msg: 'Espadazo Frontal (Lento)'},    //         104 連續攻擊 -> 135 左手蓄力 -> 130 One size兩斷
 		{id: 111, msg: 'Stun - Espadazo Frontal'}, //         104 連續攻擊 -> 111 刀背打擊 -> 130 One size兩斷
-		{id: 112, msg: 'Salto Detras - Espadazo'}, //     121 102 連續攻擊 -> 112 後退踢擊 -> 130 One size兩斷
+		{id: 112, msg: 'Salto Randon - Espadazo'}, //     121 102 連續攻擊 -> 112 後退踢擊 -> 130 One size兩斷
 		{id: 109, msg: 'Salto Adelante - Espadazo'},         // 109 向下劈擊 -> 402 等待     -> 130 One size兩斷
 		
-		{id: 116, msg: 'Bloqueo perfecto (Iframe)'},    // 116 斬擊
-		{id: 140, msg: 'Bloqueo perfecto (Iframe)'},    // 140 斬擊
+//		{id: 116, msg: 'Bloqueo perfecto (Iframe)'},    // 116 斬擊
+//		{id: 140, msg: 'Bloqueo perfecto (Iframe)'},    // 140 斬擊
 		
-		{id: 145, msg: '3 Ataques Circulares de Corte'},  // 145 重擊斬 139 迴旋砍擊x2 -> 140 斬擊
-		{id: 136, msg: '2 Ataques Circulares - Un Golpe Frontal'},  // 136 重擊斬 144 迴旋砍擊x1 -> 130 One size兩斷
+		{id: 145, msg: '3 Ataques Circulares Slash'},  // 145 重擊斬 139 迴旋砍擊x2 -> 140 斬擊
+		{id: 136, msg: '2 Ataques Circulares - Golpe Frontal'},  // 136 重擊斬 144 迴旋砍擊x1 -> 130 One size兩斷
 		
 		{id: 141, msg: 'Ataque Circular - Espadazo Frontal'}, // 141 破壞氣魄+迴旋砍擊x2 -> 146 114 130
 		{id: 146, msg: 'Ataque Barbilla - Espadazo Frontal'}, // 146 One size兩斷       -> 114 下巴粉碎 -> 130 One size兩斷
-		{id: 142, msg: 'Ataque con Giro - Ataque Barbilla'}, // 142 破壞氣魄+迴旋砍擊x2 -> 143 114 130
-		{id: 143, msg: 'Un Espdazo Frontal'},        // 143 One size兩斷(取消) -> 114 下巴粉碎 -> 130 One size兩斷
+		{id: 142, msg: 'Ataque con Giro'}, // 142 破壞氣魄+迴旋砍擊x2 -> 143 114 130
+		{id: 143, msg: 'Espdazo Frontal'},        // 143 One size兩斷(取消) -> 114 下巴粉碎 -> 130 One size兩斷
 		
 		{id: 151, msg: '3 Cortes - Un Ataque Frontal'}, // 151 149 148三斬 -> 130 One size兩斷
 		{id: 117, msg: 'Flash (Iframe)'},  //    117 瞬閃点名 -> 130 One size兩斷
 		{id: 356, msg: 'Flash (Iframe)'},  //    356 瞬閃点名 -> 147 One size兩斷
-		{id: 134, msg: 'Cuidado (Ataque hacia atras)'},  //    134 要害攻擊 -> 147 One size兩斷
+		{id: 134, msg: 'Cuidado (Ataque Atras)'},  //    134 要害攻擊 -> 147 One size兩斷
 		
-		{id: 357, msg: 'SALIR-> Explosion (Iframe!!)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
+//		{id: 357, msg: 'SALIR + Explosion (Iframe!!)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
 		{id: 350, msg: 'SALIR-> ENTRAR'},     // 350 吸收力量                 -> 302 甜甜圈
 		
-		{id: 351, msg: 'Romper Escudo !!'},       // 护盾开始 环形爆发
+//		{id: 351, msg: 'Romper Escudo !!'},       // 护盾开始 环形爆发
 		{id: 401, msg: '30% (Iframe)'}           // 开始
 	],
 	FA_TipMsg : ["Carga de Skill Completa (Cuidado)!!!"]
