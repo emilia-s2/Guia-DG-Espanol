@@ -27,6 +27,12 @@ Guide-DG
 
 Guide Base https://github.com/tera-mod/TERA-Guide
 
+----
+
+####  Para el perfecto fucionamento es nescesario 2 modulos extras, ellos son instalados automaticamente por el toolbox
+#####  library
+#####  Guide-Complemento-ESP
+
 ------
 Se no te gusta las marcaciónes de los ataques del bos en al piso usalo los seguientes comando:
 
