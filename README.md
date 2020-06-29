@@ -25,7 +25,7 @@ Informaciónes de las DG's incluídas
 Guide Base https://github.com/tera-mod/TERA-Guide
 
 ------
-Se você não gosta das marcaçoes do bos no piso, então use o seguinte comando
+Se no te gusta las marcaciónes de los ataques del bos en al piso usalo los seguientes comando:
 
 
 
