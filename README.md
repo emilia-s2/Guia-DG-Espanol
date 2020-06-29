@@ -1,4 +1,8 @@
-Informaciónes de las DG's incluídas
+Guide-DG
+======
+
+Dungeons incluídas
+======
 
 (Velik's Sanctuary)
 
@@ -34,5 +38,5 @@ Se no te gusta las marcaciónes de los ataques del bos en al piso usalo los segu
 
 /8 para abrir o chat (comando proxy) | Descriçao
 --- | ---
-guia SpawnObject | ON / OFF
+guia spawnObject | ON / OFF
 !guia spawnObject  | O escrebiendo directamente fuera del chat de proxy
