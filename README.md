@@ -1,22 +1,38 @@
-Guide-DG
-======
+Informaciónes de las DG's incluídas
 
-# Información de dungeon incluidas
-
+(Velik's Sanctuary)
 
 (RK-9 Kennel)
 
 (Red Refuge)
 
-(Antaroth's Abyss)
+(Antaroth's Abyss - Hard)
+
+(Gossamer Vault - Hard)
 
 (Akalath Quarantine)
 
 (Sea Of Honor)
 
-(Corrupted Skynest)
+(Corrupted Skynest - NM-HM)
 
 (Forbidden Arena)
 
+(Bahaar's Sanctum)
 
-Este guia fue traducido con base en https://github.com/tera-mod/TERA-Guide
+(Draakon Arena - NM-HM) -  Beta_Test
+
+Guide Base https://github.com/tera-mod/TERA-Guide
+
+------
+Se você não gosta das marcaçoes do bos no piso, então use o seguinte comando
+
+
+
+
+------
+
+/8 para abrir o chat (comando proxy) | Descriçao
+--- | ---
+guia SpawnObject | ON / OFF
+!guia spawnObject  | ou digitando diretamente fora do chat do proxy
