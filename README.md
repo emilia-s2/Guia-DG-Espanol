@@ -34,14 +34,14 @@ Guide Base https://github.com/tera-mod/TERA-Guide
 #####  Guide-Complemento-ESP
 
 ------
-Si no te gustn las marcaciónes de los ataques del boss en el piso puedes usar los seguientes comandos:
+Si no te gustan las marcaciónes de los ataques del boss en el piso puedes usar los siguientes comandos:
 
 
 
 
 ------
 
-/8 para abrir o chat (comando proxy) | Descriçao
+/8 para abrir o chat (comando proxy) | Descripción
 --- | ---
 guia spawnObject | ON / OFF
 !guia spawnObject  | O escribiendo directamente fuera del chat de proxy
