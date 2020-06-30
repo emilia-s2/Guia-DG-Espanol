@@ -29,12 +29,12 @@ Guide Base https://github.com/tera-mod/TERA-Guide
 
 ----
 
-####  Para el perfecto fucionamento es nescesario 2 modulos extras, ellos son instalados automaticamente por el toolbox
+####  Para el perfecto funcionamiento es necesario 2 modulos extras, ellos son instalados automaticamente por el toolbox
 #####  library
 #####  Guide-Complemento-ESP
 
 ------
-Se no te gusta las marcaciónes de los ataques del bos en al piso usalo los seguientes comando:
+Si no te gustn las marcaciónes de los ataques del boss en el piso puedes usar los seguientes comandos:
 
 
 
@@ -44,4 +44,4 @@ Se no te gusta las marcaciónes de los ataques del bos en al piso usalo los segu
 /8 para abrir o chat (comando proxy) | Descriçao
 --- | ---
 guia spawnObject | ON / OFF
-!guia spawnObject  | O escrebiendo directamente fuera del chat de proxy
+!guia spawnObject  | O escribiendo directamente fuera del chat de proxy
