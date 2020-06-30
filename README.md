@@ -34,7 +34,7 @@ Guide Base https://github.com/tera-mod/TERA-Guide
 #####  Guide-Complemento-ESP
 
 ------
-Si no te gustan las marcaciónes de los ataques del boss en el piso puedes usar los siguientes comandos:
+Si no te gustan las marcaciónes de los ataques del boss en el piso, puedes usar los siguientes comandos:
 
 
 
