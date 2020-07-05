@@ -26,7 +26,7 @@ module.exports = {
 		{zone: 3020, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Sea Of Honor</font>'},
 		{zone: 9044, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Bahaars Sanctum</font>'},
 		{zone: 3102, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Draakon Arena</font> <font color="#09c0e1">Normal</font>'},
-		{zone: 3202, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Draakon Arena</font> <font color="#d92b3c">Dificil</font> <font color="#f2ff00">(Beta)</font>'},		
+		{zone: 3202, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Draakon Arena</font> <font color="#d92b3c">Dificil</font>'},		
 		{zone: 3026, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Corrupted Skynest</font> <font color="#09c0e1">Normal</font>'},
 		{zone: 3126, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Corrupted Skynest</font> <font color="#d92b3c">Dificil</font>'},
 		{zone: 3027, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena Challenge</font>'}
@@ -449,7 +449,7 @@ module.exports = {
 	CK_TipMsg : ["", "", "", ""],
 	// 狂气竞技场 (Forbidden Arena)
 	FA_BOSS : [
-		{id: 108, msg: 'Espadazo Frontal (Lento)'},    // 101 121 122 連續攻擊 -> 108 One size兩斷(坦)
+		{id: 108, msg: 'Espadazo Frontal (CUIDADO)'},    // 101 121 122 連續攻擊 -> 108 One size兩斷(坦)
 		{id: 355, msg: 'Rompe mandibulas'},    // 102 121 103 連續攻擊 -> 355 右手蓄力 -> 114 下巴粉碎
 		{id: 135, msg: 'Espadazo Frontal (Lento)'},    //         104 連續攻擊 -> 135 左手蓄力 -> 130 One size兩斷
 		{id: 111, msg: 'Stun - Espadazo Frontal'}, //         104 連續攻擊 -> 111 刀背打擊 -> 130 One size兩斷
@@ -463,11 +463,11 @@ module.exports = {
 		{id: 136, msg: '2 Ataques Circulares - Golpe Frontal'},  // 136 重擊斬 144 迴旋砍擊x1 -> 130 One size兩斷
 		
 		{id: 141, msg: 'Ataque Circular - Espadazo Frontal'}, // 141 破壞氣魄+迴旋砍擊x2 -> 146 114 130
-		{id: 146, msg: 'Ataque Barbilla - Espadazo Frontal'}, // 146 One size兩斷       -> 114 下巴粉碎 -> 130 One size兩斷
+		{id: 146, msg: 'Ataque Circular - Espadazo Frontal'}, // 146 One size兩斷       -> 114 下巴粉碎 -> 130 One size兩斷
 		{id: 142, msg: 'Ataque con Giro'}, // 142 破壞氣魄+迴旋砍擊x2 -> 143 114 130
 		{id: 143, msg: 'Espdazo Frontal'},        // 143 One size兩斷(取消) -> 114 下巴粉碎 -> 130 One size兩斷
 		
-		{id: 151, msg: '3 Cortes - Un Ataque Frontal'}, // 151 149 148三斬 -> 130 One size兩斷
+		{id: 151, msg: '3 Cortes - Ataque Frontal'}, // 151 149 148三斬 -> 130 One size兩斷
 		{id: 117, msg: 'Flash (Iframe)'},  //    117 瞬閃点名 -> 130 One size兩斷
 		{id: 356, msg: 'Flash (Iframe)'},  //    356 瞬閃点名 -> 147 One size兩斷
 		{id: 134, msg: 'Cuidado (Ataque Atras)'},  //    134 要害攻擊 -> 147 One size兩斷
