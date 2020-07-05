@@ -354,10 +354,10 @@ module.exports = function Tera_Guide(mod) {
 //		if (whichmode== 444 && event.templateId==2500 && event.stage==0 && event.skill.id==1305) {
 //			SendMessage(BS_TipMsg[2], 25);
 //		}
-//		
-//		if (boss_ID != event.gameId) return;
-//		skillid = event.skill.id % 1000; // 愤怒简化 取1000余数运算
-//		var bossSkillID = null;
+		
+		if (boss_ID != event.gameId) return;
+		skillid = event.skill.id % 1000; // 愤怒简化 取1000余数运算
+		var bossSkillID = null;
 		// DW_1王
 		if (whichmode== 466 && event.templateId==46601 && event.stage==0) {
 			if (!(bossSkillID = DW_BOSS_1.find(obj => obj.id==skillid))) return;
