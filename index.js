@@ -60,7 +60,7 @@ module.exports = function Tera_Guide(mod) {
 	mod.command.add(["辅助", "guide"], (arg) => {
 		if (!arg) {
 			Enabled = !Enabled;
-			mod.command.message("辅助提示(Guide) " + (Enabled ? "启用(ON)" : "禁用(OFF)"));
+			mod.command.message("(Guide) " + (Enabled ? "(ON)" : "(OFF)"));
 		} else {
 			switch (arg) {
 				case "st":
