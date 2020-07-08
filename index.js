@@ -562,11 +562,11 @@ module.exports = function Tera_Guide(mod) {
 		}
 		// BS_火神
 		if (whichmode== 444 && [1000, 2000].includes(event.templateId) && event.stage==0) {
-			if (!(bossSkillID = BS_BOSS.find(obj => obj.id==skillid))) return;
-			if ([121, 122, 123, 140, 141, 142].includes(skillid)) { // 半月预测
-				mod.setTimeout(() => { SendMessage(BS_TipMsg[0], 25); }, 60000);
-			}
-			SendMessage(bossSkillID.msg);
+//			if (!(bossSkillID = BS_BOSS.find(obj => obj.id==skillid))) return;
+//			if ([121, 122, 123, 140, 141, 142].includes(skillid)) { // 半月预测
+//				mod.setTimeout(() => { SendMessage(BS_TipMsg[0], 25); }, 60000);
+//			}
+//			SendMessage(bossSkillID.msg);
 		}
 		// GV_1王
 		if ([3101, 3201].includes(whichmode) && event.templateId==1000 && event.stage==0) {

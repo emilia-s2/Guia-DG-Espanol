@@ -473,7 +473,7 @@ module.exports = {
 		{id: 134, msg: 'Cuidado (Ataque Atras)'},  //    134 要害攻擊 -> 147 One size兩斷
 		
 //		{id: 357, msg: 'SALIR + Explosion (Iframe!!)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
-		{id: 350, msg: 'SALIR-> ENTRAR'},     // 350 吸收力量                 -> 302 甜甜圈
+		{id: 350, msg: 'SALIR-> ENTRAR (Donuts)'},     // 350 吸收力量                 -> 302 甜甜圈
 		
 //		{id: 351, msg: 'Romper Escudo !!'},       // 护盾开始 环形爆发
 		{id: 401, msg: '30% (Iframe)'}           // 开始
