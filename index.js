@@ -267,27 +267,27 @@ module.exports = function Tera_Guide(mod) {
 			// 在神的面前不要掉以轻心 - 78155
 		}
 		// RK_3王 上级鉴定
-		if (whichmode==935 && whichboss==3000) {
+		if (whichmode==935 && whichboss==3000) {//
 			// 执行协议-935300  近-935301 远-935302 全-935303
 			if ([301, 302, 303].includes(msg_Id)) {
-				SecondMsg = RK_TipMsg[msg_Id % 300];
-				if (!switchMsg) { // switchMsg - false(绿) / true(红)
-					SendMessage(FirstMsg + " -> " + SecondMsg);
-					// 下一次鉴定提示
-					FirstMsg = SecondMsg;
-					SecondMsg = "X";
-					mod.setTimeout(() => {
-						SendMessage((RK_TipMsg[0] + FirstMsg + " -> " + SecondMsg), 25);
-					}, 6500);
-				} else {
-					SendMessage(SecondMsg + " -> " + FirstMsg);
-					// 下一次鉴定提示
-					FirstMsg = SecondMsg;
-					SecondMsg = "X";
-					mod.setTimeout(() => {
-						SendMessage((RK_TipMsg[0] + SecondMsg + " -> " + FirstMsg), 25);
-					}, 6500);
-				}
+				SecondMsg = RK_TipMsg[msg_Id % 300];                                     // RK-9Kenel
+				if (!switchMsg) { // switchMsg - false(绿) / true(红)                     //
+					SendMessage(FirstMsg + " -> " + SecondMsg);                          //
+					// 下一次鉴定提示                                                       //
+					FirstMsg = SecondMsg;                                                //
+					SecondMsg = "X";                                                     //
+					mod.setTimeout(() => {                                               //
+						SendMessage((RK_TipMsg[0] + FirstMsg + " -> " + SecondMsg), 25); //
+					}, 6500);                                                            //
+				} else {                                                                 //
+					SendMessage(SecondMsg + " -> " + FirstMsg);                          //
+					// 下一次鉴定提示                                                       //
+					FirstMsg = SecondMsg;                                                //
+					SecondMsg = "X";                                                     //
+					mod.setTimeout(() => {                                               //
+						SendMessage((RK_TipMsg[0] + SecondMsg + " -> " + FirstMsg), 25); //
+					}, 6500);                                                            //
+				}                                                                        //
 			}
 		}
 		// CK_凯尔 鉴定
@@ -348,14 +348,14 @@ module.exports = function Tera_Guide(mod) {
 	
 	function sActionStage(event) {
 		// 模块关闭 或 不在副本中
-		if (!Enabled || !whichmode) return;
+		if (!Enabled || !whichmode) return;//
 		
-		// BS_火神_王座
-//		if (whichmode== 444 && event.templateId==2500 && event.stage==0 && event.skill.id==1305) {
-//			SendMessage(BS_TipMsg[2], 25);
-//		}
+		// BS_火神_王座                                                                                 
+//		if (whichmode== 444 && event.templateId==2500 && event.stage==0 && event.skill.id==1305) {    // Bahaars
+//			SendMessage(BS_TipMsg[2], 25);                                                            //
+//		}                                                                                             //
 		
-		if (boss_ID != event.gameId) return;
+		if (boss_ID != event.gameId) return;//
 		skillid = event.skill.id % 1000; // 愤怒简化 取1000余数运算
 		var bossSkillID = null;
 		// DW_1王
@@ -470,10 +470,10 @@ module.exports = function Tera_Guide(mod) {
 		// RK_3王
 		if ([735, 935].includes(whichmode) && event.templateId==3000 && event.stage==0) {
 			if (!(bossSkillID = RK_BOSS_3.find(obj => obj.id==skillid))) return;
-			if (skillid==321) { // 破盾
-				mod.setTimeout(() => { SendMessage(RK_TipMsg[4]); }, 90000);
-			}
-			SendMessage(bossSkillID.msg);
+		if (skillid==321) { // 破盾                                                  // RK-9Kenel RK9
+				mod.setTimeout(() => { SendMessage(RK_TipMsg[4]); }, 90000);        //
+			}                                                                       //
+			SendMessage(bossSkillID.msg);                                           //
 		}
 		// RR_1王
 		if ([739, 939].includes(whichmode) && event.templateId==1000 && event.stage==0) {
@@ -561,13 +561,13 @@ module.exports = function Tera_Guide(mod) {
 			SendMessage(bossSkillID.msg);
 		}
 		// BS_火神
-		if (whichmode== 444 && [1000, 2000].includes(event.templateId) && event.stage==0) {
-//			if (!(bossSkillID = BS_BOSS.find(obj => obj.id==skillid))) return;
-//			if ([121, 122, 123, 140, 141, 142].includes(skillid)) { // 半月预测
-//				mod.setTimeout(() => { SendMessage(BS_TipMsg[0], 25); }, 60000);
-//			}
-//			SendMessage(bossSkillID.msg);
-		}
+		if (whichmode== 444 && [1000, 2000].includes(event.templateId) && event.stage==0) {//
+//			if (!(bossSkillID = BS_BOSS.find(obj => obj.id==skillid))) return;      // Bahaars Sanctum 
+//			if ([121, 122, 123, 140, 141, 142].includes(skillid)) { // 半月预测       //                             
+//				mod.setTimeout(() => { SendMessage(BS_TipMsg[0], 25); }, 60000);    //
+//			}                                                                       //
+//			SendMessage(bossSkillID.msg);                                           //
+		}//
 		// GV_1王
 		if ([3101, 3201].includes(whichmode) && event.templateId==1000 && event.stage==0) {
 			if (!(bossSkillID = GV_BOSS_1.find(obj => obj.id==skillid))) return;
@@ -583,10 +583,10 @@ module.exports = function Tera_Guide(mod) {
 		if (whichmode==3023 && event.templateId==1000 && event.stage==0) {
 			if (!(bossSkillID = AQ_BOSS_1.find(obj => obj.id==event.skill.id))) return;
 			// 诅咒
-			if (myDeBuff && [3119, 3220].includes(event.skill.id)) {
-				SendMessage(bossSkillID.msg + bossSkillID.TIP[myDeBuff%30231000]);
-				return;
-			}
+			if (myDeBuff && [3119, 3220].includes(event.skill.id)) {                 // Akalath Quarantine AQ
+				SendMessage(bossSkillID.msg + bossSkillID.TIP[myDeBuff%30231000]);   //
+				return;                                                              //
+			}                                                                        //
 			SendMessage(bossSkillID.msg);
 		}
 		// AQ_2王
@@ -629,16 +629,20 @@ module.exports = function Tera_Guide(mod) {
 		// CK_凯尔
 		if ([3026, 3126].includes(whichmode) && [1000, 1001, 1002].includes(event.templateId) && event.stage==0) {
 			if (!(bossSkillID = CK_BOSS.find(obj => obj.id==skillid))) return;
-			if ([212, 215].includes(skillid)) { // 内火(火爪)
-				mod.command.message("内火 |" + ((bossWord%2)?"恐惧(相同)":"愤怒(不同)") + "| 内冰");
-				SendMessage((myDeBuff?CK_TipMsg[(0+bossWord+myDeBuff)%2]:"") + "" + CK_TipMsg[(0+bossWord)%2+2]);
-				return;
-			}
-			if ([213, 214].includes(skillid)) { // 内冰(冰爪)
-				mod.command.message("内冰 |" + ((bossWord%2)?"恐惧(相同)":"愤怒(不同)") + "| 内火");
-				SendMessage((myDeBuff?CK_TipMsg[(1+bossWord+myDeBuff)%2]:"") + "" + CK_TipMsg[(1+bossWord)%2+2]);
-				return;
-			}
+			if ([212, 215].includes(skillid)) { // 内火(火爪)                                                          //Corrupted Skynest
+				setTimeout(() => {                                                                                   //Acrecentado   
+				mod.command.message("内火 |" + ((bossWord%2)?"恐惧(相同)":"愤怒(不同)") + "| 内冰");                       //
+				SendMessage((myDeBuff?CK_TipMsg[(0+bossWord+myDeBuff)%2]:"x") + "->" + CK_TipMsg[(0+bossWord)%2+2]); //
+				}, 500);                                                                                             //Adicionado  
+				return;                                                                                              //
+			}                                                                                                        //
+			if ([213, 214].includes(skillid)) { // 内冰(冰爪)                                                          //
+				setTimeout(() => {                                                                                   //Adicionado  
+				mod.command.message("内冰 |" + ((bossWord%2)?"恐惧(相同)":"愤怒(不同)") + "| 内火");                      //
+				SendMessage((myDeBuff?CK_TipMsg[(1+bossWord+myDeBuff)%2]:"x") + "->" + CK_TipMsg[(1+bossWord)%2+2]); //
+				}, 500);                                                                                             //Adicionado
+				return;                                                                                              //
+			}                                                                                                        //
 			SendMessage(bossSkillID.msg);
 		}
 		// FA_狂气
@@ -661,7 +665,7 @@ module.exports = function Tera_Guide(mod) {
 		} else {
 			mod.send('S_CHAT', 3 , {
 				channel: chl ? chl : 21, // 21 = 队长通知, 1 = 组队, 2 = 公会, 25 = 团长通知
-				name: 'DG-Guide',
+				name: 'Guide-DG',
 				message: msg
 			});
 		}

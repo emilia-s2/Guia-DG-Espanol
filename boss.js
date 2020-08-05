@@ -33,7 +33,7 @@ module.exports = {
 	],
 	// 费勒诺的实验室 (Demokron Factory)
 	DF_BOSS_1 : [
-		
+/*		
 	],
 	DF_BOSS_2 : [
 		
@@ -66,24 +66,24 @@ module.exports = {
 		{id: 116, msg: 'DENTRO do Circulo'}, // 116  117 118
 		// < 30% 
 		{id: 311, msg: 'EMPUJANDO personas!!'},
-		{id: 322, msg: 'Destino!!(buff)'}
+		{id: 322, msg: 'Destino!!(buff)'}//*/
 	],
 	// 贝里克神殿 (Velik's Sanctuary)
 	VS_BOSS_1 : [
-		{id: 301, msg: 'Veneno(General)'},
-//		{id: 304, msg: 'Ataque Dentro y Fuera'},
-//		{id: 401, msg: 'IZQUIERDO Seguro----->> (T)'},
-//		{id: 402, msg: '(T) <<-----DERECHO Seguro'}
+/*		{id: 301, msg: 'Veneno(General)'},
+		{id: 304, msg: 'Ataque Dentro y Fuera'},
+		{id: 401, msg: 'IZQUIERDO Seguro----->> (T)'},
+		{id: 402, msg: '(T) <<-----DERECHO Seguro'}//*/
 	],
 	VS_BOSS_2 : [
-//		{id: 106, msg: 'Atras'},
-//		{id: 108, msg: 'Frente'},
-//		{id: 131, msg: 'IZQUIERDO seguro----->> (T)'},
-//		{id: 130, msg: '(T) <<-----DERECHO Seguro'},
-		{id: 134, msg: 'Debuff'}
+/*		{id: 106, msg: 'Atras'},
+		{id: 108, msg: 'Frente'},
+		{id: 131, msg: 'IZQUIERDO seguro----->> (T)'},
+		{id: 130, msg: '(T) <<-----DERECHO Seguro'},
+		{id: 134, msg: 'Debuff'}//*/
 	],
 	VS_BOSS_3 : [
-		{id: 116, msg: 'Stun Frontal'},
+/*		{id: 116, msg: 'Stun Frontal'},
 		{id: 138, msg: 'Cuidado!!'},
 		{id: 144, msg: 'Fuera Seguro'},
 		{id: 145, msg: 'Dentro seguro'},
@@ -98,13 +98,13 @@ module.exports = {
 		{id: 302, msg: 'Bomb (Juntar) No Cleanse'},
 		{id: 405, msg: 'Debuff (Lejos)'},
 		{id: 401, msg: 'Disipar!!'},
-		{id: 402, msg: 'Halo!!'}
+		{id: 402, msg: 'Halo!!'}//*/
 	],
 	//            0           1           2           3           1+3=4       2+3=5       3+3=6
-	VS_TipMsg : ["Seguiente -> ", "Bebuff (Cerca)", "Rayos (Alejarse)", "Bomb (Juntar + Cleanse)", "Debuff (Lejos)", "Rayos (Juntar)", "Bomb (Juntar No Cleanse)"],
+	VS_TipMsg : ["Seguiente -> ", "(Bebuff) Cerca", "(Rayos) Alejar", "(Bombs) Juntar + Cleanse", "(Debuff) Lejos", "(Rayos) Juntar", "(Bombs) Juntar No Cleanse"],
 	// RK-9机库 (RK-9 Kennel)
 	RK_BOSS_1 : [
-		{id: 104, msg: 'Stun Adelantente'},
+/*		{id: 104, msg: 'Stun Adelantente'},
 		{id: 112, msg: 'Ataque ATRAS'},
 		{id: 304, msg: 'SALIR!!'},
 		{id: 305, msg: 'ENTRAR!!'},
@@ -127,77 +127,78 @@ module.exports = {
 		{id: 318, msg: 'Superior Izquierdo'}, // 7
 		{id: 322, msg: 'Superior Izquierdo'},
 		{id: 314, msg: 'Frente Izquierda'}, // 8
-		{id: 326, msg: 'Frente Izquierda'}
+		{id: 326, msg: 'Frente Izquierda'}//*/
 	],
 	RK_BOSS_2 : [
-		{id: 102, msg: 'Ataque a Frente'},
+/*		{id: 102, msg: 'Ataque a Frente'},
 		{id: 108, msg: 'Ataque ATRAS (Repeler)'},
 		{id: 105, msg: 'Rotar (Repeler)'},
 		// 上级
 		{id: 305, msg: 'Adsorcin (Cerrar)'},
-		{id: 304, msg: 'Explosion (Alejate)!!'}
+		{id: 304, msg: 'Explosion (Alejate)!!'}//*/
 	],
 	RK_BOSS_3 : [
-		{id: 117, msg: 'S Mano IZQUIERDA----->> (T)'}, // 117 121 123
-		{id: 118, msg: 'S Mano IZQUIERDA----->> (T)'}, // 118 121 123
-		{id: 116, msg: '(T) <<-----S Mano DERECHA'}, // 116 120 122
-		{id: 119, msg: '(T) <<-----S Mano DERECHA'}, // 119 120 122
+/*		{id: 117, msg: 'S Mano IZQUIERDA'}, // 117 121 123
+		{id: 118, msg: 'S Mano IZQUIERDA'}, // 118 121 123
+		{id: 116, msg: 'S Mano DERECHA'}, // 116 120 122
+		{id: 119, msg: 'S Mano DERECHA'}, // 119 120 122
 		{id: 128, msg: 'Puno de Cohete - Atras'},
 		// 128 129 火箭拳 | 130 131 后喷
 		{id: 321, msg: 'Escudo!!'},
 		{id: 323, msg: 'Radar!!'},
 		{id: 324, msg: 'SALIR Circulo'}
-		// 305 鉴定
+		// 305 鉴定//*/
 	],
-	RK_TipMsg : ["Siguiente -> ", "SALIR", "ENTRAR", "OLA", "ESCUDO en 10s"],
+	RK_TipMsg : [//"Siguiente -> ", "SALIR", "ENTRAR", "OLA", "ESCUDO en 10s"
+	],
 	// 革命团总部 (Red Refuge)
 	RR_BOSS_1 : [
 	
 	],
 	RR_BOSS_2 : [
-		{id: 119, msg: 'Spray Adelante'},
-		{id: 120, msg: 'Empujar (Repeler)'}
+//		{id: 119, msg: 'Spray Adelante'},
+//		{id: 120, msg: 'Empujar (Repeler)'}
 	],
 	RR_BOSS_3 : [
-		{id: 115, msg: 'Rugir (Stun)!!'},
-		{id: 175, msg: 'Rugir verdadero (Stun)'},
-		{id: 201, msg: 'Cara verdadera (Rasgo)'}
+//		{id: 115, msg: 'Rugir (Stun)!!'},
+//		{id: 175, msg: 'Rugir verdadero (Stun)'},
+//		{id: 201, msg: 'Cara verdadera (Rasgo)'}
 	],
 	// 安塔洛斯的深渊 (Antaroth's Abyss)
 	AA_BOSS_1 : [
 		//{id: 300, msg: 'Jugar al Alto(Iframe)'}
 	],
 	AA_BOSS_2 : [
-       // {id: 106, msg: 'GIRO'},
-       // {id: 106, msg: 'GIRO'}, // rage
-       // {id: 119, msg: 'SALIR seguro'},
-       // {id: 220, msg: 'ENTRAR seguro'} 
+/*      {id: 106, msg: 'GIRO'},
+        {id: 106, msg: 'GIRO'}, // rage
+        {id: 119, msg: 'SALIR seguro'},
+        {id: 220, msg: 'ENTRAR seguro'} //*/
 	],
 	AA_BOSS_3 : [
-	    //{id: 113, msg: 'Frente - ATRAS STURN'},
-       // {id: 111, msg: '(T) <<-----DERECHO Seguro, SALIR'},
-       // {id: 111, msg: '(T) <<-----DERECHO Seguro, SALIR'},
-       // {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR----->> (T)'},
-       // {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR----->> (T)'},
+/*	    {id: 113, msg: 'Frente - ATRAS STURN'},
+        {id: 111, msg: 'DERECHO Seguro, SALIR'},
+        {id: 111, msg: 'DERECHO Seguro, SALIR'},
+        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR'},
+        {id: 109, msg: 'IZQUIERDO Seguro, ENTRAR'},
 		{id: 310, msg: 'Ola de agua'},
 		{id: 311, msg: 'Ola de agua'},
 		{id: 312, msg: 'Ola de agua'},
 		{id: 313, msg: 'Ola de agua'},
 		{id: 314, msg: 'Ola de agua'}
-		//{id: 400, msg: 'Fantasma Slash x3'}, // 三幻影-剑气 205 500 400 204 204
-		//{id: 401, msg: 'Circulo fantasma x3'},  // 三幻影-转圈 205 500 401 115 309
-        //{id: 104, msg: 'Atras Stun'},
-        //{id: 104, msg: 'Atras stun'}
+		/{id: 400, msg: 'Fantasma Slash x3'}, // 三幻影-剑气 205 500 400 204 204
+		{id: 401, msg: 'Circulo fantasma x3'},  // 三幻影-转圈 205 500 401 115 309
+        {id: 104, msg: 'Atras Stun'},
+        {id: 104, msg: 'Atras stun'}//*/
 	],
 	// 泰内布利斯城堡 (Dark Reach Citadel)
 	DRC_BOSS_1 : [
-		{id: 108, msg: 'Salto atras (Stun)'},
+/*		{id: 108, msg: 'Salto atras (Stun)'},
 		{id: 109, msg: 'Empujar Atras (repeler)'},
 		{id: 119, msg: 'Poderoso'},
-		{id: 127, msg: 'Trueno!!'}
+		{id: 127, msg: 'Trueno!!'}//*/
 	],
 	DRC_BOSS_2 : [
-		{id: 105, msg: '(Golpear la mosca)'},
+/*		{id: 105, msg: '(Golpear la mosca)'},
 		{id: 110, msg: 'sentadilla frontal'},
 		{id: 111, msg: 'Patada en el lado Derecho (repeler)'},
 		{id: 115, msg: 'Patada en el lado Izquierdo (repeler)'},
@@ -205,22 +206,22 @@ module.exports = {
 		{id: 120, msg: 'Golpe Frontal - Patada Traseira (repeler)'},
 		{id: 316, msg: 'Llama (explosion)'},
 		{id: 317, msg: 'OLA de agua'},
-		{id: 318, msg: 'Tapete (Stun)'}
+		{id: 318, msg: 'Tapete (Stun)'}//*/
 	],
 	DRC_BOSS_3 : [
-		{id: 106, msg: 'Empujar Adelante'},
+/*		{id: 106, msg: 'Empujar Adelante'},
 		{id: 109, msg: 'Insercion frontal (Stun)'},
 		{id: 112, msg: 'Empujar atras (repelir)'},
 		{id: 301, msg: 'Espina en el Suelo'},
 		{id: 303, msg: 'DERECHO>>>>'},
 		{id: 306, msg: '<<<<IZQUIERDA'},
 		{id: 309, msg: 'Mirar!!'},
-		{id: 315, msg: 'Miedo (succion de sangre)'}
+		{id: 315, msg: 'Miedo (succion de sangre)'}//*/
 	],
 	DRC_TipMsg : ["100%Energia!!"],
 		// 里安的地下殿堂 (Grotto of Lost Souls)
 	GLS_BOSS_1 : [
-		{id: 106, msg: 'Golpe pesado'},
+/*		{id: 106, msg: 'Golpe pesado'},
 		{id: 107, msg: 'EMPUJAR (repelir)'},
 		{id: 109, msg: 'ROCK (Chica)'},
 		{id: 110, msg: 'ROCK (Grande)'},
@@ -229,41 +230,41 @@ module.exports = {
 		{id: 307, msg: 'Jaula (proibhida)'},
 		{id: 309, msg: '1 FLOR - Identificada!!'},
 		{id: 310, msg: '2 FLORES - Identificada!!'},
-		{id: 312, msg: 'Flor Dorada!!'}
+		{id: 312, msg: 'Flor Dorada!!'}//*/
 	],
 	GLS_BOSS_2 : [
-		{id: 105, msg: 'GIRAR Atras'},
+/*		{id: 105, msg: 'GIRAR Atras'},
 		{id: 113, msg: 'Manos (STUN)'},
 		{id: 114, msg: 'ENTRAR'},
 		{id: 116, msg: 'Frente - Atras'},
 		{id: 301, msg: 'SALIR + ESQUIVAR'},
-		{id: 302, msg: 'ENTRAR + ESQUIVAR'}
+		{id: 302, msg: 'ENTRAR + ESQUIVAR'}//*/
 	],
 	GLS_BOSS_3 : [
-//		{id: 118, msg: 'Frente triple (spray Esquerdo-Direito)'},
-//		{id: 143, msg: '<<<<IZQUIERDO Atras'},
-//		{id: 145, msg: '<<<<IZQUIERDO Atras'},
-//		{id: 146, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
-//		{id: 154, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
-//		{id: 144, msg: 'DERECHA Atras>>'},
-//		{id: 147, msg: 'DERECHA Atras>>'},
-//		{id: 148, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
-//		{id: 155, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
-//		{id: 161, msg: 'Frente - Atras'},
-//		{id: 162, msg: 'Frente - Atras'},
-//		{id: 213, msg: 'Cola!!'},
-//		{id: 215, msg: 'Cola!!'},
-//		{id: 139, msg: 'IZQUIERDA Segura----->> (T)'}, //151
-//		{id: 150, msg: 'IZQUIERDA Segura----->> (T)'}, //151
-//		{id: 141, msg: '(T) <<-----DERECHO SEGURO'}, //153
-//		{id: 152, msg: '(T) <<-----DERECHO SEGURO'}, //153
-//		{id: 300, msg: 'DESPIERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
-//		{id: 399, msg: 'Despiertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
-//		{id: 360, msg: 'Explosion !! Explosion!!'}
+/*		{id: 118, msg: 'Frente triple (spray Esquerdo-Direito)'},
+		{id: 143, msg: '<<<<IZQUIERDO Atras'},
+		{id: 145, msg: '<<<<IZQUIERDO Atras'},
+		{id: 146, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
+		{id: 154, msg: '<<IZQUIERDO Trasero(Olas pulsantes)'},
+		{id: 144, msg: 'DERECHA Atras>>'},
+		{id: 147, msg: 'DERECHA Atras>>'},
+		{id: 148, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
+		{id: 155, msg: 'DERECHA Trasero(Olas pulsantes)>>'},
+		{id: 161, msg: 'Frente - Atras'},
+		{id: 162, msg: 'Frente - Atras'},
+		{id: 213, msg: 'Cola!!'},
+		{id: 215, msg: 'Cola!!'},
+		{id: 139, msg: 'IZQUIERDA Segura'}, //151
+		{id: 150, msg: 'IZQUIERDA Segura'}, //151
+		{id: 141, msg: 'DERECHO SEGURO'}, //153
+		{id: 152, msg: 'DERECHO SEGURO'}, //153
+		{id: 300, msg: 'DESPIERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
+		{id: 399, msg: 'Despiertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
+		{id: 360, msg: 'Explosion !! Explosion!!'}//*/
 	],
 	// 费尔奎娜巢穴 (Gossamer Vault)
 	GV_BOSS_1 : [
-		{id: 124, msg: 'Stun a Frente'},
+/*		{id: 124, msg: 'Stun a Frente'},
 		{id: 104, msg: 'Stun a Frente'},
 		{id: 133, msg: 'Salto (Rapido)'},
 		{id: 113, msg: 'Salto (Lento)'},
@@ -287,10 +288,10 @@ module.exports = {
 		{id: 305, msg: 'Pizza'}, // 143 / 145
 		
 		{id: 312, msg: 'Pantalla completa (Repeler) (RAPIDO'},
-		{id: 311, msg: 'Pantalla completa (Repeler) (LENTO'}
+		{id: 311, msg: 'Pantalla completa (Repeler) (LENTO'}//*/
 	],
 	GV_BOSS_2 : [
-		{id: 105, msg: 'Espina delantera'}, // 104 105
+/*		{id: 105, msg: 'Espina delantera'}, // 104 105
 		{id: 109, msg: 'Esquivar (Lento)'},
 		{id: 108, msg: 'Ataque Adelante - Ataque ATRAS'},
 		{id: 228, msg: 'Juntar time'},
@@ -299,11 +300,11 @@ module.exports = {
 		{id: 231, msg: 'FUERA circulo'},
 		{id: 232, msg: 'DENTRO circulo'},
 		{id: 235, msg: 'Debuff!!'},
-		{id: 236, msg: '(Repeler a frente)'}
+		{id: 236, msg: '(Repeler a frente)'}//*/
 	],
 	// 贝尔亚克城堡 (Akalath Quarantine)
 	AQ_BOSS_1 : [
-		{id: 1104, msg: 'Saltar Stun'},
+/*		{id: 1104, msg: 'Saltar Stun'},
 		{id: 2104, msg: 'Saltar Stun'},
 		{id: 1110, msg: 'Adelante Stun'},
 		{id: 2110, msg: 'Adelante Stun'},
@@ -323,10 +324,10 @@ module.exports = {
 		{id: 3115, msg: 'Ataque Rotativo'}, // 1106 2106
 		{id: 3116, msg: 'Circulos + Ataque Rotativo'}, // 1106 2106
 		{id: 3119, msg: 'Maldicion ', TIP: ["SALIR", "ENTRAR"]}, // Red OUT | Blue IN
-		{id: 3220, msg: 'Maldicion ', TIP: ["ENTRAR", "SALIR"]}  // Red IN | Blue OUT
+		{id: 3220, msg: 'Maldicion ', TIP: ["ENTRAR", "SALIR"]}  // Red IN | Blue OUT//*/
 	],
 	AQ_BOSS_2 : [
-		{id: 164, msg: 'Ataque de (Sangrado)'},
+/*		{id: 164, msg: 'Ataque de (Sangrado)'},
 		{id: 166, msg: 'Ataque Atras (dar vueltas)'}, // 169 166 ?? ??? ???
 		{id: 175, msg: 'Rugido (iframe)'},
 		{id: 181, msg: 'Rock'},
@@ -336,17 +337,17 @@ module.exports = {
 		{id: 185, msg: 'Explosion (Shield/Kaias)'},
 		{id: 202, msg: 'Punalada Trasera + Delantera'},  // 177
 		{id: 207, msg: 'Fantasma x5 (Sangrar)'}, // 204 206 205
-		{id: 212, msg: 'Flash (Sangrar)'}    // 180
+		{id: 212, msg: 'Flash (Sangrar)'}    // 180//*/
 	],
 	// 金麟號 (Sailing Instance)
 	SI_BOSS_1 : [
-		{id: 104, msg: 'Succion Azul (Esquivar)'}
+//		{id: 104, msg: 'Succion Azul (Esquivar)'}
 	],
 	SI_BOSS_2 : [
-		{id: 103, msg: 'Succion Azul (Esquivar)'}
+//		{id: 103, msg: 'Succion Azul (Esquivar)'}
 	],
 	SI_BOSS_3 : [
-		{id: 108, msg: 'Ataque (Halo Tan)'},
+/*		{id: 108, msg: 'Ataque (Halo Tan)'},
 		{id: 128, msg: 'Golfe (volar)'},
 		{id: 129, msg: 'Ataque Fuerte a Frente'},
 		{id: 135, msg: "saltar la cuerda"},
@@ -363,10 +364,11 @@ module.exports = {
 		{id: 123, msg: ''},         // Carregue antes de esmagar | (Fora) (Verde)_Explosão  +No.2 buff
 		{id: 120, msg: ''},         // Circulo carregado | (Dentro) (Roxo)_Abismo  +No.2 buff
 	//  {id: 126, msg: 'Aplastar'},  // Terceiro Hit
-	//  {id: 134, msg: 'Grande circulo'},  // Terceiro Hit
+	//  {id: 134, msg: 'Grande circulo'},  // Terceiro Hit   //*/
 	],
 	//           121+120=241 122+120=242           121+123=244 122+123=245
-	SI_TipMsg : ["SALIR-ENTRAR-ENTRAR", "ENTRAR-SALIR-ENTRAR","Stun(ESQUIVAR)!!!", "SALIR-ENTRAR-SALIR", "ENTRAR-SALIR-SALIR"],
+	SI_TipMsg : [//"SALIR-ENTRAR-ENTRAR", "ENTRAR-SALIR-ENTRAR","Stun(ESQUIVAR)!!!", "SALIR-ENTRAR-SALIR", "ENTRAR-SALIR-SALIR"
+	],
 	// 凯尔赛克隐藏地(Corrupted Skynest)
 	CK_BOSS : [
 		// 120 猛烈的咆哮
@@ -376,7 +378,7 @@ module.exports = {
 		// 205 前方跳跃(回避)
 		// 206 后方跳跃(闪避)
 		// 131 广域1实例
-		{id: 103, msg: 'Coletazo (Vuela!!)'},
+	/*	{id: 103, msg: 'Coletazo (Vuela!!)'},
 		{id: 153, msg: 'Coletazo (Vuela!!)'},
 		{id: 108, msg: 'Giro a la derecha (Derribo!!)'},
 		{id: 158, msg: 'Giro a la derecha (Derribo!!)'},
@@ -406,10 +408,10 @@ module.exports = {
 		{id: 105, msg: 'AOE-Magia de FUEGO (Grande)'},
 		{id: 155, msg: 'AOE-Magia de FUEGO (Chico)'},
 		// 内外鉴定
-		{id: 212, msg: 'Rojo Adentro'}, // 212 -> 141(FOGO)
-		{id: 213, msg: 'Azul Adentro'}, // 213 -> 143(GELO)
-		{id: 214, msg: 'Azul Adentro'}, // 214 -> 142(FOGO)
-		{id: 215, msg: 'Rojo Adentro'}, // 215 -> 144(GELO)
+		{id: 212, msg: 'Fuego Adentro'}, // 212 -> 141(FOGO)
+		{id: 213, msg: 'Hielo Adentro'}, // 213 -> 143(GELO)
+		{id: 214, msg: 'Heilo Adentro'}, // 214 -> 142(FOGO)
+		{id: 215, msg: 'Fuego Adentro'}, // 215 -> 144(GELO)
 	// 以下未知
 		{id: 119, msg: 'Rugido Debil'},
 		{id: 161, msg: 'Rugido Debil'},
@@ -443,21 +445,22 @@ module.exports = {
 		{id: 209, msg: 'Alarma de modo'},// "모드알람_ModeAlarm_더미"
 		{id: 210, msg: 'Accion de Invocacion'},// "스폰동작_Spawn_노멀"
 		{id: 211, msg: 'Fin de rotacion'},// "회전종료용_ModeAlarm_노멀"
-		{id: 302, msg: 'Random Buff Invencible'}// "무적버프_wait_노멀"
+		{id: 302, msg: 'Random Buff Invencible'}// "무적버프_wait_노멀"   //*/
 	],
 			//            0     1     2      3
-	CK_TipMsg : ["", "", "", ""],
+	CK_TipMsg : [//"Entrar", "Salir", "Seguro", "Seguro"
+	],
 	// 狂气竞技场 (Forbidden Arena)
 	FA_BOSS : [
-		{id: 108, msg: 'Espadazo Frontal (CUIDADO)'},    // 101 121 122 連續攻擊 -> 108 One size兩斷(坦)
+	/*	{id: 108, msg: 'Espadazo Frontal (CUIDADO)'},    // 101 121 122 連續攻擊 -> 108 One size兩斷(坦)
 		{id: 355, msg: 'Rompe mandibulas'},    // 102 121 103 連續攻擊 -> 355 右手蓄力 -> 114 下巴粉碎
 		{id: 135, msg: 'Espadazo Frontal (Lento)'},    //         104 連續攻擊 -> 135 左手蓄力 -> 130 One size兩斷
 		{id: 111, msg: 'Stun - Espadazo Frontal'}, //         104 連續攻擊 -> 111 刀背打擊 -> 130 One size兩斷
 		{id: 112, msg: 'Salto Randon - Espadazo'}, //     121 102 連續攻擊 -> 112 後退踢擊 -> 130 One size兩斷
 		{id: 109, msg: 'Salto Adelante - Espadazo'},         // 109 向下劈擊 -> 402 等待     -> 130 One size兩斷
 		
-//		{id: 116, msg: 'Bloqueo perfecto (Iframe)'},    // 116 斬擊
-//		{id: 140, msg: 'Bloqueo perfecto (Iframe)'},    // 140 斬擊
+		{id: 116, msg: 'Bloqueo perfecto (Iframe)'},    // 116 斬擊
+		{id: 140, msg: 'Bloqueo perfecto (Iframe)'},    // 140 斬擊
 		
 		{id: 145, msg: '3 Ataques Circulares Slash'},  // 145 重擊斬 139 迴旋砍擊x2 -> 140 斬擊
 		{id: 136, msg: '2 Ataques Circulares - Golpe Frontal'},  // 136 重擊斬 144 迴旋砍擊x1 -> 130 One size兩斷
@@ -472,11 +475,11 @@ module.exports = {
 		{id: 356, msg: 'Flash (Iframe)'},  //    356 瞬閃点名 -> 147 One size兩斷
 		{id: 134, msg: 'Cuidado (Ataque Atras)'},  //    134 要害攻擊 -> 147 One size兩斷
 		
-//		{id: 357, msg: 'SALIR + Explosion (Iframe!!)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
+		{id: 357, msg: 'SALIR + Explosion (Iframe!!)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
 		{id: 350, msg: 'SALIR-> ENTRAR (Donuts)'},     // 350 吸收力量                 -> 302 甜甜圈
 		
-//		{id: 351, msg: 'Romper Escudo !!'},       // 护盾开始 环形爆发
-		{id: 401, msg: '30% (Iframe)'}           // 开始
+		{id: 351, msg: 'Romper Escudo !!'},       // 护盾开始 环形爆发
+		{id: 401, msg: '30% (Iframe)'}           // 开始   //*/
 	],
 	FA_TipMsg : ["Carga de Skill Completa (Cuidado)!!!"]
 }
