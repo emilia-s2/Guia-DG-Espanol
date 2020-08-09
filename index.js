@@ -17,7 +17,7 @@ module.exports = function Tera_Guide(mod) {
 		SI_BOSS_1,  SI_BOSS_2,  SI_BOSS_3,  SI_TipMsg,
 		CK_BOSS,    CK_TipMsg,
 		FA_BOSS,    FA_TipMsg
-	} = require((mod.region.toUpperCase()=='NA')?'./boss':'./boss-Custom');
+    } = require('./boss');
 	
 	let Enabled            = true,  // 总开关
 		SendToStream       = false; // true 关闭队长通知, 并将消息发送到聊天[代理]频道
