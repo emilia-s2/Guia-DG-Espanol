@@ -300,9 +300,9 @@ module.exports = function Tera_Guide(mod) {
 	function sAbnormalityBegin(event) {
 		if (!Enabled || !whichmode) return;
 		// BS_火神
-		if (event.id==90442304 && boss_ID==event.target) {
-			SendMessage(BS_TipMsg[1], 25);
-		}
+//		if (event.id==90442304 && boss_ID==event.target) {                     //Bahaars
+//			SendMessage(BS_TipMsg[1], 25);
+//		}
 		// SI_金鳞船 亡靈閃電的襲擊 / 海洋魔女的氣息
 		if ([30209101, 30209102].includes(event.id)) {
 			partyMakers.push({
