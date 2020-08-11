@@ -7,6 +7,8 @@ Guide-DG
 
 (RK-9 Kennel)
 
+(RK-9 Kennel - Hard)
+
 (Red Refuge)
 
 (Antaroth's Abyss - Hard)
@@ -23,7 +25,7 @@ Guide-DG
 
 (Bahaar's Sanctum)
 
-(Draakon Arena - NM-HM) -  Beta_Test
+(Draakon Arena - NM-HM)
 
 Guide Base https://github.com/tera-mod/TERA-Guide
 
