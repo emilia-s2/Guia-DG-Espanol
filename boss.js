@@ -8,7 +8,7 @@ module.exports = {
 		{zone: 9781, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Velik Sanctuary</font> <font color="#09c0e1">Normal</font>'},
 		{zone: 9981, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Velik Sanctuary</font> <font color="#d92b3c">Dificil</font>'},
 		{zone: 9735, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">RK-9Kenel</font> <font color="#09c0e1">Normal</font>'},
-		{zone: 9935, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">RK-9Kenel</font> <font color="#d92b3c">Dificil</font>'},
+		{zone: 3034, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">RK-9Kenel</font> <font color="#d92b3c">Dificil</font>'},
 		{zone: 9739, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Red Refuge</font> <font color="#09c0e1">Normal</font>'},
 		{zone: 9939, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Red Refuge</font> <font color="#d92b3c">Dificil</font>'},
 		{zone: 9720, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Antaroth Abyss</font> <font color="#09c0e1">Normal</font>'},
