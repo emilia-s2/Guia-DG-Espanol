@@ -35,8 +35,8 @@ proxy(/8) | Descripción de Comandos
 **guia&nbsp;gNotice**<br>(por defecto: off) | Envía mensaje para el Chat party ON/OFF
 **guia&nbsp;spawnObject**<br>(por defecto: on) | Marcación de objetos ON/OFF
 **guia&nbsp;dungeons** | Lista de todas las dungeons + IDs
-**guia&nbsp;verbose&nbsp;+`ID`**<br>(por defecto: todas on) | Activar/desactivar Mensajes de la guia para algún DG específico ON/OFF<br>EX: (guia verbose 9781) ID=Velik's Sanctuary
-**guia&nbsp;spawnObject&nbsp;+`ID`**<br>(por defecto:todas on) | Activar/desactivar marcaciones para algún DG específico ON/OFF<br>Ex: (guia spawnObject 9781) ID=Velik's Sanctuary 
+**guia&nbsp;verbose&nbsp;+`ID`**<br>(por defecto: todas on) | Activar/desactivar Mensajes de la guia para algún DG específico ON/OFF<br>EJ: (guia verbose 9781) ID=Velik's Sanctuary
+**guia&nbsp;spawnObject&nbsp;+`ID`**<br>(por defecto:todas on) | Activar/desactivar marcaciones para algún DG específico ON/OFF<br>EJ: (guia spawnObject 9781) ID=Velik's Sanctuary 
 **guia&nbsp;ajuda** | Lista de todos los comandos soportados
 
 ---
