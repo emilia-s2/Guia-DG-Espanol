@@ -54,7 +54,7 @@ proxy(/8) | Descripción de Comandos
 
 ##
 
-* Cuando **gNotice** y **lNotice** están *Desactivados*, los avisos serán mostrados en la parte superior de la pantalla, sin estar en forma de Take Notice. (Por defecto el mensaje es color verde, pero puedes cambiar o dejar el color, escribiendo el comando /8 guia ajuda para mostrar la lista completa de colores disponnibles)  
+* Cuando **gNotice** y **lNotice** están *Desactivados*, los avisos serán mostrados en la parte superior de la pantalla, sin estar en forma de Take Notice. (Por defecto el mensaje es color verde, pero puedes cambiar y dejar el color como gustas, escribas el comando /8 guia ayuda para mostrar la lista completa de colores disponnibles)  
   
   ![](https://i.imgur.com/R2PuTGK.jpg)
 
@@ -68,8 +68,8 @@ proxy(/8) | Descripción de Comandos
 ###  
 
 ## Credits
-- **[hsdn](https://github.com/hsdn)** 
 - **[Kasea](https://github.com/tera-toolbox-mods)** 
+- **[hsdn](https://github.com/hsdn)**
 - **[michengs](https://github.com/michengs)** 
 - **[ZC](https://github.com/tera-mod)** 
 - **[Owyn](https://github.com/Owyn)** 
