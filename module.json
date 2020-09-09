@@ -4,12 +4,12 @@
         "niceName": "Guide-DG",
         "guiName": "(Tera-Guide-Esp)"
     },
-    "author": "ZC / Maura / Emilia",
+    "author": "HSDN / ZC / Maura / Kasea / Emilia",
     "description": "Guia de DG para TERA",
     "servers": ["https://raw.githubusercontent.com/emilia-s2/Guia-DG-Espanol/master/"],
     "supportUrl": "https://github.com/emilia-s2/Guia-DG-Espanol/issues",
 	    "dependencies": {
         "Guide-Complemento-ESP": "https://raw.githubusercontent.com/emilia-s2/Guide-Complemento-ESP/master/module.json"
     },
-    "version": "97.03"
+    "version": "98.02"
 }

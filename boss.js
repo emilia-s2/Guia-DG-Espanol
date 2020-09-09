@@ -8,7 +8,7 @@ module.exports = {
 		{zone: 9781, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Velik Sanctuary</font> <font color="#09c0e1">Normal</font>'},
 		{zone: 9981, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Velik Sanctuary</font> <font color="#d92b3c">Dificil</font>'},
 		{zone: 9735, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">RK-9Kenel</font> <font color="#09c0e1">Normal</font>'},
-		{zone: 3034, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">RK-9Kenel</font> <font color="#d92b3c">Dificil</font>'},
+		{zone: 3034, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Rampaging RK-9 Kennel</font> <font color="#d92b3c">Dificil</font>'},
 		{zone: 9739, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Red Refuge</font> <font color="#09c0e1">Normal</font>'},
 		{zone: 9939, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Red Refuge</font> <font color="#d92b3c">Dificil</font>'},
 		{zone: 9720, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Antaroth Abyss</font> <font color="#09c0e1">Normal</font>'},
@@ -29,8 +29,10 @@ module.exports = {
 		{zone: 3202, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Draakon Arena</font> <font color="#d92b3c">Dificil</font>'},		
 		{zone: 3026, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Corrupted Skynest</font> <font color="#09c0e1">Normal</font>'},
 		{zone: 3126, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Corrupted Skynest</font> <font color="#d92b3c">Dificil</font>'},
-		{zone: 3027, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena Challenge</font>'}
-	],
+		{zone: 3027, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena [Hagufna]</font>'}
+		{zone: 3103, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena [Undying Warlord]</font>'},
+		{zone: 3203, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena [Nightmare Undying Warlord]</font>'},
+		],
 	// 费勒诺的实验室 (Demokron Factory)
 	DF_BOSS_1 : [
 /*		
