@@ -64,7 +64,7 @@ proxy(/8) | Descripción de Comandos
 ##   
 
    #### Interface GUI
-* Una ventana de comandos, donde puedes cambiar y personalizar la Guía a su gusto ( comando de Activación /8 guia gui )
+* Ventana de comandos donde puedes modificar la guía a tu gusto (comando para abrirla /8 guia gui)
  
   ![](https://i.imgur.com/cO7ZNuB.png)  
 
