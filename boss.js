@@ -29,9 +29,10 @@ module.exports = {
 		{zone: 3202, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Draakon Arena</font> <font color="#d92b3c">Dificil</font>'},		
 		{zone: 3026, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Corrupted Skynest</font> <font color="#09c0e1">Normal</font>'},
 		{zone: 3126, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Corrupted Skynest</font> <font color="#d92b3c">Dificil</font>'},
-		{zone: 3027, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena [Hagufna]</font>'},
-		{zone: 3103, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena [Undying Warlord]</font>'},
-		{zone: 3203, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena [Nightmare Undying Warlord]</font>'}
+		{zone: 3027, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena</font> <font color="#09c0e1"> [Hagufna]</font>'},
+		{zone: 3103, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena</font> <font color="#09c0e1"> [Undying Warlord]</font>'},
+		{zone: 3203, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Forbidden Arena</font> <font color="#d92b3c"> [Nightmare Undying Warlord]</font>'},
+		{zone: 9053, string: '<font color="#ff5cde">Bien-Venido a</font> <font color="#8eff05">Kezzels Gorge</font>'}
 		],
 	// 费勒诺的实验室 (Demokron Factory)
 	DF_BOSS_1 : [
