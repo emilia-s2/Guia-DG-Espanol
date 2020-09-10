@@ -15,9 +15,11 @@ ID | Nombre de las Dungeons
 3020 | Sea of Honor 
 3026 | Corrupted Skynest 
 3126 | Corrupted Skynest (Hard) 
-3027 | Forbidden Arena 
 3102 | Draakon Arena 
 3202 | Draakon Arena (Hard) 
+3027 | Forbidden Arena [Hagufna]
+3103 | Forbidden Arena [Undying Warlord]
+3203 | Forbidden Arena [Nightmare Undying Warlord]
 
 ----
 
@@ -44,7 +46,7 @@ proxy(/8) | Descripción de Comandos
 ## Configuración de Mensajes
 
  
- ATENCIÓN | Cuidado al escribir el comando **lNotice** o *(I) de INotice* no es una *(I)* mayúscula, es una *(L)* minúscula
+ ATENCIÓN | Al escribir el comando **lNotice** o *(I) de INotice* no es una *(I)* mayúscula, es una *(L)* minúscula
 ---- | ----
 
 
@@ -54,23 +56,25 @@ proxy(/8) | Descripción de Comandos
 
 ##
 
-* Cuando **gNotice** y **lNotice** están *Desactivados*, los avisos serán mostrados en la parte superior de la pantalla, sin estar en forma de Take Notice. (Por defecto el mensaje es color verde, pero puedes cambiar y dejar el color a su gusto, escribas el comando /8 guia ayuda para mostrar la lista completa de colores disponnibles)  
+* Quando **lNotice** se encuentra *Desativado* y **gNotice** *Activado*, los avisos serán mostrados en la parte superior de la pantalla, sin estar en forma de Take Notice. (Por defecto el mensaje es color verde, pero puedes cambiar y dejar el color a su gusto, escribas el comando (/8 guia ayuda) para mostrar la lista completa de colores disponnibles o aún usar el comando /8 guia) gui)  
   
   ![](https://i.imgur.com/R2PuTGK.jpg)
 
 ##   
 
-* Cuando **gNotice** se encuentra *Activado* y **lNotice** *Desactivado* se dejarán de mostrar los avisos en la pantalla, y serán mostrados únicamente en el chat de party. 
-(No te preocupes, los miembros de la party no podrán ver los mensajes mostrados de la guia...)
+   #### Interface GUI
+* Una ventana de comandos, donde puedes cambiar y personalizar la Guía a su gusto ( comando de Activación /8 guia gui )
  
-  ![](https://i.imgur.com/WhbAsFr.jpg)  
+  ![](https://i.imgur.com/cO7ZNuB.png)  
 
 ###  
 
 ## Credits
-- **[Kasea](https://github.com/tera-toolbox-mods)** 
-- **[hsdn](https://github.com/hsdn)**
-- **[michengs](https://github.com/michengs)** 
-- **[ZC](https://github.com/tera-mod)** 
-- **[Owyn](https://github.com/Owyn)** 
-- **[ITunk](https://github.com/GrafNikola)** 
+- **[Kasea](https://github.com/tera-toolbox-mods)** - Desenvolvedor original do módulo Tera-Guide
+- **[hsdn](https://github.com/hsdn)** - Autor das principais funçoes e novidades
+- **[michengs](https://github.com/michengs)** - Autor do código base para a maioria dos guias e núcleo do módulo
+- **[Multarix](https://github.com/Multarix)** - Autor do guia RR e também fazendo alterações na tradução para o inglês
+- **[Kuroine](https://github.com/Kuroine)** - Autor do código base para o guia DA
+- **[ZC](https://github.com/tera-mod)** - Coordenadas fornecidas para renderização de áreas de ataque e mecânica
+- **[Owyn](https://github.com/Owyn)** - Autor do guia RR e também fazendo alterações na tradução para o inglês
+- **[ITunk](https://github.com/GrafNikola)** Autor da tradução inicial para o russo
