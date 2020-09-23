@@ -56,14 +56,14 @@ proxy(/8) | Descripción de Comandos
 * Cuando el **lNotice** se encuentra *Activado*, los avisos serán mostrados en la parte inferior de la pantalla como Take Notice.
 
   ![](https://i.imgur.com/qAVCiuv.jpg)
-- **[Mira el tamaño real haciendo clic aquí](https://i.imgur.com/NnQFXbT.png)**
+- **[Mira el tamaño real haciendo clic aquí](https://camo.githubusercontent.com/062034582b8db13a74347784cf388ea1315ea37e/68747470733a2f2f692e696d6775722e636f6d2f4e6e51465862542e706e67)**
 
 ##
 
 * Cuando **lNotice** se encuentra *Desactivado* y **gNotice** *Activado*, los avisos serán mostrados en la parte superior de la pantalla con letras grandes. (Por defecto el mensaje es de color verde), pero puedes cambiarlo al color que prefieras, escribiendo el comando (/8 guia ayuda) para mostrar la lista completa de colores disponibles o usando el comando (/8 guia gui)
   
   ![](https://i.imgur.com/R2PuTGK.jpg)
-- **[Mira el tamaño real haciendo clic aquí](https://i.imgur.com/mdAKfX0.png)**
+- **[Mira el tamaño real haciendo clic aquí](https://camo.githubusercontent.com/293acbbfaf60df832116e1dbd85a509ffa9762ad/68747470733a2f2f692e696d6775722e636f6d2f6d64414b6658302e706e67)**
 
 ##  
 
