@@ -20,6 +20,7 @@ ID | Nombre de las Dungeons
 3027 | Forbidden Arena [Hagufna]
 3103 | Forbidden Arena [Undying Warlord]
 3203 | Forbidden Arena [Nightmare Undying Warlord]
+9053 |	Kezzel's Gorge (5-Person)
 
 ----
 
@@ -32,8 +33,9 @@ ID | Nombre de las Dungeons
 ## Comandos 
 proxy(/8) | Descripción de Comandos  
 --- | ---
-**guia** | Module on/off 
-**guia gui** | mostrar una ventana de personalización GUI
+**guia**<br>(por defecto: off) | Module on/off 
+**guia&nbsp;gui** | mostrar una ventana de personalización GUI
+**guia&nbsp;stream**<br>(por defecto: off) | Mensajes apenas en chat, y todos los marcadores serán desactivados
 **guia&nbsp;lNotice**<br>(por defecto: on) | Envía mensaje en Take notice ON/OFF 
 **guia&nbsp;gNotice**<br>(por defecto: off) | Envía mensaje para el Chat party ON/OFF
 **guia&nbsp;spawnObject**<br>(por defecto: on) | Marcación de objetos ON/OFF
@@ -66,7 +68,7 @@ proxy(/8) | Descripción de Comandos
    #### Interface GUI
 * Ventana de comandos donde puedes modificar la guía a tu gusto (comando para abrirla /8 guia gui)
  
-  ![](https://i.imgur.com/cO7ZNuB.png)  
+  ![](https://i.imgur.com/LVs2Yzw.png)  
 
 ###  
 
