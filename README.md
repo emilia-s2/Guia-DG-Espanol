@@ -67,7 +67,7 @@ proxy(/8) | Descripción de Comandos
 
 ##  
 
-* Cuando el módulo Stream se encuentra *Activado* los avisos (mensajes) serán mostrados unicamente al chat, e todos los marcadores serán desactivados
+* Cuando el módulo Stream se encuentra *Activado* los avisos (mensajes) serán mostrados unicamente al chat, y todos los marcadores serán desactivados
 
    ![](https://i.imgur.com/kbRd3Xd.png)
 
