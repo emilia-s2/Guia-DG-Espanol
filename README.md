@@ -56,18 +56,18 @@ proxy(/8) | Descripción de Comandos
 * Cuando el **lNotice** se encuentra *Activado*, los avisos serán mostrados en la parte inferior de la pantalla como Take Notice.
 
   ![](https://i.imgur.com/qAVCiuv.jpg)
-- **[Cheque en tamaño real apretando aquí](https://i.imgur.com/NnQFXbT.png)**
+- **[Mira el tamaño real haciendo clic aquí](https://i.imgur.com/NnQFXbT.png)**
 
 ##
 
 * Cuando **lNotice** se encuentra *Desactivado* y **gNotice** *Activado*, los avisos serán mostrados en la parte superior de la pantalla con letras grandes. (Por defecto el mensaje es de color verde), pero puedes cambiarlo al color que prefieras, escribiendo el comando (/8 guia ayuda) para mostrar la lista completa de colores disponibles o usando el comando (/8 guia gui)
   
   ![](https://i.imgur.com/R2PuTGK.jpg)
-- **[Cheque en tamaño real apretando aquí](https://i.imgur.com/mdAKfX0.png)**
+- **[Mira el tamaño real haciendo clic aquí](https://i.imgur.com/mdAKfX0.png)**
 
 ##  
 
-* Cuando el módulo Stream se encuentra *Activado* los avisos (mensajes) serán mostrados unicamente al chat, y todos los marcadores serán desactivados
+* Cuando el modo Stream se encuentra *Activado* los avisos (mensajes) serán mostrados únicamente en el chat, y todos los marcadores serán desactivados
 
    ![](https://i.imgur.com/kbRd3Xd.png)
 
