@@ -65,10 +65,16 @@ proxy(/8) | Descripción de Comandos
   ![](https://i.imgur.com/R2PuTGK.jpg)
 - **[Cheque en tamaño real apretando aquí](https://i.imgur.com/mdAKfX0.png)**
 
-##   
+##  
+
+* Cuando el módulo Stream se encuentra *Activado* los avisos (mensajes) serán mostrados unicamente al chat, e todos los marcadores serán desactivados
+
+   ![](https://i.imgur.com/kbRd3Xd.png)
+
+##
 
    #### Interface GUI
-* Ventana de comandos donde puedes modificar la guía a tu gusto (comando para abrirla /8 guia gui)
+* Ventana de comandos donde puedes modificar la guía a tu gusto<br>(comando para abrirla /8 guia gui)
  
   ![](https://i.imgur.com/LVs2Yzw.png)  
 
