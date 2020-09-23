@@ -33,7 +33,7 @@ ID | Nombre de las Dungeons
 ## Comandos 
 proxy(/8) | Descripción de Comandos  
 --- | ---
-**guia**<br>(por defecto: off) | Module on/off 
+**guia**<br>(por defecto: on) | Module on/off 
 **guia&nbsp;gui** | mostrar una ventana de personalización GUI
 **guia&nbsp;stream**<br>(por defecto: off) | Mensajes apenas en chat, y todos los marcadores serán desactivados
 **guia&nbsp;lNotice**<br>(por defecto: on) | Envía mensaje en Take notice ON/OFF 
