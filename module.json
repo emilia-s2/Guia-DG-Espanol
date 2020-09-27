@@ -1,15 +1,20 @@
 {
+    "disableAutoUpdate": false,
     "name": "Tera-Guide",
     "options": {
         "niceName": "Guide-DG",
-        "guiName": "(Tera-Guide-Esp)"
+        "guiName": "(Tera-Guide-Esp)",
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js",
+        "settingsVersion": 1.12
     },
-    "author": "HSDN / ZC / Maura / Kasea / Emilia",
-    "description": "Guia de DG para TERA",
+    "author": "HSDN / ZC / Kasea / Emilia",
+    "description": "Guia de DG para TERA en Español",
     "servers": ["https://raw.githubusercontent.com/emilia-s2/Guia-DG-Espanol/master/"],
     "supportUrl": "https://github.com/emilia-s2/Guia-DG-Espanol/issues",
-	    "dependencies": {
-        "Guide-Complemento-ESP": "https://raw.githubusercontent.com/emilia-s2/Guide-Complemento-ESP/master/module.json"
+    "dependencies": {
+        "library": "https://raw.githubusercontent.com/tera-toolbox-mods/library/master/module.json",
+		"Guide-Complemento-ESP": "https://raw.githubusercontent.com/emilia-s2/Guide-Complemento-ESP/master/module.json"
     },
     "version": "98.02"
 }

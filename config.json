@@ -1,0 +1,167 @@
+{
+    "version": "1.08",
+    "data": {
+        "enabled": true,
+        "lNotice": true,
+        "gNotice": false,
+        "stream": false,
+        "spawnObject": true,
+        "speaks": false,
+        "rate": [
+            2
+        ],
+        "dungeons": [
+            {
+                "id": 3020,
+                "name": "Sea of Honor",
+                "name_RU": "Золотая чешуя",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3023,
+                "name": "Akalath Quarantine",
+                "name_RU": "Секретное подземелье крепости Берарк",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3026,
+                "name": "Corrupted Skynest (Normal)",
+                "name_RU": "Логово Келсаика",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3027,
+                "name": "Forbidden Arena",
+                "name_RU": "Арена безумия",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3101,
+                "name": "Gossamer Vault (Normal)",
+                "name_RU": "Гнездо Паркин",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3102,
+                "name": "Draakon Arena (Normal)",
+                "name_RU": "Командный центр",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3126,
+                "name": "Corrupted Skynest (Dificil)",
+                "name_RU": "Логово Бессмертного Келсаика",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3201,
+                "name": "Gossamer Vault (Dificil)",
+                "name_RU": "Гнездо сверкающей Паркин",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3202,
+                "name": "Draakon Arena (Dificil)",
+                "name_RU": "Командный центр (сложно)",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9044,
+                "name": "Bahaar's Sanctum",
+                "name_RU": "Святилище Бахаара",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9067,
+                "name": "Demokron Factory (Dificil)",
+                "name_RU": "Лаборатория Берна (сложно)",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9720,
+                "name": "Antaroth's Abyss (Normal)",
+                "name_RU": "Омут Антароса",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9735,
+                "name": "RK-9 Kennel (Normal)",
+                "name_RU": "Ангар RK-9",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9739,
+                "name": "Red Refuge (Normal)",
+                "name_RU": "Ангар соверше",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9781,
+                "name": "Velik's Sanctuary (Normal)",
+                "name_RU": "Святилище Велики",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9782,
+                "name": "Grotto of Lost Souls (Normal)",
+                "name_RU": "Мастерская Леандра",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9920,
+                "name": "Antaroth's Abyss (Dificil)",
+                "name_RU": "Омут Бездушного Антароса",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9935,
+                "name": "RK-9 Kennel (Dificil)",
+                "name_RU": "Ангар совершенного RK-9",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9970,
+                "name": "Ruinous Manor (Dificil)",
+                "name_RU": "Руины Кошмарной Абнукты",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9981,
+                "name": "Velik's Sanctuary (Dificil)",
+                "name_RU": "Разрушенное Святилище Велики",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9982,
+                "name": "Grotto of Lost Souls (Dificil)",
+                "name_RU": "Заброшенная мастерская Леандра",
+                "verbose": true,
+                "spawnObject": true
+            }
+        ],
+        "cc": [
+            "</font><font color=\"#ff5cde\">"
+        ],
+        "chat-name": "Guide"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "debug": {
+        "chat": true,
+        "all": false,
+        "hp": false,
+        "abnormal": false,
+        "skill": false,
+        "boss": false,
+        "dm": false,
+        "qb": false
+    }
+}
