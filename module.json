@@ -2,7 +2,7 @@
     "disableAutoUpdate": false,
     "name": "Tera-Guide",
     "options": {
-        "niceName": "Guia-DG",
+        "niceName": "Guide-DG",
         "guiName": "(Tera-Guide-Esp)",
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js",
