@@ -540,7 +540,7 @@ module.exports = function TeraGuide(mod) {
 	// Boss skill action
 	mod.hook("S_ACTION_STAGE", 9, { order: 15 }, e => {
 		// Return if any of the below is false
-		if (!mod.settings.enabled || !guide.loaded || !guide.verbose || !e.skill.npc) return;
+		if (!mod.settings.enabled || !guide.loaded || !e.skill.npc) return;
 		let skillid = e.skill.id % 1000; // 100-200
 		let eskillid = e.skill.id > 3000 ? e.skill.id : e.skill.id % 1000;
 		const ent = entity["mobs"][e.gameId.toString()];
@@ -558,7 +558,7 @@ module.exports = function TeraGuide(mod) {
 	// Boss abnormality triggered
 	function abnormality_triggered(e) {
 		// Return if any of the below is false
-		if (!mod.settings.enabled || !guide.loaded || !guide.verbose) return;
+		if (!mod.settings.enabled || !guide.loaded) return;
 		// avoid errors ResidentSleeper (neede for abnormality refresh)
 		if (!e.source) e.source = 0n;
 		// If the boss/mob get"s a abnormality applied to it
@@ -584,7 +584,7 @@ module.exports = function TeraGuide(mod) {
 	// Boss health bar triggered
 	mod.hook("S_BOSS_GAGE_INFO", 3, e => {
 		// Return if any of the below is false
-		if (!mod.settings.enabled || !guide.loaded || !guide.verbose) return;
+		if (!mod.settings.enabled || !guide.loaded) return;
 		const ent = entity["mobs"][e.id.toString()];
 		const hp = Math.floor(Number(e.curHp) / Number(e.maxHp) * 100);
 		const key = `${ent.huntingZoneId}-${ent.templateId}`;
@@ -598,7 +598,7 @@ module.exports = function TeraGuide(mod) {
 	// Dungeon event message
 	mod.hook("S_DUNGEON_EVENT_MESSAGE", 2, e => {
 		// Return if any of the below is false
-		if (!mod.settings.enabled || !guide.loaded || !guide.verbose) return;
+		if (!mod.settings.enabled || !guide.loaded) return;
 		const result = /@dungeon:(\d+)/g.exec(e.message);
 		if (result) {
 			handleEvent({
@@ -611,7 +611,7 @@ module.exports = function TeraGuide(mod) {
 	// Quest balloon
 	mod.hook("S_QUEST_BALLOON", 1, e => {
 		// Return if any of the below is false
-		if (!mod.settings.enabled || !guide.loaded || !guide.verbose) return;
+		if (!mod.settings.enabled || !guide.loaded) return;
 		const source_ent = entity["mobs"][e.source.toString()];
 		const result = /@monsterBehavior:(\d+)/g.exec(e.message);
 		if (result && source_ent)
