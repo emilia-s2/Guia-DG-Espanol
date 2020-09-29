@@ -24,9 +24,10 @@ ID | Nombre de las Dungeons
 
 ----
 
-####  Para el perfecto funcionamiento son necesarios 2 módulos adicionales, éstos son instalados automáticamente por el toolbox
+####  Para el perfecto funcionamiento son necesarios 3 módulos adicionales, éstos son instalados automáticamente por el toolbox
 ##### > library
 ##### > Guide-Complemento-ESP
+##### > tera-guide-core
 
 ------
 
@@ -82,7 +83,7 @@ proxy(/8) | Descripción de Comandos
 
 ## Credits
 - **[Kasea](https://github.com/tera-toolbox-mods)** - Desenvolvedor original do módulo Tera-Guide
-- **[hsdn](https://github.com/hsdn)** - Autor das principais funçoes e novidades
+- **[hsdn](https://github.com/hsdn)** - Autor atual das principais funçoes e novidades
 - **[michengs](https://github.com/michengs)** - Autor do código base para a maioria dos guias e núcleo do módulo
 - **[Multarix](https://github.com/Multarix)** - Autor do guia RR e também fazendo alterações na tradução para o inglês
 - **[Kuroine](https://github.com/Kuroine)** - Autor do código base para o guia DA
