@@ -169,7 +169,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 2, 0, 110, 800, 0, 2500] }, 
 			{ type: "spawn", func: "vector", args: [553, 2, 0, 250, 800, 0, 2500] }, 
 			{ type: "spawn", func: "vector", args: [553, 2, 0, 290, 800, 0, 2500] }  
-	],
+	    ],
 		//"s-3201-1000-121-0": [{ type: "text", class_position:"tank", sub_type: "message", message: "Right", message_RU: "Право" }],
 		//"s-3201-1000-122-0": [{ type: "text", class_position:"tank", sub_type: "message", message: "Left", message_RU: "Лево" }],
 		"s-3201-1000-124-0": [{ type: "text", class_position:"tank", sub_type: "message", message: "Stun Frontal", message_RU: "Стан (фаст)" }],
@@ -183,14 +183,16 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3201-1000-132-0": [{ type: "text", sub_type: "message", message: "<-Spray IZQUIERDO e DERECHO->", message_RU: "Лево + Право (фаст)" }],
 		"s-3201-1000-133-0": [{ type: "text", sub_type: "message", delay: 0, message: "Salto (Rapido)", message_RU: "Прыжок (фаст)" },
 		{ type: "text", sub_type: "message", delay: 900, message: "Iframe", message_RU: "Камень!" }
+		],
 		"s-3201-1000-138-0": [{ type: "text", sub_type: "message", delay: 0, message: "Salto (Rapido)", message_RU: "Прыжок (фаст)" },
 		{ type: "text", sub_type: "message", delay: 900, message: "Iframe", message_RU: "Камень!" }
+		],
 		"s-3201-1000-139-0": [{ type: "text", sub_type: "message", message: "Spray FRENTE e ATRAS (Rapido)", message_RU: "Вперед + Назад (фаст)" },
 		    { type: "spawn", func: "vector", args: [553, 2, 0, 70, 800, 0, 2500] },  
 			{ type: "spawn", func: "vector", args: [553, 2, 0, 110, 800, 0, 2500] }, 
 			{ type: "spawn", func: "vector", args: [553, 2, 0, 250, 800, 0, 2500] }, 
 			{ type: "spawn", func: "vector", args: [553, 2, 0, 290, 800, 0, 2500] }  
-	],
+	    ],
 		//"s-3201-1000-141-0": [{ type: "text", class_position:"tank", sub_type: "message", message_RU: "双手前砸 (медленно)" }],
 		//"s-3201-1000-142-0": [{ type: "text", class_position:"tank", sub_type: "message", message_RU: "1правая+левая" }],
 /*		"s-3201-1000-143-0": [
@@ -293,7 +295,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		//"s-3201-2000-233-0": [{ type: "text", sub_type: "message", message: "5", message_RU: "5 бомб" }],
 		
 		"s-3201-2000-234-0": [{ type: "func", func: secondboss_debuff_event, args: [234] }],
-		"s-3201-2000-235-0": [{ type: "text", sub_type: "message", message: "Debuffs", message_RU: "注视2人吃鉴定" }]
+		"s-3201-2000-235-0": [{ type: "text", sub_type: "message", message: "Debuffs", message_RU: "注视2人吃鉴定" }],
 		"s-3201-2000-236-0": [{ type: "text", sub_type: "message", message: "Repeler a Frente", message_RU: "Конус вперед (байт)" }],
 
 		/*"s-3201-320115-203": [{ type: "spawn", func: "marker", args: [false, 0, 0, 100, 3000, true, null] },
