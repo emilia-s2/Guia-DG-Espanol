@@ -1,10 +1,10 @@
 'use strict';
 
-module.exports = function NetworkMod(mod) {
+module.exports.NetworkMod = function (mod) {
 	try {
 		mod.require["tera-guide-core"].load(mod, {
 			colors: { gui: {}, general: {} }, // color settings
-			command: ["guia"], // module command
+			command: ["guide"], // module command
 			chat_name: "Guide", // set chat author name for notices
 		});
 	} catch (e) {
