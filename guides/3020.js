@@ -180,14 +180,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		}
 	}
 
-	function updateMarkers() {
-		if (dispatch._dispatch.settings.stream || !guide.verbose) return;
-
-		dispatch.send("S_PARTY_MARKER", 1, {
-			markers: party_makers
-		});
-	}
-
 	return {
 		"dm-0-0-30209203": [{ type: "func", func: start_dungeon_event }],
 		"dm-0-0-30209204": [{ type: "func", func: start_dungeon_event }],
