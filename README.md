@@ -26,7 +26,6 @@ ID | Nombre de las Dungeons
 
 ####  Para el perfecto funcionamiento son necesarios 3 módulos adicionales, éstos son instalados automáticamente por el toolbox
 ##### > library
-##### > Guide-Complemento-ESP
 ##### > tera-guide-core
 
 ------
@@ -61,7 +60,7 @@ proxy(/8) | Descripción de Comandos
 
 ##
 
-* Cuando **lNotice** se encuentra *Desactivado* y **gNotice** *Activado*, los avisos serán mostrados en la parte superior de la pantalla con letras grandes. (Por defecto el mensaje es de color verde), pero puedes cambiarlo al color que prefieras, escribiendo el comando (/8 guia ayuda) para mostrar la lista completa de colores disponibles o usando el comando (/8 guia gui)
+* Cuando **lNotice** se encuentra *Desactivado* y **gNotice** *Desactivado*, los avisos serán mostrados en la parte superior de la pantalla con letras grandes. (Por defecto el mensaje es de color verde), pero puedes cambiarlo al color que prefieras, escribiendo el comando (/8 guia ayuda) para mostrar la lista completa de colores disponibles o usando el comando (/8 guia gui)
   
   ![](https://i.imgur.com/R2PuTGK.jpg)
 - **[Mira el tamaño real haciendo clic aquí](https://camo.githubusercontent.com/76e36f0630a62a456a43324790b16fce124d4a13/68747470733a2f2f692e696d6775722e636f6d2f6d3656515738552e706e67)**
