@@ -42,7 +42,7 @@ proxy(/8) | Descripción de Comandos
 **guia&nbsp;dungeons** | Lista de todas las dungeons + IDs
 **guia&nbsp;verbose&nbsp;+`ID`**<br>(por defecto: todas on) | Mensajes de la guía para algún DG específico ON/OFF<br>EJ: (guia verbose 9781) ID=Velik's Sanctuary
 **guia&nbsp;spawnObject&nbsp;+`ID`**<br>(por defecto:todas on) | Marcaciones para algún DG específico ON/OFF<br>EJ: (guia spawnObject 9781) ID=Velik's Sanctuary 
-**guia&nbsp;ayuda** | Lista de todos los comandos soportados
+**guia&nbsp;help** | Lista de todos los comandos soportados
 
 ---
 
@@ -60,7 +60,7 @@ proxy(/8) | Descripción de Comandos
 
 ##
 
-* Cuando **lNotice** se encuentra *Desactivado* y **gNotice** *Desactivado*, los avisos serán mostrados en la parte superior de la pantalla con letras grandes. (Por defecto el mensaje es de color verde), pero puedes cambiarlo al color que prefieras, escribiendo el comando (/8 guia ayuda) para mostrar la lista completa de colores disponibles o usando el comando (/8 guia gui)
+* Cuando **lNotice** se encuentra *Desactivado* y **gNotice** *Desactivado*, los avisos serán mostrados en la parte superior de la pantalla con letras grandes. (Por defecto el mensaje es de color verde), pero puedes cambiarlo al color que prefieras, escribiendo el comando (/8 guia help) para mostrar la lista completa de colores disponibles o usando el comando (/8 guia gui)
   
   ![](https://i.imgur.com/R2PuTGK.jpg)
 - **[Mira el tamaño real haciendo clic aquí](https://camo.githubusercontent.com/76e36f0630a62a456a43324790b16fce124d4a13/68747470733a2f2f692e696d6775722e636f6d2f6d3656515738552e706e67)**
