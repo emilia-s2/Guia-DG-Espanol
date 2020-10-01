@@ -6,7 +6,7 @@ module.exports.general = {
 	// English
 	en: {
 		 unknowncommand: "Comando desconocido, Para ver todos los comandos proba \"guia help\"",
-		 helpheader: "guia help\" para mas informaciones",
+		 helpheader: "Use el comando \"guia help\ para mas informaciones",
 	     helpbody: [
 			["guia cr, Mensaje Color ROJO", "CRMSG"],
 			["guia co, Mensaje Color NARANJA", "COMSG"],
