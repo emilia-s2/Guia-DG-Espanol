@@ -149,17 +149,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	function start_dungeon_event() {
 		const abnormality_change = (added, event) => {
 			if (debuffs_targe[event.id]) {
-				party_makers.push({
-					color: 2, // 0. red, 1. yellow, 2. blue
-					target: event.target
-				});
-
-				updateMarkers();
-
-				dispatch.setTimeout(() => {
-					party_makers = [];
-					updateMarkers();
-				}, 3500);
+				// Set party marker to target
+				handlers.marker({ id: event.target, color: "blue", sub_delay: 3500 });
 
 				if (player.isMe(event.target.toString()) || player.playersInParty.includes(event.target.toString())) {
 					if (added) {
