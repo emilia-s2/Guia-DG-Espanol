@@ -1,4 +1,4 @@
-// RK-9 Kennel (Hard)
+// RK-9 Kennel (Dificil)
 //
 // made by michengs / HSDN
 
@@ -441,11 +441,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"qb-3034-3000-3034312": [{ type: "text", sub_type: "message", message: "!!! Radar !!!", message_RU: "!!! Радар !!!" }],
 		"s-3034-3000-324-0": [
 			{ type: "text", sub_type: "message", message: "SALIR", message_RU: "ОТ НЕГО" },
-		    { "type": "spawn_func", "func": "circle", "args": [false, 553, 0, 0, 10, 285, 0, 3000] }
-//		    { "type": "spawn_func", "func": "circle", "args": [false, 912, 0, 0, 12, 200, 0, 3000] },
-//		    { "type": "spawn_func", "func": "circle", "args": [false, 912, 0, 0, 14, 150, 0, 3000] },
-//		    { "type": "spawn_func", "func": "circle", "args": [false, 912, 0, 0, 18, 100, 0, 3000] },
-//		    { "type": "spawn_func", "func": "circle", "args": [false, 912, 0, 0, 50, 50, 0, 3000] }
+		    { type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 285, 0, 3000] }
+//		    { type: "spawn", func: "circle", args: [false, 912, 0, 0, 12, 200, 0, 3000] },
+//		    { type: "spawn", func: "circle", args: [false, 912, 0, 0, 14, 150, 0, 3000] },
+//		    { type: "spawn", func: "circle", args: [false, 912, 0, 0, 18, 100, 0, 3000] },
+//		    { type: "spawn", func: "circle", args: [false, 912, 0, 0, 50, 50, 0, 3000] }
         ],
 	     "s-3034-3000-325-0": [
 			{ type: "text", sub_type: "message", message: "ENTRAR", message_RU: "К НЕМУ" },
