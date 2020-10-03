@@ -85,13 +85,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] }
 		],
 		"s-781-1000-2304-0": [
-			{ type: "text", sub_type: "message", message: "Voar", message_RU: "Взлет" },
+			{ type: "text", sub_type: "message", message: "Volar", message_RU: "Взлет" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 6000] }
 		],
 		"s-781-1000-2303-0": [{ type: "text", sub_type: "message", message: "GIRAR", message_RU: "Крутилка" }],
-		"s-781-1000-2301-0": [{ type: "text", sub_type: "message", message: "Veneno Geral", message_RU: "Крутилка" }],  // Adicionado
+		"s-781-1000-2301-0": [{ type: "text", sub_type: "message", message: "Veneno General", message_RU: "Крутилка" }],  // Adicionado
 		"s-781-1000-2113-0": [{ type: "text", sub_type: "message", message: "Frente + AOEs", message_RU: "Передняя | AOE" }],
-		"s-781-1000-2308-0": [{ type: "text", sub_type: "message", message: "SAIR", message_RU: "Наружу" }],
+		"s-781-1000-2308-0": [{ type: "text", sub_type: "message", message: "SALIR", message_RU: "Наружу" }],
 		"s-781-1000-2309-0": [{ type: "text", sub_type: "message", message: "ENTRAR", message_RU: "Внутрь" }],
 		"s-781-1000-1401-0": [
 			{ type: "text", sub_type: "message", message: "DERECHA", message_RU: "Откид вправо" },
