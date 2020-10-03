@@ -74,12 +74,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-781-1000-2401": [
+		"s-781-1000-2401-0": [
 			{ type: "text", sub_type: "message", message: "DERECHA", message_RU: "Откид вправо" },
 			{ type: "spawn", func: "marker", args: [false, 300, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] }
 		],
-		"s-781-1000-2402": [
+		"s-781-1000-2402-0": [
 			{ type: "text", sub_type: "message", message: "IZQUIERDA", message_RU: "Откид влево" },
 			{ type: "spawn", func: "marker", args: [false, 60, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] }
@@ -93,12 +93,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-781-1000-2113-0": [{ type: "text", sub_type: "message", message: "Frente + AOEs", message_RU: "Передняя | AOE" }],
 		"s-781-1000-2308-0": [{ type: "text", sub_type: "message", message: "SAIR", message_RU: "Наружу" }],
 		"s-781-1000-2309-0": [{ type: "text", sub_type: "message", message: "ENTRAR", message_RU: "Внутрь" }],
-		"s-781-1000-1401": [
+		"s-781-1000-1401-0": [
 			{ type: "text", sub_type: "message", message: "DERECHA", message_RU: "Откид вправо" },
 			{ type: "spawn", func: "marker", args: [false, 300, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] }
 		],
-		"s-781-1000-1402": [
+		"s-781-1000-1402-0": [
 			{ type: "text", sub_type: "message", message: "IZQUIERDA", message_RU: "Откид влево" },
 			{ type: "spawn", func: "marker", args: [false, 60, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] }
