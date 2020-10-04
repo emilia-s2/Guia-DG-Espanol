@@ -138,9 +138,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3023-1000-115-0": [
 			{ type: "text", sub_type: "message", message: "Semi-circulo Trasero", message_RU: "Удар назад" },
-			{ type: "spawn", func: "semicircle", args: [90, 270, 553, 0, 0, 20, 160, 100, 2000] },
-			{ type: "spawn", func: "semicircle", args: [90, 270, 553, 0, 0, 12, 220, 100, 2000] },
-			{ type: "spawn", func: "semicircle", args: [90, 270, 553, 0, 0, 10, 340, 100, 2000] } //300>340 alterado posiçao | 270>285
+			{ type: "spawn", func: "semicircle", args: [90, 280, 553, 0, 0, 15, 160, 100, 2000] }, //alterado 270>280  | 20>15
+			{ type: "spawn", func: "semicircle", args: [90, 275, 553, 0, 0, 10, 220, 100, 2000] }, //alterado 280>275  | 12>10
+			{ type: "spawn", func: "semicircle", args: [90, 270, 553, 0, 0, 10, 340, 100, 2000] }, //alterado 300>340  | 270>285
+		    { type: "spawn", func: "vector", args: [553, 90, 150, 90, 150, 0, 2000] },   //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 270, 150, 270, 150, 0, 2000] }  //Adicionado
 		],
 		"s-3023-1000-116-0": [
 			{ type: "text", sub_type: "message", message: "Explosion", message_RU: "Кайа", class_position: "dps" },
@@ -161,12 +163,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3023-1000-3115-0": [
 			{ type: "text", sub_type: "message", message: "Ataque Rotativo", message_RU: "Крутилка" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 335, 0, 3500] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 335, 0, 3500] } // Alterado 320>335 abrir
 		],
 		"s-3023-1000-3116-0": [
 			{ type: "text", sub_type: "message", message: "Circulos + Ataque Rotativo", message_RU: "Круги + Крутилка" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 335, 0, 5000] }
-		],
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 335, 0, 5000] } // Alterado 320>335 abrir
+		], 
 		"s-3023-1000-3119-0": [
 			{ type: "func", func: firstboss_debuff_event, args: [3119] },
 //			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 270, 0, 4000] },
@@ -206,7 +208,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 750, 0, 4000] }
 		],
 		"s-3023-2000-202-0": [
-			{ type: "text", sub_type: "message", message: "Punalada Trasera + Frontal", message_RU: "Назад + Вперед" },
+			{ type: "text", sub_type: "message", message: "Salto Atras | Ataque", message_RU: "Назад + Вперед" },
 			{ type: "spawn", func: "vector", args: [553, 90, 80, 180, 500, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 80, 180, 500, 0, 3000] }
 		],
