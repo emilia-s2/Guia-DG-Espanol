@@ -18,11 +18,15 @@ const DefaultSettings = {
 	"debug": {
 		"chat": true,
 		"all": false,
-		"hp": false,
-		"abnormal": false,
-		"skill": false,
-		"boss": false,
-		"spawn": false,
+		"s": false,
+		"am": false,
+		"ae": false,
+		"ab": false,
+		"ar": false,
+		"ad": false,
+		"h": false,
+		"ns": false,
+		"nd": false,
 		"dm": false,
 		"qb": false
 	}
@@ -61,6 +65,10 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
 
 			case 1.13:
 				remove(["dbg.json", "lib.js", "dispatch.js", "voice/index.js", "voice"]);
+				break;
+
+			case 1.14:
+				oldsettings["debug"] = settings["debug"];
 				break;
 		}
 
