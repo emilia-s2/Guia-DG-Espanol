@@ -243,9 +243,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			//{ type: "spawn", func: "vector", args: [542, 0, 0, 0, 3000, 0, 6000000] },
 			//{ type: "spawn", func: "vector", args: [542, 0, 0, 180, 3000, 0, 6000000] },
 			{ type: "spawn", func: "marker", args: [false, 0, -700, 100, 60000000, false, ["Throne", "Throne Direction"]] },
-			{ type: "spawn", func: "point", args: [513, 0, 800, 100, 60000000] }
+			{ type: "spawn", func: "point", args: [513, 0, 800, 100, 60000000] },
+			{ type: "func", func: start_boss }
 		],
-		"h-444-2000-99": [{ type: "func", func: start_boss }],
 
 		// ---------------------------------------- Not enraged ----------------------------------------
 //		"s-444-2000-1101-0": [
