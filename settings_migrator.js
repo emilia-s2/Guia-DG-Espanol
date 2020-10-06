@@ -33,20 +33,22 @@ const DefaultSettings = {
 };
 
 module.exports = function MigrateSettings(from_ver, to_ver, settings) {
+
 	if (from_ver === undefined) return Object.assign(Object.assign({}, DefaultSettings), settings);
 	else if (from_ver === null) return DefaultSettings;
 	else {
-		from_ver = parseFloat(from_ver);
-		to_ver = parseFloat(to_ver);
+		from_ver = Number(from_ver);
+		to_ver = Number(to_ver);
 
-		if (from_ver + 0.1 < to_ver) {
-			settings = MigrateSettings(from_ver, from_ver + 0.1, settings);
-
-			return MigrateSettings(from_ver + 0.1, to_ver, settings);
+		if (from_ver + 0.01 < to_ver) {
+			settings = MigrateSettings(from_ver, from_ver + 0.01, settings);
+			return MigrateSettings(from_ver + 0.01, to_ver, settings);
 		}
 
 		const oldsettings = settings;
 		settings = Object.assign(DefaultSettings, {});
+
+		to_ver = Math.round(to_ver * 100) / 100;
 
 		switch (to_ver) {
 			case 1.12:
@@ -59,9 +61,11 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
 							settings[option][id] = element;
 						}
 						continue;
+					} else {
+						settings[option] = oldsettings[option];
 					}
 				}
-				break;
+				return settings;
 
 			case 1.13:
 				remove(["dbg.json", "lib.js", "dispatch.js", "voice/index.js", "voice"]);
