@@ -36,7 +36,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		if (power && [118, 143, 145, 146, 144, 147, 148, 154, 155, 161, 162, 213, 215].includes(skillid)) {
 			Level++;
-			powerMsg = "(" + Level + ")";
+			powerMsg = `{$(Level)}`;
 
 			if (Level == 4) {
 				handlers.text({
@@ -108,7 +108,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-982-1000-312-0": [{ type: "text", sub_type: "message", message: "Flor Dorada!", message_RU: "Золотой цветок!!" }],
 
 		// 2 BOSS
-		"nd-982-1000": [
+		"nd-982-2000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
@@ -136,7 +136,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		// 3 БОСС
-		"nd-982-1000": [
+		"nd-982-3000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],

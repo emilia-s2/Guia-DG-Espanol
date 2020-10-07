@@ -1,4 +1,4 @@
-// Draakon Arena
+// Draakon Arena (Normal)
 //
 // made by Kuroine / HSDN
 

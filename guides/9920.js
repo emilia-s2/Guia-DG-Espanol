@@ -6,7 +6,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
 
 	let counter = 0;
-	let timer;
+	let timer = null;
 
 	function thirdboss_backattack_event() {
 		dispatch.clearTimeout(timer);

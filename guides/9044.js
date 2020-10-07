@@ -9,7 +9,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let notice = true;
 	let printend = false;
 
-	function skilld_event(skillid,  ent) {
+	function skilld_event(skillid, ent) {
 		if (skillid == 90442304) {
 			handlers.text({ sub_type: "notification", message: "Stun", message_RU: "Стан!!!" });
 			handlers.text({ sub_type: "message", message: "Stun", message_RU: "Стан!!!" });
@@ -23,7 +23,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				message_RU: "Лазер"
 			});
 
-			dispatch.setTimeout(() => notice = true,  4000);
+			dispatch.setTimeout(() => notice = true, 4000);
 		}
 
 		// Wawes
@@ -405,7 +405,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-444-2000-2117-0": [{ type: "text", sub_type: "message", message: "Salto (Bait)", message_RU: "Прыжок (байт)" }],
 		"s-444-2000-2118-0": [{ type: "text", sub_type: "message", message: "Salto (Tank)", message_RU: "Прыжок (танк)" }],
-		 "s-444-2000-2119-0": [
+		"s-444-2000-2119-0": [
 			{ type: "text", sub_type: "message", message: "Izquierda Deslizar", message_RU: "Слева" },
 			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 20, 160, 0, 2000] },
 			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 12, 220, 0, 2000] },
@@ -413,7 +413,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 8, 360, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 270, 300, 100, 2000, true, null] }
 		],
-		 "s-444-2000-2120-0": [
+		"s-444-2000-2120-0": [
 			{ type: "text", sub_type: "message", message: "Derecha Deslizar", message_RU: "Справа" },
 			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 20, 160, 0, 2000] },
 			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 12, 220, 0, 2000] },

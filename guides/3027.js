@@ -2,11 +2,13 @@
 //
 // made by michengs / HSDN
 
+/* eslint-disable no-multi-spaces */
+
 module.exports = (dispatch, handlers, guide, lang) => {
 	const { HIGHLIGHT_ITEM } = module.parent.exports.spawn;
 
-	let timer1;
-	let timer2;
+	let timer1 = null;
+	let timer2 = null;
 	let print_shield = true;
 	let print_hp = true;
 	let is_hp_74_39 = false;
@@ -15,7 +17,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		dispatch.clearTimeout(timer1);
 		dispatch.clearTimeout(timer2);
 
-		timer1 = dispatch.setTimeout(()=> {
+		timer1 = dispatch.setTimeout(() => {
 			if (!is_hp_74_39) {
 				handlers.text({
 					sub_type: "message",
@@ -25,7 +27,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			}
 		}, 85000);
 
-		timer2 = dispatch.setTimeout(()=> {
+		timer2 = dispatch.setTimeout(() => {
 			if (!is_hp_74_39) {
 				handlers.text({
 					sub_type: "message",

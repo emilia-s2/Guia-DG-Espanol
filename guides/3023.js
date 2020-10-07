@@ -6,8 +6,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = ES;
 
 	let debuff = 0;
-	let timer1;
-	let timer2;
+	let timer1 = null;
+	let timer2 = null;
 
 	function firstboss_debuff_event(skillid) {
 		switch (skillid) {

@@ -1,4 +1,4 @@
-// Corrupted Skynest (Hard)
+// Corrupted Skynest (Dificil)
 //
 // made by michengs / HSDN / ZC
 
@@ -9,33 +9,33 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	const { MARKER_ITEM } = module.parent.exports.spawn;
 
 	let debuff = null;
-	let timer1;
-	let timer2;
-	let timer3;
-	let timer4;
-	let timer5;
-	let boss_ent;
+	let timer1 = null;
+	let timer2 = null;
+	let timer3 = null;
+	let timer4 = null;
+	let timer5 = null;
+	let boss_ent = null;
 	let boss_offset = 0;
 	let qbacting = null;
 	let blue = false;
-	let red  = false;
+	let red = false;
 	let debuff_tracker_started = false;
 
 	const mech_messages = {
-		0: { message: "ENTRAR",    message_RU: "К НЕМУ" },
-		1: { message: "SALIR",   message_RU: "ОТ НЕГО" },
-		2: { message: "IZQUIERDA",  message_RU: "Лево" },
+		0: { message: "ENTRAR", message_RU: "К НЕМУ" },
+		1: { message: "SALIR", message_RU: "ОТ НЕГО" },
+		2: { message: "IZQUIERDA", message_RU: "Лево" },
 		3: { message: "DERECHA", message_RU: "Право" }
 	};
 
 	const qbacting_messages = {
 		0: { message: "Diferente", message_RU: "разные" },
-		1: { message: "Igual",      message_RU: "одинаковые" }
+		1: { message: "Igual", message_RU: "одинаковые" }
 	};
 
 	const debuff_messages = {
 		0: { message: "Listo para obter Debuff de FUEGO", message_RU: "Готовность к переключению на Огонь" },
-		1: { message: "Listo para obter Debuff de HIELO",  message_RU: "Готовность к переключению на Лед" }
+		1: { message: "Listo para obter Debuff de HIELO", message_RU: "Готовность к переключению на Лед" }
 	};
 
 	// NULL % 2 = 0
@@ -47,15 +47,15 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		if (!boss_ent) return;
 
 		let distance = 220;
-		let caption  = "IN";
+		let caption = "IN";
 
 		if (out) {
 			distance = 620;
-			caption  = "OUT";
+			caption = "OUT";
 		}
 
 		handlers.event([
-//			{ type: "spawn", func: "marker", args: [false,  45 + boss_offset, distance, 0, 4000, true, [caption, "SAFE"]] },
+//			{ type: "spawn", func: "marker", args: [false, 45 + boss_offset, distance, 0, 4000, true, [caption, "SAFE"]] },
 //			{ type: "spawn", func: "marker", args: [false, 135 + boss_offset, distance, 0, 4000, true, [caption, "SAFE"]] },
 //			{ type: "spawn", func: "marker", args: [false, 225 + boss_offset, distance, 0, 4000, true, [caption, "SAFE"]] },
 //			{ type: "spawn", func: "marker", args: [false, 315 + boss_offset, distance, 0, 4000, true, [caption, "SAFE"]] }
@@ -204,7 +204,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 			handlers.event([
 				{ type: "spawn", func: "vector", args: [553, 0, 0, 180, 840, 200, 11000] },// Alterado 190>180 Rotaçao
-				{ type: "spawn", func: "vector", args: [553, 0, 0,  0, 840, 200, 11000] }  // Alterado 10>0 Rotaçao
+				{ type: "spawn", func: "vector", args: [553, 0, 0, 0, 840, 200, 11000] }  // Alterado 10>0 Rotaçao
 			]);
 		}
 
@@ -237,11 +237,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			}, 500);
 
 			blue = true;
-			red  = false;
+			red = false;
 
 			dispatch.setTimeout(() => {
 				blue = false;
-				red  = true;
+				red = true;
 			}, 6600);
 
 			dispatch.setTimeout(() => red = false, 9400);
@@ -267,11 +267,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			}, 500);
 
 			blue = false;
-			red  = true;
+			red = true;
 
 			dispatch.setTimeout(() => {
 				blue = true;
-				red  = false;
+				red = false;
 			}, 6600);
 
 			dispatch.setTimeout(() => blue = false, 9400);
@@ -392,7 +392,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"am-3126-1000-31260067": [{ type: "text", sub_type: "message", message: "[Debuff] Layer 2", message_RU: "[Дебафф] 2 стак" }],
 		"am-3126-1000-31260068": [
 			{ type: "text", sub_type: "message", message: "[Debuff] Layer 3", message_RU: "[Дебафф] 3 стак" },
-			{ type: "text", sub_type: "message", delay: 145000, message: '[Debuff] 2.5 minutos pasado', message_RU: "[Дебафф] Прошло 2.5 минуты (стаки удалены)" }
+			{ type: "text", sub_type: "message", delay: 145000, message: "[Debuff] 2.5 minutos pasado", message_RU: "[Дебафф] Прошло 2.5 минуты (стаки удалены)" }
 		]
 	};
 
@@ -400,8 +400,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	for (let [key, value] of Object.entries(skills)) {
 		if (key.length === 5) {
-			object["s-3126-1000-1" + key] = value;
-			object["s-3126-1000-2" + key] = value;
+			object[`s-3126-1000-1${key}`] = value;
+			object[`s-3126-1000-2${key}`] = value;
 		} else {
 			object[key] = value;
 		}

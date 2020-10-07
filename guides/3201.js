@@ -5,10 +5,8 @@
 module.exports = (dispatch, handlers, guide, lang) => {
 	let notice = true;
 	let boss = null;
-	let secondboss = false;
 
 	function secondboss_start_event() {
-		secondboss = true;
 		notice = true;
 		boss = null;
 	}
