@@ -302,7 +302,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "func", func: skilld_event, args: [1121] }
 		],
 		"s-444-2000-1122-0": [
-			{ type: "text", sub_type: "message", message: "Olas (IZQUIERDA) 3nd Rapido, message_RU: "Волны (левая) 3-я быстрая" },
+			{ type: "text", sub_type: "message", message: "Olas (IZQUIERDA) 3nd Rapido", message_RU: "Волны (левая) 3-я быстрая" },
 			{ type: "func", func: skilld_event, args: [1122] }
 		],
 		"s-444-2000-1123-0": [

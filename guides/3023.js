@@ -163,7 +163,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3023-1000-3115-0": [
 			{ type: "text", sub_type: "message", message: "Ataque Rotativo", message_RU: "Крутилка" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 335, 0, 3500] } // Alterado 320>335 abrir
-		],,
+		],
 		"s-3023-1000-3116-0": [
 			{ type: "text", sub_type: "message", message: "Circulos + Ataque Rotativo", message_RU: "Круги + Крутилка" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 335, 0, 5000] } // Alterado 320>335 abrir
