@@ -5,8 +5,8 @@ module.exports.general = {
 
 	// English
 	en: {
-		 unknowncommand: "Comando desconocido, Para ver todos los comandos proba \"guia help\"",
-		 helpheader: "Use el comando \"guia help\ para mas informaciones",
+		 unknowncommand: "Comando desconocido, Para ver todos los comandos proba (guia help)",
+		 helpheader: "Use el comando \"guia help\" para mas informaciones",
 	     helpbody: [
 			["guia cr, Mensaje Color ROJO", "CRMSG"],
 			["guia co, Mensaje Color NARANJA", "COMSG"],
@@ -26,8 +26,8 @@ module.exports.general = {
 			["guia voice, convierte los mensajes de texto a voz ON/OFF", "COMSG"],
 			["guia 1~10, Configurar velocidad de voz", "COMSG"],
 			["guia stream, Modo stream (mensajem solo en chat) ON/OFF", "COMSG"],
-			["guia lNotice, Mensajes mostradas en Take notice (parte inferior) ON/OFF", "CGMSG"],
-			["guia gNotice, Mensajes mostradas en la (parte superior) de la pantalla ON/OFF", "CGMSG"],
+			["guia lNotice, Mensajes mostradas en Take notice (parte Inferior) ON/OFF", "CGMSG"],
+			["guia gNotice, Mensajes mostradas en (chat de party) ON/OFF", "CGMSG"],
 			["guia spawnObject, Mostrar marcadores  ON/OFF", "CGMSG"],
 			["guia dungeons, Lista de todas las dungeons + IDs soportadas", "CRMSG"],
 			["guia cc, Mostrar el color de notificación actual", "CRMSG"],
@@ -36,7 +36,7 @@ module.exports.general = {
 		],
 		red: "Rojo",
 		green: "Verde",
-		settings: "Configuración",
+		settings: "Configuraciones",
 		spawnObject: "Marcadores",
 		speaks: "Mensajes por voz",
 		lNotice: "lNotice (Take  notice)",
@@ -44,7 +44,7 @@ module.exports.general = {
 		stream: "Streamer Mode",
 		rate: "Velocidad da voz",
 		color: "Cambiar Color",
-		dungeons: "Configuración de dungeons",
+		dungeons: "Configuraciones de dungeons",
 		verbose: "Mensajes",
 		objects: "Marcadores",
 		test: "Probar voz",

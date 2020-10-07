@@ -13,7 +13,7 @@ module.exports = {
 	en: "Rampaging RK-9 Kennel"},
 	"9920": {
 	en: "Antaroth's Abyss (Dificil)"},
-	 "9982": {
+	"9982": {
 	en: "Grotto of Lost Souls (Dificil)"},
 	"9044": {
 	en: "Bahaar's Sanctum"},
@@ -28,10 +28,10 @@ module.exports = {
 	"3126": {
 	en: "Corrupted Skynest (Dificil)"},
 	"3102": {
-	en: "Draakon Arena Normal"},
+	en: "Draakon Arena"},
 	"3202": {
 	en: "Draakon Arena (Dificil)"},
-	 "3027": {
+	"3027": {
 	en: "Forbidden Arena [Hagufna]"},
 	"3103": {
 	en: "Forbidden Arena [Undying Warlord]"},
@@ -39,4 +39,8 @@ module.exports = {
 	en: "Forbidden Arena [Nightmare Undying Warlord]"},
 	"9053": {
     en: "Kezzel's Gorge (5-Person)"},
+	"7011": {
+    en: "Guardian Blightwood"},
+	"7015": {
+    en: "Guardian Balder's Refuge"},
 };
