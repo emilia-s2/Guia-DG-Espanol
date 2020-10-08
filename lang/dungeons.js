@@ -40,7 +40,7 @@ module.exports = {
 	"9053": {
     en: "Kezzel's Gorge (5-Person)"},
 	"7011": {
-    en: "Guardian Blightwood"},
+    en: "Blightwood"},
 	"7015": {
-    en: "Guardian Balder's Refuge"},
+    en: "Balder's Refuge"},
 };
