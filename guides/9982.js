@@ -36,7 +36,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		if (power && [118, 143, 145, 146, 144, 147, 148, 154, 155, 161, 162, 213, 215].includes(skillid)) {
 			Level++;
-			powerMsg = `{$(Level)}`;
+			powerMsg = `(${Level})`;
 
 			if (Level == 4) {
 				handlers.text({
@@ -156,8 +156,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-982-3000-146-0": [
 			{ type: "text", sub_type: "message", message: "IZQUIERDA Atras (Pulsos)", message_RU: "Слева сзади (бублик)" },
-			{ type: "spawn", func: "marker", args: [false, 215, 370, 0, 8000, true, null] },
-			{ type: "spawn", func: "circle", args: [false, 553, 215, 370, 15, 160, 2500, 6000] },
+			{ type: "spawn", func: "marker", args: [false, 215, 370, 0, 4500, true, null] },
+			{ type: "spawn", func: "circle", args: [false, 553, 215, 370, 15, 160, 2500, 4500] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2500, 8000] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2500, 8000] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2500, 8000] },
@@ -166,8 +166,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-982-3000-154-0": [
 			{ type: "text", sub_type: "message", message: "IZQUIERDA Atras (Pulsos)", message_RU: "Слева сзади (бублик)" },
-			{ type: "spawn", func: "marker", args: [false, 215, 370, 0, 8000, true, null] },
-			{ type: "spawn", func: "circle", args: [false, 553, 215, 370, 15, 160, 2500, 6000] },
+			{ type: "spawn", func: "marker", args: [false, 215, 370, 0, 4500, true, null] },
+			{ type: "spawn", func: "circle", args: [false, 553, 215, 370, 15, 160, 2500, 4500] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2500, 8000] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2500, 8000] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2500, 8000] },
@@ -184,8 +184,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-982-3000-148-0": [
 			{ type: "text", sub_type: "message", message: "DERECHA Atras (Pulsos)", message_RU: "Справа сзади (бублик)" },
-			{ type: "spawn", func: "marker", args: [false, 155, 388, 0, 8000, true, null] }, 
-			{ type: "spawn", func: "circle", args: [false, 553, 155, 388, 15, 160, 2500, 6000] },
+			{ type: "spawn", func: "marker", args: [false, 155, 388, 0, 4500, true, null] }, 
+			{ type: "spawn", func: "circle", args: [false, 553, 155, 388, 15, 160, 2500, 4500] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2500, 8000] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2500, 8000] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2500, 8000] },
@@ -194,8 +194,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-982-3000-155-0": [
 			{ type: "text", sub_type: "message", message: "DERECHA Atras (Pulsos)", message_RU: "Справа сзади (бублик)" },
-			{ type: "spawn", func: "marker", args: [false, 155, 388, 0, 8000, true, null] }, 
-			{ type: "spawn", func: "circle", args: [false, 553, 155, 388, 15, 160, 2500, 6000] },
+			{ type: "spawn", func: "marker", args: [false, 155, 388, 0, 4500, true, null] }, 
+			{ type: "spawn", func: "circle", args: [false, 553, 155, 388, 15, 160, 2500, 4500] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2500, 8000] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2500, 8000] },
 //			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2500, 8000] },
@@ -224,6 +224,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 5000] },
 			{ type: "spawn", func: "marker", args: [false, 270, 200, 0, 8000, true, null] },
 			{ type: "func", func: skilld_event, args: [139] }
+		],	
+			"s-982-3000-139-1": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 4000] },    //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 4000] }],//Adicionado
+			"s-982-3000-139-2": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 3000] },    //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 3000] }],//Adicionado
+			"s-982-3011-352-0": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 200] },     //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 2000] }  //Adicionado
 		],
 		"s-982-3000-150-0": [
 			{ type: "text", sub_type: "message", message: "Derecha Seguro", message_RU: "Лево сейф" },
@@ -231,6 +238,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 5000] },
 			{ type: "spawn", func: "marker", args: [false, 270, 200, 0, 8000, true, null] },
 			{ type: "func", func: skilld_event, args: [150] }
+		],	
+		    "s-982-3000-150-1": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 4000] },    //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 4000] }],//Adicionado
+		    "s-982-3000-150-2": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 3000] },    //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 3000] }],//Adicionado
+		    "s-982-3000-352-0": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 2000] },    //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 2000] }  //Adicionado
 		],
 		"s-982-3000-141-0": [
 			{ type: "text", sub_type: "message", message: "Izquierda Seguro", message_RU: "Право сейф" },
@@ -238,6 +252,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 5000] },
 			{ type: "spawn", func: "marker", args: [false, 90, 200, 0, 8000, true, null] },
 			{ type: "func", func: skilld_event, args: [141] }
+		],	
+			"s-982-3000-141-1": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 4000] },    //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 4000] }],//Adicionado
+			"s-982-3000-141-2": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 3000] },    //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 3000] }],//Adicionado  
+			"s-982-3011-352-0": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 2000] },    //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 2000] }  //Adicionado
 		],
 		"s-982-3000-152-0": [
 			{ type: "text", sub_type: "message", message: "Derecha Seguro", message_RU: "Право сейф" },
@@ -245,7 +266,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 5000] },
 			{ type: "spawn", func: "marker", args: [false, 90, 200, 0, 8000, true, null] },
 			{ type: "func", func: skilld_event, args: [152] }
-		],
+		],	 
+			"s-982-3000-152-1": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 4000] },    //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 4000] }],//Adicionado 
+			"s-982-3000-152-2": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 3000] },    //Adicionado
+			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 3000] }],//Adicionado
+			"s-982-3000-352-0": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 2000] },    //Adicionado
+		                         { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 2000] }  //Adicionado
+		],	
 		"s-982-3000-300-0": [
 			{ type: "text", sub_type: "message", message: "DESPIERTAR (Iframe)", message_RU: "Эвейд! (пробуждение 1)" },
 			{ type: "func", func: skilld_event, args: [300] }
