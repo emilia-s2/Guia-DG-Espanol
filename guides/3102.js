@@ -38,12 +38,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3102-1000-110-0": [
 			{ type: "text", sub_type: "message", message: "Ola DENTRO", message_RU: "Бублики + Волна" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 6, 650, 0, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 6, 650, 0, 4000] },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 320, 0, 4000] }
 		],
 		"s-3102-1000-109-0": [
 			{ type: "text", sub_type: "message", message: "Tumbar + Girar", message_RU: "Опрокид + Крутилка" },
-			{ type: "spawn", func: "circle", args: [true, 553, 0, 100, 8, 420, 0, 500] },
-			{ type: "spawn", func: "circle", args: [true, 553, 180, 0, 8, 415, 0, 3850] }
+			{ type: "spawn", func: "circle", args: [true, 553, 0, 100, 8, 420, 0, 1000] },
+			{ type: "spawn", func: "circle", delay: 1000, args: [true, 553, 180, 0, 8, 415, 0, 3000] }
 		],
 		"s-3102-1000-304-0": [{ type: "text", sub_type: "message", message: "ESCUDO!", message_RU: "ЩИТ!" }],
 		"ab-3102-1000-31021006": [
@@ -57,9 +58,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 //			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 550, 0, 3000] },
 //			{ type: "spawn", func: "semicircle", args: [-60, 70, 912, 0, 50, 8, 450, 0, 4000] },
 //			{ type: "spawn", func: "semicircle", args: [120, 250, 912, 0, 50, 8, 450, 0, 4000] },
-			{ type: "spawn", func: "vector", args: [912, 0, 50, 70, 450, 0, 4000] },
+			{ type: "spawn", func: "vector", args: [912, 0, 50, 60, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 120, 450, 0, 4000] },
-			{ type: "spawn", func: "vector", args: [912, 0, 50, 250, 450, 0, 4000] },
+			{ type: "spawn", func: "vector", args: [912, 0, 50, 240, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 300, 450, 0, 4000] },
 			{ type: "text", sub_type: "message", delay: 1900, message: "Esquiva!", message_RU: "Эвейд!" }
 		],
@@ -75,9 +76,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 //			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 550, 0, 3000] },
 //			{ type: "spawn", func: "semicircle", args: [-60, 70, 912, 0, 50, 8, 450, 0, 4000] },
 //			{ type: "spawn", func: "semicircle", args: [120, 250, 912, 0, 50, 8, 450, 0, 4000] },
-			{ type: "spawn", func: "vector", args: [912, 0, 50, 70, 450, 0, 4000] },
+			{ type: "spawn", func: "vector", args: [912, 0, 50, 60, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 120, 450, 0, 4000] },
-			{ type: "spawn", func: "vector", args: [912, 0, 50, 250, 450, 0, 4000] },
+			{ type: "spawn", func: "vector", args: [912, 0, 50, 240, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 300, 450, 0, 4000] },
 			{ type: "text", sub_type: "message", delay: 1900, message: "Esquiva!", message_RU: "Эвейд!" }
 		],
