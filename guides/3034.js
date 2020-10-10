@@ -138,7 +138,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				handlers.text({ sub_type: "message", message: "Triplo-S | ENTRAR", message_RU: "Трипл-эска | К нему" });
 				handlers.text({ sub_type: "message", delay: 4500, message: "ENTRAR", message_RU: "К нему" });
 			}
-			handlers.spawn({ func: "circle", args: [false, 445, 0, 0, 10, 300, 5000, 2000] });
+			handlers.spawn({ func: "circle", args: [false, 553, 0, 0, 10, 300, 5000, 2000] });
 			duration = 2000;
 		}
 		if ([1160, 1161, 1162, 1163, 1190, 1191, 1192, 1193, 2220, 2222, 2231].includes(skillid)) { // right safe
@@ -210,6 +210,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		   { type: "spawn", func: "circle", args: [false, 553, 180, 250, 10, 200, 0, 2750] }   //Adicionado
 		],
 		"s-3034-1003-205-0": [{ type: "text", sub_type: "alert", message: "Ventilador", message_RU: "Ветер (кайя)!" }],
+		"s-3034-1004-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
+		"s-3034-1005-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
+		"s-3034-1006-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
+		"s-3034-1007-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
 		"s-3034-1000-304-0": [
 		   { type: "text", sub_type: "message", message: "SALIR", message_RU: "От него" },
 		   { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 350, 100, 4000] } // Adicionado
