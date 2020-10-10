@@ -35,7 +35,7 @@ ID | Nombre de las Dungeons
 ## Dependencies
 ###  Son instalados automáticamente por el toolbox
 
-- **[tera-guide-core](https://github.com/GrafNikola)**
+- **[tera-guide-core](https://github.com/hsdn/tera-guide-core)**
 
 ------
 
