@@ -23,10 +23,19 @@ ID | Nombre de las Dungeons
 9053 |	Kezzel's Gorge (5-Person)
 
 ----
+### Tera-Guide
+#### El módulo Guía de Dungeons cuenta con notificaciones de voz, mensajes en pantalla y marcadores de área de ataques y mecánicas de los bosses. Disponible  en idioma *Español*. 
 
-####  Para el perfecto funcionamiento son necesarios 3 módulos adicionales, éstos son instalados automáticamente por el toolbox
-##### > library
-##### > tera-guide-core
+----
+
+### Original Guide
+- **[Original Guide -HSDN ](https://github.com/hsdn/tera-guide)**
+
+---
+## Dependencies
+###  Son instalados automáticamente por el toolbox
+
+- **[tera-guide-core](https://github.com/GrafNikola)**
 
 ------
 
