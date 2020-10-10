@@ -4,6 +4,8 @@ Guide-DG
 ##  Dungeons Soportadas
 ID | Nombre de las Dungeons 
 --- | ---
+7011 | Guardian Blightwood
+7015 | Guardian Balder's Refuge
 9781 | Velik's Sanctuary 
 9735 | RK-9 Kennel 
 3034 | RK-9 Kennel (Hard) 
@@ -29,7 +31,7 @@ ID | Nombre de las Dungeons
 ----
 
 ### Original Guide
-- **[Original Guide -HSDN ](https://github.com/hsdn/tera-guide)**
+- **[Original Guide - HSDN ](https://github.com/hsdn/tera-guide)**
 
 ---
 ## Dependencies
