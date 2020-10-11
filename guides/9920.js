@@ -92,7 +92,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 913, 0, 0, 14, 210, 100, 3700] }     //Adicionado
 		],
 		"s-920-1000-1109-0": [{ type: "text", sub_type: "message", message: "Escudo Atras (Izquierda)", message_RU: "Откид назад" }],
-		"s-920-1000-1130-0": [{ type: "text", sub_type: "message", message: "FULL | ENTRAR > SALIR", message_RU: "Общий > Внешний > Внутренний" }],
+		"s-920-1000-1130-0": [{ type: "text", sub_type: "message", message: "FULL | ENTRAR - SALIR", message_RU: "Общий > Внешний > Внутренний" }],
 
 		// Enraged
 		"s-920-1000-2117-0": [
@@ -104,7 +104,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		   { type: "spawn", func: "circle", args: [false, 913, 0, 0, 14, 210, 100, 3700] }      //Adicionado
 		],   
 		"s-920-1000-2109-0": [{ type: "text", sub_type: "message", message: "Escudo Atras (Izquierda)", message_RU: "Откид назад" }],
-		"s-920-1000-2130-0": [{ type: "text", sub_type: "message", message: "FULL | SALIR < ENTRAR", message_RU: "Общий > Внутренний > Внешний" }],
+		"s-920-1000-2130-0": [{ type: "text", sub_type: "message", message: "FULL | SALIR - ENTRAR", message_RU: "Общий > Внутренний > Внешний" }],
 		
 		// 1 BOSS, SPECIAL ATTACKS
 		"s-920-1000-1300-0": [{ type: "text", sub_type: "message", delay: 400, message: "Jugar al Alto (iframe)", message_RU: "Эвейд!" }],

@@ -22,7 +22,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-620-1000-108-0": [{ type: "text", sub_type: "message", message: "Ataque (Atras)", message_RU: "no se russo :c sorry" }],
 		"s-620-1000-103-0": [{ type: "text", sub_type: "message", message: "Stun Frontal", message_RU: "no se russo :c sorry" }],
 		"s-620-1000-209-0": [{ type: "text", sub_type: "message", message: "Regresar al Medio + Bolas de Fuego", message_RU: "no se russo :c sorry" }],
-		"s-620-1000-125-0": [{ type: "text", sub_type: "message", message: "Bolas de Fogo", message_RU: "Поворот + дыхание" }],
+		"s-620-1000-125-0": [{ type: "text", sub_type: "message", message: "Bolas de Fuego", message_RU: "Поворот + дыхание" }],
 		
 		"s-620-1001-303-0": [{ type: "text", sub_type: "message", message: "AOE", message_RU: "no se russo :c sorry" }],
 		"s-620-1002-303-0": [{ type: "alias", id: "s-620-1001-303-0" }],
