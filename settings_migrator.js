@@ -2,14 +2,16 @@
 
 const DefaultSettings = {
 	"enabled": true,
+	"stream": false,
 	"lNotice": true,
 	"gNotice": false,
-	"stream": false,
 	"spawnObject": true,
-	"speaks": false,
-	"rate": [
-		3
-	],
+	"speech": {
+		"enabled": false,
+		"rate": 3,
+		"volume": 100,
+		"gender": "female"
+	},
 	"cc": [
 		"</font><font color=\"#8eff05\">"
 	],
@@ -74,6 +76,18 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
 			case 1.14:
 				oldsettings["debug"] = settings["debug"];
 				break;
+
+			case 1.16:
+				for (const option in oldsettings) {
+					if (option == "speaks") {
+						settings["speech"]["enabled"] = oldsettings["speaks"];
+					} else if (option == "rate") {
+						settings["speech"]["rate"] = parseInt(oldsettings["rate"]);
+					} else {
+						settings[option] = oldsettings[option];
+					}
+				}
+				return settings;
 		}
 
 		for (const option in oldsettings) {
