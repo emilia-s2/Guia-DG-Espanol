@@ -3,7 +3,7 @@
 // Available strings for different languages
 module.exports.general = {
 
-	// English
+	// Español
 	en: {
 		 unknowncommand: "Comando desconocido, Para ver todos los comandos proba (guia help)",
 		 helpheader: "Use el comando \"guia help\" para mas informaciones",
@@ -28,9 +28,9 @@ module.exports.general = {
 			["guia stream, Modo stream (mensajem solo en chat) ON/OFF", "COMSG"],
 			["guia lNotice, Mensajes mostradas en Take notice (parte Inferior) ON/OFF", "CGMSG"],
 			["guia gNotice, Mensajes mostradas en (chat de party) ON/OFF", "CGMSG"],
-			["guia spawnObject, Mostrar marcadores  ON/OFF", "CGMSG"],
-			["guia dungeons, Lista de todas las dungeons + IDs soportadas", "CRMSG"],
-			["guia cc, Mostrar el color de notificación actual", "CRMSG"],
+			["guide male~female, Cambiar la voz entre masculino e feminino (se disponible)", "CGMSG"],
+			["guia spawnObject, Mostrar marcadores  ON/OFF", "CLPMSG"],
+			["guia dungeons, Lista de todas las dungeons + IDs soportadas", "CLPMSG"],
 			["guia verbose + ID, Guia para alguna dungeon especifica ON/OFF", "CLBMSG"],
 			["guia spawnObject + ID, marcadores para alguna dungeon específica ON/OFF", "CLBMSG"],
 		],
@@ -51,7 +51,9 @@ module.exports.general = {
 		module: "TERA-Guide módulo",
 		enabled: "Activado",
 		disabled: "Desactivado",
-		voicetest: "[Probar Velocidad]",
+		male: "Masculino",
+		female: "Feminino",
+		voicetest: "[Probar Velocidad de la voz]",
 		colorchanged: "El color de la notificación del mensaje ha sido cambiado",
 		ratechanged: "Velocidad de voz lvl",
 		dgnotfound: "Dungeon no encontrada.",
