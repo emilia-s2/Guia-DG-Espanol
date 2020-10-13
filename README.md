@@ -46,6 +46,7 @@ proxy(/8) | Descripción de Comandos
 --- | ---
 **guia**<br>(por defecto: on) | Módulo on/off 
 **guia&nbsp;gui** | mostrar una ventana de personalización GUI
+**guia&nbsp;help** | Lista de todos los comandos soportados
 **guia&nbsp;stream**<br>(por defecto: off) | Mensajes apenas en chat, y todos los marcadores serán desactivados ON/OFF
 **guia&nbsp;lNotice**<br>(por defecto: on) | Envía mensaje en Take notice ON/OFF 
 **guia&nbsp;gNotice**<br>(por defecto: off) | Envía mensaje para el Chat party ON/OFF
@@ -53,7 +54,7 @@ proxy(/8) | Descripción de Comandos
 **guia&nbsp;dungeons** | Lista de todas las dungeons + IDs
 **guia&nbsp;verbose&nbsp;+`ID`**<br>(por defecto: todas on) | Mensajes de la guía para algún DG específico ON/OFF<br>EJ: (guia verbose 9781) ID=Velik's Sanctuary
 **guia&nbsp;spawnObject&nbsp;+`ID`**<br>(por defecto:todas on) | Marcaciones para algún DG específico ON/OFF<br>EJ: (guia spawnObject 9781) ID=Velik's Sanctuary 
-**guia&nbsp;help** | Lista de todos los comandos soportados
+
 
 ---
 
@@ -87,7 +88,7 @@ proxy(/8) | Descripción de Comandos
    #### Interface GUI
 * Ventana de comandos donde puedes modificar la guía a tu gusto<br>(comando para abrirla /8 guia gui)
  
-  ![](https://i.imgur.com/LVs2Yzw.png)  
+  ![](https://i.imgur.com/2Krbr8l.png)  
 
 ###  
 
