@@ -4,7 +4,7 @@
 module.exports.general = {
 
 	// Español
-	en: {
+	es: {
 		 unknowncommand: "Comando desconocido, Para ver todos los comandos proba (guia help)",
 		 helpheader: "Use el comando \"guia help\" para mas informaciones",
 	     helpbody: [
