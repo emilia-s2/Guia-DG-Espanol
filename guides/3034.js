@@ -11,10 +11,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let mech_notice = false;
 
 	const mech_messages = {
-		0: { message: "SALIR", message_RU: "От него" },
-		1: { message: "ENTRAR", message_RU: "К нему" },
-		2: { message: "Ola", message_RU: "Волна" },
-		3: { message: "?", message_RU: "?" }
+		0: { message_ES: "SALIR", message_RU: "От него" },
+		1: { message_ES: "ENTRAR", message_RU: "К нему" },
+		2: { message_ES: "Ola", message_RU: "Волна" },
+		3: { message_ES: "?", message_RU: "?" }
 	};
 
 	// Throwing orbs
@@ -24,7 +24,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 			handlers.text({
 				sub_type: "message",
-				message: "Jugar Bombs",
+				message_ES: "Jugar Bombs",
 				message_RU: "Бомба"
 			});
 
@@ -114,7 +114,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		handlers.text({
 			sub_type: sub_type,
-			message: message,
+			message_ES: message,
 			message_RU: message_RU
 		});
 	}
@@ -125,18 +125,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		let delay  = boss_seventy ? 2000 : 0,
 			duration = boss_seventy ? 800 : 900;
 		if ([1160, 1190].includes(skillid)) {
-			handlers.text({ sub_type: "message", delay: delay, message: "DERECHA Seguro", message_RU: "Справа сейф" });
+			handlers.text({ sub_type: "message", delay: delay, message_ES: "DERECHA Seguro", message_RU: "Справа сейф" });
 		}
 		if ([1170, 1180].includes(skillid)) {
-			handlers.text({ sub_type: "message",delay: delay, message: "IZQUIERDA Seguro", message_RU: "Слева сейф" });
+			handlers.text({ sub_type: "message",delay: delay, message_ES: "IZQUIERDA Seguro", message_RU: "Слева сейф" });
 		}
 		if ([1160, 1170, 1180, 1190].includes(skillid) && boss_seventy) { // <70%
 			if (mech_reverse) {
-				handlers.text({ sub_type: "message",message: "Triplo-S | SALIR", message_RU: "Трипл-эска | От него" });
-				handlers.text({ sub_type: "message",delay: 4500, message: "SALIR", message_RU: "От него" });
+				handlers.text({ sub_type: "message",message_ES: "Triplo-S | SALIR", message_RU: "Трипл-эска | От него" });
+				handlers.text({ sub_type: "message",delay: 4500, message_ES: "SALIR", message_RU: "От него" });
 			} else {
-				handlers.text({ sub_type: "message", message: "Triplo-S | ENTRAR", message_RU: "Трипл-эска | К нему" });
-				handlers.text({ sub_type: "message", delay: 4500, message: "ENTRAR", message_RU: "К нему" });
+				handlers.text({ sub_type: "message", message_ES: "Triplo-S | ENTRAR", message_RU: "Трипл-эска | К нему" });
+				handlers.text({ sub_type: "message", delay: 4500, message_ES: "ENTRAR", message_RU: "К нему" });
 			}
 			handlers.spawn({ func: "circle", args: [false, 553, 0, 0, 10, 300, 5000, 2000] });
 			duration = 2000;
@@ -197,104 +197,104 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"qb-3034-1000-3034101": [{ type: "text", sub_type: "alert", message: "Pizza", message_RU: "Пицца" }],
-		"qb-3034-1000-3034102": [{ type: "text", sub_type: "alert", message: "AOE! SALTAR", message_RU: "AOE! Прыгай!!!" }],
-		"s-3034-1000-104-0": [{ type: "text", sub_type: "message", message: "Stun Frontal", message_RU: "Передний зажим" }],
+		"qb-3034-1000-3034101": [{ type: "text", sub_type: "alert", message_ES: "Pizza", message_RU: "Пицца" }],
+		"qb-3034-1000-3034102": [{ type: "text", sub_type: "alert", message_ES: "AOE! SALTAR", message_RU: "AOE! Прыгай!!!" }],
+		"s-3034-1000-104-0": [{ type: "text", sub_type: "message", message_ES: "Stun Frontal", message_RU: "Передний зажим" }],
 		"s-3034-1000-108-0": [
-		    { type: "text", sub_type: "message", message: "SALIR", message_RU: "От него" },
+		    { type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "От него" },
 		    { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 300, 100, 4000] } // Adicionado// крутилка
 		],	
-		"s-3034-1000-111-0": [{ type: "text", sub_type: "message", message: "Atras | Frente Ataque", message_RU: "Удар назад + вперед" }],
+		"s-3034-1000-111-0": [{ type: "text", sub_type: "message", message_ES: "Atras | Frente Ataque", message_RU: "Удар назад + вперед" }],
 		"s-3034-1000-112-0": [
-		   { type: "text", sub_type: "message", message: "Ataque Atras", message_RU: "Удар назад" },
+		   { type: "text", sub_type: "message", message_ES: "Ataque Atras", message_RU: "Удар назад" },
 		   { type: "spawn", func: "circle", args: [false, 553, 180, 250, 10, 200, 0, 2750] }   //Adicionado
 		],
-		"s-3034-1003-205-0": [{ type: "text", sub_type: "alert", message: "Ventilador", message_RU: "Ветер (кайя)!" }],
+		"s-3034-1003-205-0": [{ type: "text", sub_type: "alert", message_ES: "Ventilador", message_RU: "Ветер (кайя)!" }],
 		"s-3034-1004-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
 		"s-3034-1005-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
 		"s-3034-1006-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
 		"s-3034-1007-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
 		"s-3034-1000-304-0": [
-		   { type: "text", sub_type: "message", message: "SALIR", message_RU: "От него" },
+		   { type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "От него" },
 		   { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 350, 100, 4000] } // Adicionado
 		],   
 		"s-3034-1000-305-0": [
-		   { type: "text", sub_type: "message", message: "ENTRAR", message_RU: "К нему" },
+		   { type: "text", sub_type: "message", message_ES: "ENTRAR", message_RU: "К нему" },
 		   { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 290, 100, 4000] } // Adicionado
 		],   
-		"s-3034-1000-306-0": [{ type: "text", sub_type: "message", message: "Bombs", message_RU: "Бомбы" }],
-		"s-3034-1000-307-0": [{ type: "text", sub_type: "message", message: "Jalar", message_RU: "Стяжка" }],
+		"s-3034-1000-306-0": [{ type: "text", sub_type: "message", message_ES: "Bombs", message_RU: "Бомбы" }],
+		"s-3034-1000-307-0": [{ type: "text", sub_type: "message", message_ES: "Jalar", message_RU: "Стяжка" }],
 		"s-3034-1000-309-0": [
-			{ type: "text", sub_type: "message", message: "Misiles Iniciados", message_RU: "Запуск 4 ракет" },
-			{ type: "text", sub_type: "message", delay: 6000, message: "5", message_RU: "5" },
-			{ type: "text", sub_type: "message", delay: 7000, message: "4", message_RU: "4" },
-			{ type: "text", sub_type: "message", delay: 8000, message: "3", message_RU: "3" },
-			{ type: "text", sub_type: "message", delay: 9000, message: "2", message_RU: "2" },
-			{ type: "text", sub_type: "message", delay: 10000, message: "1", message_RU: "1" },
-			{ type: "text", sub_type: "alert", delay: 11000, message: "SALTAR", message_RU: "Прыгай!" }
+			{ type: "text", sub_type: "message", message_ES: "Misiles Iniciados", message_RU: "Запуск 4 ракет" },
+			{ type: "text", sub_type: "message", delay: 6000, message_ES: "5", message_RU: "5" },
+			{ type: "text", sub_type: "message", delay: 7000, message_ES: "4", message_RU: "4" },
+			{ type: "text", sub_type: "message", delay: 8000, message_ES: "3", message_RU: "3" },
+			{ type: "text", sub_type: "message", delay: 9000, message_ES: "2", message_RU: "2" },
+			{ type: "text", sub_type: "message", delay: 10000, message_ES: "1", message_RU: "1" },
+			{ type: "text", sub_type: "alert", delay: 11000, message_ES: "SALTAR", message_RU: "Прыгай!" }
 		],
 		"s-3034-1000-311-0": [
-			{ type: "text", sub_type: "message", message: "Derecha Frente | Seguro", message_RU: "Справа спереди сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Derecha Frente | Seguro", message_RU: "Справа спереди сейф" },
 			{ type: "spawn", func: "marker", args: [false, 67, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-312-0": [
-			{ type: "text", sub_type: "message", message: "Derecha Atras | Seguro", message_RU: "Справа сзади сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Derecha Atras | Seguro", message_RU: "Справа сзади сейф" },
 			{ type: "spawn", func: "marker", args: [false, 112, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-313-0": [
-			{ type: "text", sub_type: "message", message: "Atras Izquierda | Seguro", message_RU: "Сзади слева сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Atras Izquierda | Seguro", message_RU: "Сзади слева сейф" },
 			{ type: "spawn", func: "marker", args: [false, 202, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-314-0": [
-			{ type: "text", sub_type: "message", message: "Frente Izquierda | Seguro", message_RU: "Спереди слева сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Frente Izquierda | Seguro", message_RU: "Спереди слева сейф" },
 			{ type: "spawn", func: "marker", args: [false, 337, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-315-0": [
-			{ type: "text", sub_type: "message", message: "Frente Derecha | Seguro", message_RU: "Спереди справа сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Frente Derecha | Seguro", message_RU: "Спереди справа сейф" },
 			{ type: "spawn", func: "marker", args: [false, 22, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-316-0": [
-			{ type: "text", sub_type: "message", message: "Atras Derecha | Seguro", message_RU: "Сзади справа сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Atras Derecha | Seguro", message_RU: "Сзади справа сейф" },
 			{ type: "spawn", func: "marker", args: [false, 157, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-317-0": [
-			{ type: "text", sub_type: "message", message: "Izquierda Atras | Seguro", message_RU: "Слева сзади сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Izquierda Atras | Seguro", message_RU: "Слева сзади сейф" },
 			{ type: "spawn", func: "marker", args: [false, 247, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-318-0": [
-			{ type: "text", sub_type: "message", message: "Izquierda Frente | Seguro", message_RU: "Слева спереди сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Izquierda Frente | Seguro", message_RU: "Слева спереди сейф" },
 			{ type: "spawn", func: "marker", args: [false, 292, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-319-0": [
-			{ type: "text", sub_type: "message", message: "Frente Derecha | Seguro", message_RU: "Спереди справа сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Frente Derecha | Seguro", message_RU: "Спереди справа сейф" },
 			{ type: "spawn", func: "marker", args: [false, 22, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-320-0": [
-			{ type: "text", sub_type: "message", message: "Atras Derecha | Seguro", message_RU: "Сзади справа сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Atras Derecha | Seguro", message_RU: "Сзади справа сейф" },
 			{ type: "spawn", func: "marker", args: [false, 157, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-321-0": [
-			{ type: "text", sub_type: "message", message: "Atras Izquierda | Seguro", message_RU: "Сзади слева сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Atras Izquierda | Seguro", message_RU: "Сзади слева сейф" },
 			{ type: "spawn", func: "marker", args: [false, 202, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-322-0": [
-			{ type: "text", sub_type: "message", message: "Izquierda Frente | Seguro", message_RU: "Слева спереди сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Izquierda Frente | Seguro", message_RU: "Слева спереди сейф" },
 			{ type: "spawn", func: "marker", args: [false, 292, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-323-0": [
-			{ type: "text", sub_type: "message", message: "Derecha Frente | Seguro", message_RU: "Справа спереди сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Derecha Frente | Seguro", message_RU: "Справа спереди сейф" },
 			{ type: "spawn", func: "marker", args: [false, 67, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-324-0": [
-			{ type: "text", sub_type: "message", message: "Derecha Atras | Seguro", message_RU: "Справа сзади сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Derecha Atras | Seguro", message_RU: "Справа сзади сейф" },
 			{ type: "spawn", func: "marker", args: [false, 112, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-325-0": [
-			{ type: "text", sub_type: "message", message: "Izquierda Atras | Seguro", message_RU: "Слева сзади сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Izquierda Atras | Seguro", message_RU: "Слева сзади сейф" },
 			{ type: "spawn", func: "marker", args: [false, 247, 120, 100, 12000, true, null] }
 		],
 		"s-3034-1000-326-0": [
-			{ type: "text", sub_type: "message", message: "Frente Izquierda | Seguro", message_RU: "Спереди слева сейф" },
+			{ type: "text", sub_type: "message", message_ES: "Frente Izquierda | Seguro", message_RU: "Спереди слева сейф" },
 			{ type: "spawn", func: "marker", args: [false, 337, 120, 100, 12000, true, null] }
 		],
 
@@ -318,30 +318,30 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		{ type: "spawn", "id": 445, "sub_delay": 99999999, "pos": { x: -32375, y: 59515, z: 0 } }  //Direito 2 Clone
 	],
 		"s-3034-2000-102-0": [
-			{ type: "text", sub_type: "message", message: "Frente", message_RU: "Пила" },
+			{ type: "text", sub_type: "message", message_ES: "Frente", message_RU: "Пила" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 300, 12, 228, 0, 3000] }
 		],
 		"s-3034-2000-105-0": [
-			{ type: "text", sub_type: "message", message: "360 (Repeler)", message_RU: "Крутилка (откид)" },
+			{ type: "text", sub_type: "message", message_ES: "360 (Repeler)", message_RU: "Крутилка (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 278, 0, 5000] }
 		],
 		"s-3034-2000-108-0": [
-			{ type: "text", sub_type: "message", message: "Atras (Repeler)", message_RU: "Откид назад" },
+			{ type: "text", sub_type: "message", message_ES: "Atras (Repeler)", message_RU: "Откид назад" },
 			{ type: "spawn", func: "semicircle", args: [120, 245, 553, 0, 0, 10, 385, 0, 2000] },  // Adicionado 
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 120, 390, 0, 2000] },             // Adicionado 
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 240, 390, 0, 2000] }              // Adicionado 
 		],
 		"s-3034-2000-301-0": [{ type: "func", func: throwing_orb_event }],
 		"s-3034-2000-304-0": [
-			{ type: "text", sub_type: "message", message: "SLAIR (Explosion)", message_RU: "От него" },
+			{ type: "text", sub_type: "message", message_ES: "SLAIR (Explosion)", message_RU: "От него" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 400, 0, 4000] }
 		],
 		"s-3034-2000-305-0": [
-			{ type: "text", sub_type: "message", message: "ENTRAR | SALIR", message_RU: "К нему | От него" },
+			{ type: "text", sub_type: "message", message_ES: "ENTRAR | SALIR", message_RU: "К нему | От него" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 200, 0, 3000] }
 		],
 		// Safe: |||2|2||| > ||||1|||| > ||3|||3||
-		"s-3034-2000-310-0": [{ type: "text", sub_type: "message", message: "2 - 1 - 3" },
+		"s-3034-2000-310-0": [{ type: "text", sub_type: "message", message_ES: "2 - 1 - 3" },
 			{ type: "spawn", func: "marker", args: [false, 40, 220, 0, 1500, true, null] },     // 2
 			{ type: "spawn", func: "marker", args: [false, -40, 220, 0, 1500, true, null] },    // 2
 			{ type: "spawn", func: "marker", args: [false, 0, 150, 1600, 1500, true, null] },   // 1
@@ -349,7 +349,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "marker", args: [false, -60, 300, 3200, 1500, true, null] }, // 3
 		],
 		// Safe: ||||1|||| > ||3|||3|| > |||2|2|||
-		"s-3034-2000-311-0": [{ type: "text", sub_type: "message", message: "1 - 3 - 2" },
+		"s-3034-2000-311-0": [{ type: "text", sub_type: "message", message_ES: "1 - 3 - 2" },
 			{ type: "spawn", func: "marker", args: [false, 0, 150, 0, 1500, true, null] },      // 1
 			{ type: "spawn", func: "marker", args: [false, 60, 300, 1600, 1500, true, null] },  // 3
 			{ type: "spawn", func: "marker", args: [false, -60, 300, 1600, 1500, true, null] }, // 3
@@ -382,7 +382,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"h-3034-3000-99": [{ type: "func", func: thirdboss_start_event }],
 		"h-3034-3000-70": [
-			{ type: "text", sub_type: "message", message: "70%", message_RU: "70%" },
+			{ type: "text", sub_type: "message", message_ES: "70%", message_RU: "70%" },
 			{ type: "func", func: thirdboss_seventy_event }
 		],
 		//
@@ -419,31 +419,31 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3034-3000-223-0": [{ type: "func", func: thirdboss_sattack_event, args: [2230] }],
 		"s-3034-3000-223-2": [{ type: "func", func: thirdboss_sattack_event, args: [2232] }],
 		//
-		"s-3034-3000-125-0": [{ type: "text", sub_type: "message", message: "Frente", message_RU: "Удар вперед" }],
-		"s-3034-3000-126-0": [{ type: "text", sub_type: "message", message: "Frente | Atras", message_RU: "Удар вперед | Удар назад" }],
-		"s-3034-3000-127-0": [{ type: "text", sub_type: "message", message: "Atras", message_RU: "Удар назад" }],
+		"s-3034-3000-125-0": [{ type: "text", sub_type: "message", message_ES: "Frente", message_RU: "Удар вперед" }],
+		"s-3034-3000-126-0": [{ type: "text", sub_type: "message", message_ES: "Frente | Atras", message_RU: "Удар вперед | Удар назад" }],
+		"s-3034-3000-127-0": [{ type: "text", sub_type: "message", message_ES: "Atras", message_RU: "Удар назад" }],
 		"s-3034-3000-128-0": [
-			{ type: "text", sub_type: "message", message: "Combo | Atras Puno Esxplosivo", message_RU: "Комба | Конус назад" },
+			{ type: "text", sub_type: "message", message_ES: "Combo | Atras Puno Esxplosivo", message_RU: "Комба | Конус назад" },
 			{ type: "spawn", func: "vector", args: [553, 180, 40, 120, 1200, 2000, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 180, 40, 240, 1200, 2000, 3000] }
 		],
-		"s-3034-3000-129-0": [{ type: "text", class_position:"tank", sub_type: "message", message: "Esquiva", message_RU: "Эвейд" }],
+		"s-3034-3000-129-0": [{ type: "text", class_position:"tank", sub_type: "message", message_ES: "Esquiva", message_RU: "Эвейд" }],
 		"s-3034-3000-305-0": [{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 300, 0, 6000] }], // 3034301 3034302 3034303 -> 305
 		"s-3034-3000-321-0": [
-			{ type: "text", sub_type: "message", message: "ESCUDO!", message_RU: "Щит!" },
-			{ type: "text", sub_type: "message", delay: 105000, message: "ESCUDO en 10 secundos!", message_RU: "Через 10 сек. Щит!" }
+			{ type: "text", sub_type: "message", message_ES: "ESCUDO!", message_RU: "Щит!" },
+			{ type: "text", sub_type: "message", delay: 105000, message_ES: "ESCUDO en 10 secundos!", message_RU: "Через 10 сек. Щит!" }
 		],
 		"s-3034-3001-308-0": [
-			{ type: "text", sub_type: "message", message: "Bait!", message_RU: "Байт!" },
+			{ type: "text", sub_type: "message", message_ES: "Bait!", message_RU: "Байт!" },
 			{ type: "spawn", func: "vector", args: [912, 0, 0, 0, 300, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 0, 90, 300, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 0, 180, 300, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 0, 270, 300, 0, 2000] }
 		],
 		// Radar
-		"qb-3034-3000-3034312": [{ type: "text", sub_type: "message", message: "!!! Radar !!!", message_RU: "!!! Радар !!!" }],
+		"qb-3034-3000-3034312": [{ type: "text", sub_type: "message", message_ES: "!!! Radar !!!", message_RU: "!!! Радар !!!" }],
 		"s-3034-3000-324-0": [
-			{ type: "text", sub_type: "message", message: "SALIR", message_RU: "ОТ НЕГО" },
+			{ type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "ОТ НЕГО" },
 		    { type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 285, 0, 3000] }
 //		    { type: "spawn", func: "circle", args: [false, 912, 0, 0, 12, 200, 0, 3000] },
 //		    { type: "spawn", func: "circle", args: [false, 912, 0, 0, 14, 150, 0, 3000] },
@@ -451,7 +451,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 //		    { type: "spawn", func: "circle", args: [false, 912, 0, 0, 50, 50, 0, 3000] }
         ],
 	     "s-3034-3000-325-0": [
-			{ type: "text", sub_type: "message", message: "ENTRAR", message_RU: "К НЕМУ" },
+			{ type: "text", sub_type: "message", message_ES: "ENTRAR", message_RU: "К НЕМУ" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 285, 0, 3000] }
 		]
 	};

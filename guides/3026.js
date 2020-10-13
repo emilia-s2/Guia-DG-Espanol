@@ -22,18 +22,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let debuff_tracker_started = false;
 
 	const mech_messages = {
-		0: { message: "ENTRAR", message_RU: "К НЕМУ" },
-		1: { message: "SALIR", message_RU: "ОТ НЕГО" }
+		0: { message_ES: "ENTRAR", message_RU: "К НЕМУ" },
+		1: { message_ES: "SALIR", message_RU: "ОТ НЕГО" }
 	};
 
 	const qbacting_messages = {
-		0: { message: "Diferente", message_RU: "разные" },
-		1: { message: "Igual", message_RU: "одинаковые" }
+		0: { message_ES: "Diferente", message_RU: "разные" },
+		1: { message_ES: "Igual", message_RU: "одинаковые" }
 	};
 
 	const debuff_messages = {
-		0: { message: "Listo para obter Debuff de FUEGO", message_RU: "Готовность к переключению на Огонь" },
-		1: { message: "Listo para obter Debuff de HIELO", message_RU: "Готовность к переключению на Лед" }
+		0: { message_ES: "Listo para obter Debuff de FUEGO", message_RU: "Готовность к переключению на Огонь" },
+		1: { message_ES: "Listo para obter Debuff de HIELO", message_RU: "Готовность к переключению на Лед" }
 	};
 
 	// NULL % 2 = 0
@@ -68,7 +68,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			if (debuff != null) {
 				handlers.text({
 					sub_type: "message",
-					message: "Fin del Debuff en 20 secundos",
+					message_ES: "Fin del Debuff en 20 secundos",
 					message_RU: "Дебафф 20 сек."
 				});
 			}
@@ -79,14 +79,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				dispatch.setTimeout(() => {
 					handlers.text({
 						sub_type: "alert",
-						message: (`${debuff_messages[debuff % 2].message}`),
+						message_ES: (`${debuff_messages[debuff % 2].message}`),
 						message_RU: (`${debuff_messages[debuff % 2].message_RU}`)
 					});
 				}, 2000);
 
 /*				handlers.text({
 					sub_type: "message",
-					message: "Debuff 50 seconds",
+					message_ES: "Debuff 50 seconds",
 					message_RU: "Дебафф 50 сек."
 				});*/
 			}
@@ -96,7 +96,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			if (debuff != null) {
 /*				handlers.text({
 					sub_type: "message",
-					message: "Warning! Debuff 15 seconds",
+					message_ES: "Warning! Debuff 15 seconds",
 					message_RU: "Дебафф 15 сек."
 				});*/
 			}
@@ -106,7 +106,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			if (debuff != null) {
 				handlers.text({
 					sub_type: "message",
-					message: "Fin del Debuff en 10 secundos",
+					message_ES: "Fin del Debuff en 10 secundos",
 					message_RU: "Дебафф 10 сек."
 				});
 			}
@@ -116,7 +116,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			if (debuff != null) {
 /*				handlers.text({
 					sub_type: "message",
-					message: "Warning! Debuff 5 seconds",
+					message_ES: "Warning! Debuff 5 seconds",
 					message_RU: "Дебафф 5 сек."
 				});*/
 			}
@@ -125,7 +125,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		if (blue) {
 			handlers.text({
 				sub_type: "message",
-				message: (`${mech_messages[(qbacting + debuff + 1) % 2].message}`),
+				message_ES: (`${mech_messages[(qbacting + debuff + 1) % 2].message}`),
 				message_RU: (`${mech_messages[(qbacting + debuff + 1) % 2].message_RU}`)
 			});
 
@@ -133,7 +133,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		} else if (red) {
 			handlers.text({
 				sub_type: "message",
-				message: (`${mech_messages[(qbacting + debuff) % 2].message}`),
+				message_ES: (`${mech_messages[(qbacting + debuff) % 2].message}`),
 				message_RU: (`${mech_messages[(qbacting + debuff) % 2].message_RU}`)
 			});
 
@@ -218,7 +218,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				if (debuff != null) {
 					handlers.text({
 						sub_type: "message",
-						message: (`Hielo (${qbacting_messages[qbacting].message}) | ${mech_messages[(qbacting + debuff + 1) % 2].message}`),
+						message_ES: (`Hielo (${qbacting_messages[qbacting].message}) | ${mech_messages[(qbacting + debuff + 1) % 2].message}`),
 						message_RU: (`Внутри лед (${qbacting_messages[qbacting].message_RU}) | ${mech_messages[(qbacting + debuff + 1) % 2].message_RU}`)
 					});
 
@@ -226,7 +226,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				} else {
 					handlers.text({
 						sub_type: "message",
-						message: (`Hielo (${qbacting_messages[qbacting].message})`),
+						message_ES: (`Hielo (${qbacting_messages[qbacting].message})`),
 						message_RU: (`Внутри лед (${qbacting_messages[qbacting].message_RU})`)
 					});
 				}
@@ -243,7 +243,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				if (debuff != null) {
 					handlers.text({
 						sub_type: "message",
-						message: (`Fuego (${qbacting_messages[qbacting].message}) | ${mech_messages[(qbacting + debuff) % 2].message}`),
+						message_ES: (`Fuego (${qbacting_messages[qbacting].message}) | ${mech_messages[(qbacting + debuff) % 2].message}`),
 						message_RU: (`Внутри огонь (${qbacting_messages[qbacting].message_RU}) | ${mech_messages[(qbacting + debuff) % 2].message_RU}`)
 					});
 
@@ -251,7 +251,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				} else {
 					handlers.text({
 						sub_type: "message",
-						message: (`Fuego (${qbacting_messages[qbacting].message})`),
+						message_ES: (`Fuego (${qbacting_messages[qbacting].message})`),
 						message_RU: (`Внутри огонь (${qbacting_messages[qbacting].message_RU})`)
 					});
 				}
@@ -277,52 +277,52 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	}
 
 	const skills = {
-		"112-0": [{ type: "text", sub_type: "message", message: "Mano de HIELO (Fuera)", message_RU: "Лед (полоса)" }],
-		"110-0": [{ type: "text", sub_type: "message", message: "Mano de FUEGO (Fuera)", message_RU: "Огонь (лужа)" }],
+		"112-0": [{ type: "text", sub_type: "message", message_ES: "Mano de HIELO (Fuera)", message_RU: "Лед (полоса)" }],
+		"110-0": [{ type: "text", sub_type: "message", message_ES: "Mano de FUEGO (Fuera)", message_RU: "Огонь (лужа)" }],
 		"108-0": [
-			{ type: "text", sub_type: "message", message: "Giro a la Derecha (Derribo!!)", message_RU: "Поворот вправо (откид)" },
+			{ type: "text", sub_type: "message", message_ES: "Giro a la Derecha (Derribo!!)", message_RU: "Поворот вправо (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
 		"158-0": [
-			{ type: "text", sub_type: "message", message: "Giro a la Derecha (Derribo!!)", message_RU: "Поворот вправо (откид)" },
+			{ type: "text", sub_type: "message", message_ES: "Giro a la Derecha (Derribo!!)", message_RU: "Поворот вправо (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
 		"109-0": [
-			{ type: "text", sub_type: "message", message: "Giro a la Izquierda (Derribo!!)", message_RU: "Поворот влево (откид)" },
+			{ type: "text", sub_type: "message", message_ES: "Giro a la Izquierda (Derribo!!)", message_RU: "Поворот влево (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
 		"159-0": [
-			{ type: "text", sub_type: "message", message: "Giro a la Izquierda (Derribo!!)", message_RU: "Поворот влево (откид)" },
+			{ type: "text", sub_type: "message", message_ES: "Giro a la Izquierda (Derribo!!)", message_RU: "Поворот влево (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
-		"120-0": [{ type: "text", sub_type: "message", message: "JUNTAR", message_RU: "Яростный рев" }],
-		"145-0": [{ type: "text", sub_type: "message", message: "Pies (Stun)", message_RU: "Стан" }],
-//	    "157-0": [{ type: "text", sub_type: "message", message: "Change", message_RU: "Смена" }],
+		"120-0": [{ type: "text", sub_type: "message", message_ES: "JUNTAR", message_RU: "Яростный рев" }],
+		"145-0": [{ type: "text", sub_type: "message", message_ES: "Pies (Stun)", message_RU: "Стан" }],
+//	    "157-0": [{ type: "text", sub_type: "message", message_ES: "Change", message_RU: "Смена" }],
 		"103-0": [
-			{ type: "text", sub_type: "message", message: "Cola (Vuela!!)", message_RU: "Хвост (полет)" },
-			{ type: "text", sub_type: "message", message: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
+			{ type: "text", sub_type: "message", message_ES: "Cola (Vuela!!)", message_RU: "Хвост (полет)" },
+			{ type: "text", sub_type: "message", message_ES: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
 			{ type: "spawn", func: "semicircle", args: [140, 260, 553, 0, 0, 10, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 135, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 260, 500, 0, 2000] }
 		],
 		"153-0": [
-			{ type: "text", sub_type: "message", message: "Cola (Vuela!!)", message_RU: "Хвост (полет!!)" },
-			{ type: "text", sub_type: "message", message: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
+			{ type: "text", sub_type: "message", message_ES: "Cola (Vuela!!)", message_RU: "Хвост (полет!!)" },
+			{ type: "text", sub_type: "message", message_ES: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
 			{ type: "spawn", func: "semicircle", args: [140, 260, 553, 0, 0, 10, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 135, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 260, 500, 0, 2000] }
 		],
-		"118-0": [{ type: "text", sub_type: "message", message: "Jugar al Alto (iframe)", message_RU: "Прыжок" }],
-//		"118-1": [{ type: "text", sub_type: "message", message: "Dodge", message_RU: "Эвейд!" }],
+		"118-0": [{ type: "text", sub_type: "message", message_ES: "Jugar al Alto (iframe)", message_RU: "Прыжок" }],
+//		"118-1": [{ type: "text", sub_type: "message", message_ES: "Dodge", message_RU: "Эвейд!" }],
 
 		// AOE лед (большой)
 		"104-0": [
-			{ type: "text", sub_type: "message", message: "Magia de HIELO (GRANDE)", message_RU: "Ледяные лужи" },
+			{ type: "text", sub_type: "message", message_ES: "Magia de HIELO (GRANDE)", message_RU: "Ледяные лужи" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 0, 5000] }
 		],
 		// AOE огонь (большой)
 		"105-0": [
-			{ type: "text", sub_type: "message", message: "AOE de FUEGO (GRANDE)", message_RU: "Огненные бомбы" },
+			{ type: "text", sub_type: "message", message_ES: "AOE de FUEGO (GRANDE)", message_RU: "Огненные бомбы" },
 			{ type: "spawn", func: "circle", args: [false, 553, 135, 500, 10, 270, 0, 3000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 315, 500, 10, 270, 0, 3250] },
 			{ type: "spawn", func: "circle", args: [false, 553, 45, 500, 10, 270, 0, 3500] },
@@ -334,27 +334,27 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		// AOE лед (малый)
 		"154-0": [
-			{ type: "text", sub_type: "message", message: "Magia de HIELO (Pequeno)", message_RU: "Ледяной шторм" },
+			{ type: "text", sub_type: "message", message_ES: "Magia de HIELO (Pequeno)", message_RU: "Ледяной шторм" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 0, 6000] }
 		],
 		// AOE огонь (малый)
-		"155-0": [{ type: "text", sub_type: "message", message: "AOE de FUEGO (Pequeno)", message_RU: "Огненный столб (опрокид)" }
-//			{ type: "text", sub_type: "message", delay: 1200, message: "Esquiva", message_RU: "Эвейд" }
+		"155-0": [{ type: "text", sub_type: "message", message_ES: "AOE de FUEGO (Pequeno)", message_RU: "Огненный столб (опрокид)" }
+//			{ type: "text", sub_type: "message", delay: 1200, message_ES: "Esquiva", message_RU: "Эвейд" }
 		],
 
-		"206-0": [{ type: "text", sub_type: "message", message: "Salto Atras", message_RU: "Прыжок назад" }],
+		"206-0": [{ type: "text", sub_type: "message", message_ES: "Salto Atras", message_RU: "Прыжок назад" }],
 //		"206-2": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 350, 0, 3000] }],
-        "164-0": [{ type: "text", sub_type: "message", message: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }], 
-		"165-0": [{ type: "text", sub_type: "message", message: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }],
-		"137-0": [{ type: "text", sub_type: "message", message: "Tumbar + Explosion Ampla (50metros)", message_RU: "Опрокидывание" }],
-		"138-0": [{ type: "text", sub_type: "message", message: "Explosion Ampla!!", message_RU: "AOE" }],
+        "164-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }], 
+		"165-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }],
+		"137-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar + Explosion Ampla (50metros)", message_RU: "Опрокидывание" }],
+		"138-0": [{ type: "text", sub_type: "message", message_ES: "Explosion Ampla!!", message_RU: "AOE" }],
 		"139-0": [
-			{ type: "text", sub_type: "message", message: "[Temperatura] 60+ TODOS (HIELO)", message_RU: "60° (Огонь всем)" }
-//			{ type: "text", sub_type: "message", delay: 4000, message: "Lower the temp", message_RU: "Снизить температуру" }
+			{ type: "text", sub_type: "message", message_ES: "[Temperatura] 60+ TODOS (HIELO)", message_RU: "60° (Огонь всем)" }
+//			{ type: "text", sub_type: "message", delay: 4000, message_ES: "Lower the temp", message_RU: "Снизить температуру" }
 		],
 		"140-0": [
-			{ type: "text", sub_type: "message", message: "[Temperatura] 40- TODOS (FUEGO)", message_RU: "40° (Лед всем)" }
-//			{ type: "text", sub_type: "message", delay: 4000, message: "Raise the temp", message_RU: "Повысить температуру" }
+			{ type: "text", sub_type: "message", message_ES: "[Temperatura] 40- TODOS (FUEGO)", message_RU: "40° (Лед всем)" }
+//			{ type: "text", sub_type: "message", delay: 4000, message_ES: "Raise the temp", message_RU: "Повысить температуру" }
 		],
 
 		"nd-3026-1000": [
