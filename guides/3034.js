@@ -89,32 +89,32 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		}
 	}
 	function print_mech(next, code) {
-		let message = "",
+		let message_ES = "",
 			message_RU = "",
 			sub_type = "message";
 
 		if (next) {
-			message += "Next: ";
+			message_ES += "Next: ";
 			message_RU += "Далее: ";
 			sub_type = "notification";
 		}
 
 		if (mech_reverse) {
-			message += `${mech_messages[msg_b].message} + ${mech_messages[msg_a].message}`;
+			message_ES += `${mech_messages[msg_b].message_ES} + ${mech_messages[msg_a].message_ES}`;
 			message_RU += `${mech_messages[msg_b].message_RU} + ${mech_messages[msg_a].message_RU}`;
 		} else {
-			message += `${mech_messages[msg_a].message} + ${mech_messages[msg_b].message}`;
+			message_ES += `${mech_messages[msg_a].message_ES} + ${mech_messages[msg_b].message_ES}`;
 			message_RU += `${mech_messages[msg_a].message_RU} + ${mech_messages[msg_b].message_RU}`;
 		}
 
 		if (code) {
-			message += `, Code: ${mech_reverse ? "0" : "1"}`;
+			message_ES += `, Code: ${mech_reverse ? "0" : "1"}`;
 			message_RU += `, Код: ${mech_reverse ? "0" : "1"}`;
 		}
 
 		handlers.text({
 			sub_type: sub_type,
-			message_ES: message,
+			message_ES: message_ES,
 			message_RU: message_RU
 		});
 	}
@@ -341,7 +341,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 200, 0, 3000] }
 		],
 		// Safe: |||2|2||| > ||||1|||| > ||3|||3||
-		"s-3034-2000-310-0": [{ type: "text", sub_type: "message", message_ES: "2 - 1 - 3" },
+		"s-3034-2000-310-0": [{ type: "text", sub_type: "message", message: "2 - 1 - 3" },
 			{ type: "spawn", func: "marker", args: [false, 40, 220, 0, 1500, true, null] },     // 2
 			{ type: "spawn", func: "marker", args: [false, -40, 220, 0, 1500, true, null] },    // 2
 			{ type: "spawn", func: "marker", args: [false, 0, 150, 1600, 1500, true, null] },   // 1
@@ -349,7 +349,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "marker", args: [false, -60, 300, 3200, 1500, true, null] }, // 3
 		],
 		// Safe: ||||1|||| > ||3|||3|| > |||2|2|||
-		"s-3034-2000-311-0": [{ type: "text", sub_type: "message", message_ES: "1 - 3 - 2" },
+		"s-3034-2000-311-0": [{ type: "text", sub_type: "message", message: "1 - 3 - 2" },
 			{ type: "spawn", func: "marker", args: [false, 0, 150, 0, 1500, true, null] },      // 1
 			{ type: "spawn", func: "marker", args: [false, 60, 300, 1600, 1500, true, null] },  // 3
 			{ type: "spawn", func: "marker", args: [false, -60, 300, 1600, 1500, true, null] }, // 3
@@ -382,7 +382,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"h-3034-3000-99": [{ type: "func", func: thirdboss_start_event }],
 		"h-3034-3000-70": [
-			{ type: "text", sub_type: "message", message_ES: "70%", message_RU: "70%" },
+			{ type: "text", sub_type: "message", message: "70%", message_RU: "70%" },
 			{ type: "func", func: thirdboss_seventy_event }
 		],
 		//
