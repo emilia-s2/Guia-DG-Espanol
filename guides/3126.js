@@ -81,7 +81,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				dispatch.setTimeout(() => {
 					handlers.text({
 						sub_type: "alert",
-						message_ES: (`${debuff_messages[debuff % 2].message}`),
+						message_ES: (`${debuff_messages[debuff % 2].message_ES}`),
 						message_RU: (`${debuff_messages[debuff % 2].message_RU}`)
 					});
 				}, 2000);
@@ -126,7 +126,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		if (blue) {
 			handlers.text({
 				sub_type: "message",
-				message_ES: (`${mech_messages[(qbacting + debuff + 1) % 2].message}`),
+				message_ES: (`${mech_messages[(qbacting + debuff + 1) % 2].message_ES}`),
 				message_RU: (`${mech_messages[(qbacting + debuff + 1) % 2].message_RU}`)
 			});
 
@@ -134,7 +134,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		} else if (red) {
 			handlers.text({
 				sub_type: "message",
-				message_ES: (`${mech_messages[(qbacting + debuff) % 2].message}`),
+				message_ES: (`${mech_messages[(qbacting + debuff) % 2].message_ES}`),
 				message_RU: (`${mech_messages[(qbacting + debuff) % 2].message_RU}`)
 			});
 
@@ -222,7 +222,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				if (debuff != null) {
 					handlers.text({
 						sub_type: "message",
-						message_ES: (`Hielo (${qbacting_messages[qbacting].message}) | ${mech_messages[debuff % 2 + 2].message} | ${mech_messages[(qbacting + debuff + 1) % 2].message}`),
+						message_ES: (`Hielo (${qbacting_messages[qbacting].message_ES}) | ${mech_messages[debuff % 2 + 2].message_ES} | ${mech_messages[(qbacting + debuff + 1) % 2].message_ES}`),
 						message_RU: (`Внутри лед (${qbacting_messages[qbacting].message_RU}) | ${mech_messages[debuff % 2 + 2].message_RU} | ${mech_messages[(qbacting + debuff + 1) % 2].message_RU}`),
 					});
 
@@ -230,7 +230,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				} else {
 					handlers.text({
 						sub_type: "message",
-						message_ES: (`Hielo (${qbacting_messages[qbacting].message})`),
+						message_ES: (`Hielo (${qbacting_messages[qbacting].message_ES})`),
 						message_RU: (`Внутри лед (${qbacting_messages[qbacting].message_RU})`)
 					});
 				}
@@ -252,7 +252,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				if (debuff != null) {
 					handlers.text({
 						sub_type: "message",
-						message_ES: (`Fuego (${qbacting_messages[qbacting].message}) | ${mech_messages[debuff % 2 + 2].message} | ${mech_messages[(qbacting + debuff) % 2].message}`),
+						message_ES: (`Fuego (${qbacting_messages[qbacting].message_ES}) | ${mech_messages[debuff % 2 + 2].message_ES} | ${mech_messages[(qbacting + debuff) % 2].message_ES}`),
 						message_RU: (`Внутри огонь (${qbacting_messages[qbacting].message_RU}) | ${mech_messages[debuff % 2 + 2].message_RU} | ${mech_messages[(qbacting + debuff) % 2].message_RU}`)
 					});
 
@@ -260,7 +260,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				} else {
 					handlers.text({
 						sub_type: "message",
-						message_ES: (`Fuego (${qbacting_messages[qbacting].message})`),
+						message_ES: (`Fuego (${qbacting_messages[qbacting].message_ES})`),
 						message_RU: (`Внутри огонь (${qbacting_messages[qbacting].message_RU})`)
 					});
 				}
