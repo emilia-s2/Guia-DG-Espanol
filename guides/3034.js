@@ -382,7 +382,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"h-3034-3000-99": [{ type: "func", func: thirdboss_start_event }],
 		"h-3034-3000-70": [
-			{ type: "text", sub_type: "message", message: "70%", message_RU: "70%" },
+			{ type: "text", sub_type: "message", message_ES: "70%", message_RU: "70%" },
 			{ type: "func", func: thirdboss_seventy_event }
 		],
 		//
