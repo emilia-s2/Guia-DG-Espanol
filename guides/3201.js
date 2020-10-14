@@ -47,21 +47,21 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			dispatch.setTimeout(() => notice = true, 4000);
 
 			dispatch.setTimeout(() => {
-				handlers.text({
+/*				handlers.text({
 					sub_type: "alert",
 					message_RU: "Скоро дебафф...",
 					message_ES: "Debuff Pronto..."
-				});
+				});*/
 			}, 55000);
 		}
 
 		if (notice && skillid === 234) {
-			dispatch.setTimeout(() => {
+/*			dispatch.setTimeout(() => {
 				handlers.text({
 					sub_type: "alert",
 					message_RU: "Скоро дебафф...",
 					message_ES: "Debuff Pronto..."
-				});	
+				});*/
 			}, 55000);
 		}
 	}
@@ -76,13 +76,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3201-1000-104-0": [{ type: "text", class_position:"tank", sub_type: "message", message_ES: "Stun Frontal", message_RU: "Стан!" }],
 		"s-3201-1000-107-0": [
 			{ type: "text", sub_type: "message", message_ES: "Empujar Atras (Lento)", message_RU: "|Полоса|" },
-			{ type: "spawn", func: "vector", args: [413, 90, 139, 173, 800, 0, 3500] },  //Adicionado
-			{ type: "spawn", func: "vector", args: [413, 270, 139, -173, 800, 0, 3500] } //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 90, 139, 173, 800, 0, 3500] },  //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 270, 139, -173, 800, 0, 3500] } //Adicionado
 		],
 
 		"s-3201-1000-111-0": [{ type: "text", sub_type: "message", message_ES: "Spray Atras (Lento)", message_RU: "Волна назад" },
-			{ type: "spawn", func: "vector", args: [413, 0, 100, 112, 800, 0, 3500] },  //Adicionado
-			{ type: "spawn", func: "vector", args: [413, 0, 100, -112, 800, 0, 3500] }  //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 0, 100, 112, 800, 0, 3500] },  //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 0, 100, -112, 800, 0, 3500] }  //Adicionado
 		],
 		"s-3201-1000-112-0": [{ type: "text", sub_type: "message", message_ES: "<-Spray IZQUIERDO e DERECHO->", message_RU: "Лево + Право" }],
 		"s-3201-1000-113-0": [
@@ -104,14 +104,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3201-1000-124-0": [{ type: "text", class_position:"tank", sub_type: "message", message_ES: "Stun Frontal", message_RU: "Стан (фаст)" }],
 		"s-3201-1000-127-0": [{ type: "text", class_position:"dps", sub_type: "message", message_ES: "Empujar Atras (Rapido)", message_RU: "Полоса (фаст)" },
 			{ type: "text", class_position:"heal", sub_type: "message", message_ES: "Empujar Atras (Rapido)", message_RU: "Полоса (фаст)" },
-			{ type: "spawn", func: "vector", args: [413, 90, 139, 173, 800, 0, 2000] },  //Adicionado
-			{ type: "spawn", func: "vector", args: [413, 270, 139, -173, 800, 0, 2000] } //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 90, 139, 173, 800, 0, 2000] },  //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 270, 139, -173, 800, 0, 2000] } //Adicionado
 		],
 		//"s-3201-1000-128-0": [{ type: "text", class_position:"tank", sub_type: "message", message_ES: "Triple Attack", message_RU: "Комба" }],
 		"s-3201-1000-131-0": [{ type: "text", class_position:"dps", sub_type: "message", message_ES: "Spray Atras (Rapido)", message_RU: "Волна назад (фаст)" },
 			{ type: "text", class_position:"heal", sub_type: "message", message_ES: "Spray Atras (Rapido)", message_RU: "Волна назад (фаст)" },
-			{ type: "spawn", func: "vector", args: [413, 0, 100, 112, 800, 0, 2000] }, //Adicionado
-			{ type: "spawn", func: "vector", args: [413, 0, 100, -112, 800, 0, 2000] } //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 0, 100, 112, 800, 0, 2000] }, //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 0, 100, -112, 800, 0, 2000] } //Adicionado
 		],
 		"s-3201-1000-132-0": [{ type: "text", sub_type: "message", message_ES: "<-Spray IZQUIERDO e DERECHO->", message_RU: "Лево + Право (фаст)" }],
 		"s-3201-1000-133-0": [{ type: "text", sub_type: "message", delay: 0, message_ES: "Salto (Rapido)", message_RU: "Прыжок (фаст)" },
@@ -145,10 +145,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "marker", args: [false, 225, 300, 2500, 5000, true, null] }  // 6
 		],*/
 		"s-3201-1000-148-0": [{ type: "text", sub_type: "message", message_ES: "Golpe Mano Derecha (volando)", message_RU: "Правая рука (подлет)" },
-			{ type: "spawn", func: "circle", args: [false, 413, 20, 150, 10, 320, 0, 4000] }  //Adicionado
+			{ type: "spawn", func: "circle", args: [false, 553, 20, 150, 10, 320, 0, 4000] }  //Adicionado
 		],
 		"s-3201-1000-149-0": [{ type: "text", sub_type: "message", message_ES: "Golpe Mano Izquierda (volando)", message_RU: "Левая рука (подлет)" },
-			{ type: "spawn", func: "circle", args: [false, 413, 340, 150, 10, 320, 0, 4000] }  //Adicionado
+			{ type: "spawn", func: "circle", args: [false, 553, 340, 150, 10, 320, 0, 4000] }  //Adicionado
 		],
 		"s-3201-1000-151-0": [{ type: "text", sub_type: "message", message_ES: "Ataque Stun", message_RU: "Стан!" }],
 		"s-3201-1000-305-0": [{ type: "text", sub_type: "message", message_ES: "Pizza", message_RU: "Pizza" }],
