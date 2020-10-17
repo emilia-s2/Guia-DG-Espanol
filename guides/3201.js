@@ -56,8 +56,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		}
 
 		if (notice && skillid === 234) {
-/*			dispatch.setTimeout(() => {
-				handlers.text({
+			dispatch.setTimeout(() => {
+/*				handlers.text({
 					sub_type: "alert",
 					message_RU: "Скоро дебафф...",
 					message_ES: "Debuff Pronto..."
