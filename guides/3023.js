@@ -63,7 +63,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				timer2 = dispatch.setTimeout(() => debuff = 0, 70000);
 				break;
 
-			case 99020020: // debuff removed
+			default: // debuff removed
 				debuff = 0;
 
 				dispatch.clearTimeout(timer1);
@@ -72,17 +72,15 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		}
 	}
 
-	function firstboss_start_event() {
-		debuff = 0;
-	}
-
 	return {
+		"die": [{ type: "func", func: firstboss_debuff_event }], // Debuff removed
+
 		// 1 BOSS
 		"nd-3023-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"ns-3023-1000": [{ type: "func", func: firstboss_start_event }],
+		"ns-3023-1000": [{ type: "func", func: firstboss_debuff_event }],
 		"s-3023-1000-104-0": [{ type: "text", sub_type: "message", message_ES: "Salto Stun", message_RU: "Прыжок + Стан" }],
 		"s-3023-1000-105-0": [{ type: "text", sub_type: "message", message_ES: "CUIDADO", message_RU: "Поворот назад" }],
 		"s-3023-1000-110-0": [
@@ -152,7 +150,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"am-3023-1000-30231000": [{ type: "func", func: firstboss_debuff_event, args: [30231000] }],
 		"am-3023-1000-30231001": [{ type: "func", func: firstboss_debuff_event, args: [30231001] }],
-		"ae-0-0-99020020": [{ type: "func", func: firstboss_debuff_event, args: [99020020] }], // Debuff removed
 		"ae-0-0-30231000": [{ type: "func", func: firstboss_debuff_event, args: [30231000] }], // Red debuff
 		"ae-0-0-30231001": [{ type: "func", func: firstboss_debuff_event, args: [30231001] }], // Blue debuff
 		"s-3023-1000-3107-0": [

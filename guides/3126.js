@@ -277,11 +277,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			dispatch.setTimeout(() => blue = false, 9400);
 		}
 
-		if (skillid === 99020020) { // Death release debuff
-			dispatch.clearTimeout(timer1);
-			dispatch.clearTimeout(timer2);
-		}
-
 		if (!debuff_tracker_started) {
 			dispatch.hook("S_ABNORMALITY_BEGIN", 4, abnormality_change.bind(null, true));
 			dispatch.hook("S_ABNORMALITY_END", 1, abnormality_change.bind(null, false));
@@ -368,6 +363,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 4000, message_ES: "Abaja la temperatura", message_RU: "Повысить температуру" }
 		],
 
+		"die": [{ type: "func", func: debuff_removed }],
 		"nd-3126-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
@@ -380,7 +376,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"qb-3126-1000-3026004": [{ type: "func", func: skilld_event, args: [3026004] }], // ярость, разные цвета
 		"qb-3126-1000-3126005": [{ type: "func", func: skilld_event, args: [3126005] }], // ужас, одинаковые цвета
 		"qb-3126-1000-3126004": [{ type: "func", func: skilld_event, args: [3126004] }], // ярость, разные цвета
-		"ae-0-0-99020020": [{ type: "func", func: skilld_event, args: [99020020] }],
 		"am-3126-1000-30260001": [{ type: "func", func: skilld_event, args: [30260001] }], // красный
 		"am-3126-1000-30260002": [{ type: "func", func: skilld_event, args: [30260002] }], // синий
 		"am-3126-1000-31260001": [{ type: "func", func: skilld_event, args: [31260001] }], // красный
@@ -392,7 +387,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"am-3126-1000-31260067": [{ type: "text", sub_type: "message", message_ES: "[Debuff] Layer 2", message_RU: "[Дебафф] 2 стак" }],
 		"am-3126-1000-31260068": [
 			{ type: "text", sub_type: "message", message_ES: "[Debuff] Layer 3", message_RU: "[Дебафф] 3 стак" },
-			{ type: "text", sub_type: "message", delay: 145000, message_ES: "[Debuff] 2.5 minutos pasado", message_RU: "[Дебафф] Прошло 2.5 минуты (стаки удалены)" }
+			{ type: "text", sub_type: "message", delay: 120000, message_ES: "[Debuff] 2 minutos pasado", message_RU: "[Дебафф] Прошло 2.5 минуты (стаки удалены)" }
 		]
 	};
 
