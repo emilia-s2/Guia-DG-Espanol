@@ -26,7 +26,7 @@ ID | Nombre de las Dungeons
 
 ----
 ### Tera-Guide
-#### El módulo Guía de Dungeons cuenta con notificaciones de voz, mensajes en pantalla y marcadores de área de ataques y mecánicas de los bosses. Disponible  en idioma *Español*. 
+El módulo Guía de Dungeons cuenta con notificaciones de voz, mensajes en pantalla y marcadores de área de ataques y mecánicas de los bosses. Disponible  en idioma *Español*. 
 
 ----
 
@@ -93,7 +93,7 @@ proxy(/8) | Descripción de Comandos
 ###  
 
 ## Credits
-- **[Kasea](https://github.com/tera-toolbox-mods)** - Desenvolvedor original do módulo Tera-Guide
+- **[Kasea](https://github.com/Kaseaa)** - Desenvolvedor original do módulo Tera-Guide
 - **[hsdn](https://github.com/hsdn)** - Autor atual das principais funçoes e novidades
 - **[michengs](https://github.com/michengs)** - Autor do código base para a maioria dos guias e núcleo do módulo
 - **[Multarix](https://github.com/Multarix)** - Autor do guia RR e também fazendo alterações na tradução para o inglês
