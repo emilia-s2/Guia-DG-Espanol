@@ -5,76 +5,7 @@
 module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = ES;
 
-	let debuff = 0;
-	let timer1 = null;
-	let timer2 = null;
-
-	function firstboss_debuff_event(skillid) {
-		switch (skillid) {
-			case 3119: // red inside
-				if (debuff === 1) {
-					handlers.text({
-						sub_type: "message",
-						message_ES: "SALIR",
-						message_RU: "ОТ НЕГО"
-					});
-				}
-				if (debuff === 2) {
-					handlers.text({
-						sub_type: "message",
-						message_ES: "ENTRAR",
-						message_RU: "К НЕМУ"
-					});
-				}
-				break;
-				
-			case 3220: // blue inside
-				if (debuff === 1) {
-					handlers.text({
-						sub_type: "message",
-						message_ES: "ENTRAR",
-						message_RU: "К НЕМУ"
-					});
-				}
-				if (debuff === 2) {
-					handlers.text({
-						sub_type: "message",
-						message_ES: "SALIR",
-						message_RU: "ОТ НЕГО"
-					});
-				}
-				break;
-
-			case 30231000: // red debuff
-				debuff = 1;
-
-				dispatch.clearTimeout(timer1);
-				dispatch.clearTimeout(timer2);
-
-				timer1 = dispatch.setTimeout(() => debuff = 0, 70000);
-				break;
-
-			case 30231001: // blue debuff
-				debuff = 2;
-
-				dispatch.clearTimeout(timer2);
-				dispatch.clearTimeout(timer1);
-
-				timer2 = dispatch.setTimeout(() => debuff = 0, 70000);
-				break;
-
-			case 99020020: // debuff removed
-				debuff = 0;
-
-				dispatch.clearTimeout(timer1);
-				dispatch.clearTimeout(timer2);
-				break;
-		}
-	}
-
-	function firstboss_start_event() {
-		debuff = 0;
-	}
+	let debuff = null; // default debuff
 
 	return {
 		// 1 BOSS
@@ -82,7 +13,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"ns-3023-1000": [{ type: "func", func: firstboss_start_event }],
+		// Debuff removed
+		"die": [{ type: "func", func: () => { debuff = null; } }],
+		// Debuf added
+		"ae-0-0-30231000": [{ type: "func", func: () => { debuff = 1; } }], // AoE (red)
+		"ae-0-0-30231001": [{ type: "func", func: () => { debuff = 2; } }], // AoE (blue)
+		"am-3023-1000-30231000": [{ type: "func", func: () => { debuff = 1; } }], // Red
+		"am-3023-1000-30231001": [{ type: "func", func: () => { debuff = 2; } }], // Blue
+		//
 		"s-3023-1000-104-0": [{ type: "text", sub_type: "message", message_ES: "Salto Stun", message_RU: "Прыжок + Стан" }],
 		"s-3023-1000-105-0": [{ type: "text", sub_type: "message", message_ES: "CUIDADO", message_RU: "Поворот назад" }],
 		"s-3023-1000-110-0": [
@@ -115,7 +53,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_ES: "Derecha SLASH", message_RU: "Правая полоса", class_position: "tank" },
 			{ type: "text", sub_type: "message", message_ES: "Izquierda SLASH", message_RU: "Правая полоса", class_position: "heal" },
 			{ type: "text", sub_type: "message", message_ES: "Izquierda SLASH", message_RU: "Правая полоса", class_position: "dps" },
-			{ type: "func", func: firstboss_debuff_event, args: [1113] },
 			{ type: "spawn", func: "vector", args: [553, 270, 200, 180, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 200, 0, 300, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 90, 20, 180, 500, 0, 2000] },
@@ -127,7 +64,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_ES: "Izquierda SLASH", message_RU: "Правая полоса", class_position: "tank" },
 			{ type: "text", sub_type: "message", message_ES: "Derecha SLASH", message_RU: "Правая полоса", class_position: "heal" },
 			{ type: "text", sub_type: "message", message_ES: "Derecha SLASH", message_RU: "Правая полоса", class_position: "dps" },
-			{ type: "func", func: firstboss_debuff_event, args: [1114] },
 			{ type: "spawn", func: "vector", args: [553, 90, 200, 180, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 90, 200, 0, 300, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 20, 180, 500, 0, 2000] },
@@ -150,11 +86,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_ES: "Thrall of Protection", message_RU: "Кайа", class_position: "mystic" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 0, 4000] }
 		],
-		"am-3023-1000-30231000": [{ type: "func", func: firstboss_debuff_event, args: [30231000] }],
-		"am-3023-1000-30231001": [{ type: "func", func: firstboss_debuff_event, args: [30231001] }],
-		"ae-0-0-99020020": [{ type: "func", func: firstboss_debuff_event, args: [99020020] }], // Debuff removed
-		"ae-0-0-30231000": [{ type: "func", func: firstboss_debuff_event, args: [30231000] }], // Red debuff
-		"ae-0-0-30231001": [{ type: "func", func: firstboss_debuff_event, args: [30231001] }], // Blue debuff
 		"s-3023-1000-3107-0": [
 			{ type: "text", sub_type: "message", message_ES: "Ola a Frente", message_RU: "Конус вперед" },
 			{ type: "spawn", func: "vector", args: [553, 90, 80, 10, 1000, 0, 2500] },
@@ -168,16 +99,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_ES: "Circulos + Ataque Rotativo", message_RU: "Круги + Крутилка" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 335, 0, 5000] } // Alterado 320>335 abrir
 		],
-		"s-3023-1000-3119-0": [
-			{ type: "func", func: firstboss_debuff_event, args: [3119] }
-//			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 270, 0, 4000] },
-//			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 575, 0, 4000] }
-		],
-		"s-3023-1000-3220-0": [
-			{ type: "func", func: firstboss_debuff_event, args: [3220] }
-//			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 270, 0, 4000] },
-//			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 575, 0, 4000] }
-		],
+		"s-3023-1000-3119-0": [ // red inside
+            { type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "ОТ НЕГО", check_func: () => { return debuff === 1 }, delay: 500 },
+            { type: "text", sub_type: "message", message_ES: "ENTRAR", message_RU: "К НЕМУ", check_func: () => { return debuff === 2 }, delay: 500 },
+            { type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 270, 0, 4000] },
+            { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 650, 0, 4000] }
+        ],
+        "s-3023-1000-3220-0": [ // blue inside
+            { type: "text", sub_type: "message", message_ES: "ENTRAR", message_RU: "К НЕМУ", check_func: () => { return debuff === 1 }, delay: 500 },
+            { type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "ОТ НЕГО", check_func: () => { return debuff === 2 }, delay: 500 },
+            { type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 270, 0, 4000] },
+            { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 650, 0, 4000] }
+        ],
 
 		// 2 BOSS
 		"nd-3023-2000": [
