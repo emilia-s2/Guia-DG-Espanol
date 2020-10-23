@@ -32,9 +32,15 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3102-1000-112-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Atras Patada", message_RU: "Разворот | Откид назад" },
-			{ type: "spawn", func: "semicircle", args: [144, 219, 553, 0, 0, 9, 345, 0, 3000] },
-			{ type: "spawn", func: "vector", args: [553, 90, 100, 158, 270, 0, 3000] },
-			{ type: "spawn", func: "vector", args: [553, 270, 100, -158, 270, 0, 3000] }
+			{ type: "spawn", func: "vector", args: [553, 70, 110, 160, 350, 0, 3000] },
+			{ type: "spawn", func: "vector", args: [553, 290, 110, -160, 350, 0, 3000] },
+			{ type: "spawn", func: "point", args: [553, 210, 360, 0, 3000] },
+    		{ type: "spawn", func: "point", args: [553, 200, 350, 0, 3000] },
+            { type: "spawn", func: "point", args: [553, 190, 343, 0, 3000] },
+			{ type: "spawn", func: "point", args: [553, 150, 360, 0, 3000] },
+			{ type: "spawn", func: "point", args: [553, 160, 350, 0, 3000] },
+			{ type: "spawn", func: "point", args: [553, 170, 343, 0, 3000] },
+            { type: "spawn", func: "point", args: [553, 180, 340, 0, 3000] }
 		],
 		"s-3102-1000-110-0": [
 			{ type: "text", sub_type: "message", message_ES: "Ola DENTRO", message_RU: "Бублики + Волна" },
