@@ -15,7 +15,7 @@ const DefaultSettings = {
 	"cc": [
 		"</font><font color=\"#8eff05\">"
 	],
-	"language": "es",
+	"language": "auto",
 	"dungeons": {},
 	"debug": {
 		"chat": true,
@@ -35,7 +35,6 @@ const DefaultSettings = {
 };
 
 module.exports = function MigrateSettings(from_ver, to_ver, settings) {
-
 	if (from_ver === undefined) return Object.assign(Object.assign({}, DefaultSettings), settings);
 	else if (from_ver === null) return DefaultSettings;
 	else {
@@ -53,60 +52,54 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
 		to_ver = Math.round(to_ver * 100) / 100;
 
 		switch (to_ver) {
-            case 1.12:
-                for (const option in oldsettings) {
-                    if (option == "dungeons") {
-                        settings[option] = {};
-                        for (const element of oldsettings[option]) {
-                            let id = element.id;
-                            delete element.id;
-                            settings[option][id] = element;
-                        }
-                        continue;
-                    } else {
-                        settings[option] = oldsettings[option];
-                    }
-                }
-                return settings;
+			case 1.12:
+				for (const option in oldsettings) {
+					if (option === "dungeons" && Array.isArray(oldsettings[option])) {
+						settings[option] = {};
+						for (const element of oldsettings[option]) {
+							const id = element.id;
+							delete element.id;
+							settings[option][id] = element;
+						}
+						continue;
+					} else
+						settings[option] = oldsettings[option];
+				}
+				return settings;
 
-            case 1.13:
-                remove(["dbg.json", "lib.js", "dispatch.js", "voice/index.js", "voice"]);
-                break;
+			case 1.13:
+				remove(["dbg.json", "lib.js", "dispatch.js", "voice/index.js", "voice"]);
+				break;
 
-            case 1.14:
-                oldsettings["debug"] = settings["debug"];
-                break;
+			case 1.14:
+				oldsettings["debug"] = settings["debug"];
+				break;
 
-            case 1.15:
-                for (const option in oldsettings) {
-                    if (option == "speaks") {
-                        settings["speech"]["enabled"] = oldsettings["speaks"];
-                    } else if (option == "rate") {
-                        settings["speech"]["rate"] = parseInt(oldsettings["rate"]);
-                    } else {
-                        settings[option] = oldsettings[option];
-                    }
-                }
-                return settings;
+			case 1.15:
+				for (const option in oldsettings) {
+					if (option === "speaks")
+						settings["speech"]["enabled"] = oldsettings["speaks"];
+					else if (option === "rate")
+						settings["speech"]["rate"] = parseInt(oldsettings["rate"]);
+					else
+						settings[option] = oldsettings[option];
+				}
+				return settings;
+		}
 
-            case 1.17:
-                for (const option in oldsettings) {
-                    if (option == "language") {
-                        settings[option] = "es";
-                    } else {
-                        settings[option] = oldsettings[option];
-                    }
-                }
-                return settings;
-		    }
-	   }
-		
+		for (const option in oldsettings) {
+			if (settings[option])
+				settings[option] = oldsettings[option];
+		}
+
+		return settings;
+	}
 
 	function remove(files) {
 		const fs = require("fs"), path = require("path");
 		try {
-			for (let file of files) {
-				let filePath = path.join(__dirname, file);
+			for (const file of files) {
+				const filePath = path.join(__dirname, file);
 				if (fs.existsSync(filePath)) {
 					if (fs.lstatSync(filePath).isDirectory())
 						fs.rmdirSync(filePath);

@@ -1,12 +1,13 @@
 "use strict";
 
-module.exports.NetworkMod = function (mod) {
-	try {
-		mod.require["tera-guide-core"].load(mod, {
-			colors: { gui: {}, general: {} }, // color settings
-			command: ["guia"], // module command
-			chat_name: "Guide-DG", // set chat author name for notices
-		});
+module.exports.NetworkMod = function(mod) {
+    try {
+        mod.require["tera-guide-core"].load(mod, {
+            colors: { gui: {}, general: {} }, // color settings
+            command: ["guia"], // module command
+            chat_name: "Guide-DG", // set chat author name for notices
+        });
+        mod.settings.language = "es";
 	} catch (e) {
 		mod.error("Warning!\nDepended module \"tera-guide-core\" needed for TERA-Guide is not installed!\nPlease download and install: https://github.com/hsdn/tera-guide-core\n");
 		throw e;
