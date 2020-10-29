@@ -44,25 +44,28 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-739-2000-303-0": [{ type: "text", sub_type: "message", message_ES: "Latigo", message_RU: "Кнут" }],
 
 		// 3 BOSS
-//		"h-739-3001-30": [{ type: "text", sub_type: "message", message_ES: "Reveal soon...", message_RU: "Скоро разоблачение..." }],
-		"s-739-3000-201-0": [
+		"nd-739-3001": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" }
+		],
+		"s-739-3001-201-0": [
 		    { type: "text", sub_type: "message", message_ES: "Rugido Fuerte (Stun)", message_RU: "Стан" },
 		    { type: "text", sub_type: "message", delay: 3800, message_ES: "Iframe", message_RU: "Эвейд!" }  
 		],	
-		"s-739-3000-107-0": [{ type: "text", sub_type: "message", message_ES: "Muchos Hits (Garras)", message_RU: "Несколько ударов" }],
-		"s-739-3000-115-0": [
+		"s-739-3001-107-0": [{ type: "text", sub_type: "message", message_ES: "Muchos Hits (Garras)", message_RU: "Несколько ударов" }],
+		"s-739-3001-115-0": [
 			{ type: "text", sub_type: "message", message_ES: "Rugido (Stun)", message_RU: "Стан" },
 			{ type: "text", sub_type: "message", delay: 1800, message_ES: "Iframe", message_RU: "Эвейд!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 6, 630, 0, 4000] }
 		],
-		"s-739-3000-118-0": [{ type: "text", sub_type: "message", message_ES: "Rasguno", message_RU: "Крутилка" }],
+		"s-739-3001-118-0": [{ type: "text", sub_type: "message", message_ES: "Rasguno", message_RU: "Крутилка" }],
 		// Revealed Argog
-		"s-739-3000-167-0": [{ type: "text", sub_type: "message", message_ES: "Muchos Hits (Garras)", message_RU: "Несколько ударов" }],
-		"s-739-3000-175-0": [
+		"s-739-3001-167-0": [{ type: "text", sub_type: "message", message_ES: "Muchos Hits (Garras)", message_RU: "Несколько ударов" }],
+		"s-739-3001-175-0": [
 			{ type: "text", sub_type: "message", message_ES: "Rugido (Stun)", message_RU: "Стан" },
 			{ type: "text", sub_type: "message", delay: 1800, message_ES: "Iframe", message_RU: "Эвейд!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 6, 630, 0, 4000] }
 		],
-		"s-739-3000-178-0": [{ type: "text", sub_type: "message", message_ES: "Rasguno (Sangrar)", message_RU: "Крутилка (Кровоток)" }]
+		"s-739-3001-178-0": [{ type: "text", sub_type: "message", message_ES: "Rasguno (Sangrar)", message_RU: "Крутилка (Кровоток)" }]
 	};
 };
