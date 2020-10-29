@@ -76,7 +76,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				]);
 
 				dispatch.setTimeout(() => green = false, 2000);
-			
+
 			// Проваливай - Ощути силу взрыва
 			// к нему (бублик вокруг босса) -> от него (круг перед боссом) -> от него (большой круг перед боссом)
 			} else if (purple && !boss_thirty) {
@@ -87,7 +87,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				]);
 
 				dispatch.setTimeout(() => purple = false, 2000);
-			
+
 			// < 30%
 			// Ближе! - Ощути силу взрыва
 			// от него (круг перед боссом) -> к нему (бублик вокруг босса) -> [волны] -> от него (большой круг перед боссом)
@@ -100,7 +100,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				]);
 
 				dispatch.setTimeout(() => purple = false, 2000);
-			
+
 			// < 30%
 			// Проваливай! - Ощути силу взрыва
 			// к нему (бублик вокруг босса) -> от него (круг перед боссом) -> [волны] -> от него (большой круг перед боссом)
@@ -138,7 +138,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	}
 
 	let debuff_tracker_started = false;
-	let debuffs_targe = {
+	const debuffs_targe = {
 		30209101: { message_ES: "Rayo", message_RU: "Молния (эвейд)" },
 		30209102: { message_ES: "Bruja", message_RU: "Ведьма (эвейд)" }
 	};

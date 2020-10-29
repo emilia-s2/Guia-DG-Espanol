@@ -78,7 +78,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		//"s-3203-1000-154-0": [{ type: "text", sub_type: "message", message_ES: "Jumping Kick", message_RU: "Удар в прыжке" }], // 154 310 116
 		// 310 116
-		"s-3203-1000-310-0": [ 
+		"s-3203-1000-310-0": [
 			{ type: "text", sub_type: "message", message_ES: "Giro Atras | Haymaker", message_RU: "Сальто назад | Мощный удар" },
 			{ type: "func", func: back_kick_event, args: [310] }
 		],

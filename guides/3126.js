@@ -79,7 +79,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 					message_RU: "Дебафф 15 сек."
 				});
 			}
-		}, 40000);
+		}, dispatch._mod.majorPatchVersion >= 99 ? 40000 : 55000);
 
 		timer2 = dispatch.setTimeout(() => {
 			if (debuff != null) {
@@ -89,7 +89,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 					message_RU: "Дебафф 10 сек."
 				});
 			}
-		}, 45000);
+		}, dispatch._mod.majorPatchVersion >= 99 ? 45000 : 60000);
 
 		timer3 = dispatch.setTimeout(() => {
 			if (debuff != null) {
@@ -99,7 +99,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 					message_RU: "Дебафф 5 сек."
 				});
 			}
-		}, 50000);
+		}, dispatch._mod.majorPatchVersion >= 99 ? 50000 : 65000);
 
 		if (blue) {
 			handlers.text({
@@ -199,7 +199,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 					handlers.text({
 						sub_type: "message",
 						message_ES: (`Hielo (${qbacting_messages[qbacting].message_ES}) | ${mech_messages[debuff % 2 + 2].message_ES} | ${mech_messages[(qbacting + debuff + 1) % 2].message_ES}`),
-						message_RU: (`Внутри лед (${qbacting_messages[qbacting].message_RU}) | ${mech_messages[debuff % 2 + 2].message_RU} | ${mech_messages[(qbacting + debuff + 1) % 2].message_RU}`),
+						message_RU: (`Внутри лед (${qbacting_messages[qbacting].message_RU}) | ${mech_messages[debuff % 2 + 2].message_RU} | ${mech_messages[(qbacting + debuff + 1) % 2].message_RU}`)
 					});
 
 					spawn_marker((qbacting + debuff + 1) % 2);
@@ -367,9 +367,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		]
 	};
 
-	let object = {};
+	const object = {};
 
-	for (let [key, value] of Object.entries(skills)) {
+	for (const [key, value] of Object.entries(skills)) {
 		if (key.length === 5) {
 			object[`s-3126-1000-1${key}`] = value;
 			object[`s-3126-1000-2${key}`] = value;

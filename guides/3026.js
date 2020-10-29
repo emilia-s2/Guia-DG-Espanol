@@ -371,9 +371,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"am-3026-1000-31260002": [{ type: "func", func: skilld_event, args: [31260002] }] // синий
 	};
 
-	let object = {};
+	const object = {};
 
-	for (let [key, value] of Object.entries(skills)) {
+	for (const [key, value] of Object.entries(skills)) {
 		if (key.length === 5) {
 			object[`s-3026-1000-1${key}`] = value;
 			object[`s-3026-1000-2${key}`] = value;

@@ -122,18 +122,19 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	function thirdboss_sattack_event(skillid) {
 		// Safe: 116/119 [R] + 222-0 [R] > 222-1 [L] > 222-2 [R] > 326/327
 		// Safe: 117/118 [L] + 223-0 [L] > 223-1 [R] > 223-2 [L] > 326/327
-		let delay  = boss_seventy ? 2000 : 0,
-			duration = boss_seventy ? 800 : 900;
+		const delay = boss_seventy ? 2000 : 0;
+		let duration = boss_seventy ? 800 : 900;
+			
 		if ([1160, 1190].includes(skillid)) {
 			handlers.text({ sub_type: "message", delay: delay, message_ES: "DERECHA Seguro", message_RU: "Справа сейф" });
 		}
 		if ([1170, 1180].includes(skillid)) {
-			handlers.text({ sub_type: "message",delay: delay, message_ES: "IZQUIERDA Seguro", message_RU: "Слева сейф" });
+			handlers.text({ sub_type: "message", delay: delay, message_ES: "IZQUIERDA Seguro", message_RU: "Слева сейф" });
 		}
 		if ([1160, 1170, 1180, 1190].includes(skillid) && boss_seventy) { // <70%
 			if (mech_reverse) {
-				handlers.text({ sub_type: "message",message_ES: "Triplo-S | SALIR", message_RU: "Трипл-эска | От него" });
-				handlers.text({ sub_type: "message",delay: 4500, message_ES: "SALIR", message_RU: "От него" });
+				handlers.text({ sub_type: "message", message_ES: "Triplo-S | SALIR", message_RU: "Трипл-эска | От него" });
+				handlers.text({ sub_type: "message", delay: 4500, message_ES: "SALIR", message_RU: "От него" });
 			} else {
 				handlers.text({ sub_type: "message", message_ES: "Triplo-S | ENTRAR", message_RU: "Трипл-эска | К нему" });
 				handlers.text({ sub_type: "message", delay: 4500, message_ES: "ENTRAR", message_RU: "К нему" });
@@ -209,11 +210,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		   { type: "text", sub_type: "message", message_ES: "Ataque Atras", message_RU: "Удар назад" },
 		   { type: "spawn", func: "circle", args: [false, 553, 180, 250, 10, 200, 0, 2750] }   //Adicionado
 		],
-		"s-3034-1003-205-0": [{ type: "text", sub_type: "alert", message_ES: "Ventilador", message_RU: "Ветер (кайя)!" }],
-		"s-3034-1004-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
-		"s-3034-1005-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
-		"s-3034-1006-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
-		"s-3034-1007-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
+		"s-3034-1001-205-0": [{ type: "text", sub_type: "alert", message_ES: "Ventilador (Kaia)", message_RU: "Ветер (кайя)!" }],
+		"s-3034-1002-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
+		"s-3034-1003-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
+		"s-3034-1004-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
+		"s-3034-1005-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
+		"s-3034-1006-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
+		"s-3034-1007-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
+		"s-3034-1008-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
 		"s-3034-1000-304-0": [
 		   { type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "От него" },
 		   { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 350, 100, 4000] } // Adicionado
@@ -346,7 +350,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "marker", args: [false, -40, 220, 0, 1500, true, null] },    // 2
 			{ type: "spawn", func: "marker", args: [false, 0, 150, 1600, 1500, true, null] },   // 1
 			{ type: "spawn", func: "marker", args: [false, 60, 300, 1600, 1500, true, null] },  // 3
-			{ type: "spawn", func: "marker", args: [false, -60, 300, 3200, 1500, true, null] }, // 3
+			{ type: "spawn", func: "marker", args: [false, -60, 300, 3200, 1500, true, null] } // 3
 		],
 		// Safe: ||||1|||| > ||3|||3|| > |||2|2|||
 		"s-3034-2000-311-0": [{ type: "text", sub_type: "message", message: "1 - 3 - 2" },
@@ -354,7 +358,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "marker", args: [false, 60, 300, 1600, 1500, true, null] },  // 3
 			{ type: "spawn", func: "marker", args: [false, -60, 300, 1600, 1500, true, null] }, // 3
 			{ type: "spawn", func: "marker", args: [false, 40, 220, 3200, 1500, true, null] },  // 2
-			{ type: "spawn", func: "marker", args: [false, -40, 220, 3200, 1500, true, null] }, // 2
+			{ type: "spawn", func: "marker", args: [false, -40, 220, 3200, 1500, true, null] } // 2
 		],
 		"s-3034-2007-201-0": [
 			{ type: "spawn", func: "vector", args: [912, 0, 0, 0, 500, 0, 8000] },
@@ -376,7 +380,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		// 3 BOSS
-		"sd-3034-3000": [
+		"nd-3034-3000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
@@ -427,7 +431,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 180, 40, 120, 1200, 2000, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 180, 40, 240, 1200, 2000, 3000] }
 		],
-		"s-3034-3000-129-0": [{ type: "text", class_position:"tank", sub_type: "message", message_ES: "Esquiva", message_RU: "Эвейд" }],
+		"s-3034-3000-129-0": [{ type: "text", class_position: "tank", sub_type: "message", message_ES: "Esquiva", message_RU: "Эвейд" }],
 		"s-3034-3000-305-0": [{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 300, 0, 6000] }], // 3034301 3034302 3034303 -> 305
 		"s-3034-3000-321-0": [
 			{ type: "text", sub_type: "message", message_ES: "ESCUDO!", message_RU: "Щит!" },

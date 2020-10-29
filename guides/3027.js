@@ -79,7 +79,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3027-1003-257-0": [{ type: "spawn", func: "vector", args: [553, 0, 0, 0, 3000, 0, 5000] }],  //0
 		"s-3027-1004-258-0": [{ type: "spawn", func: "vector", args: [553, 0, 0, 0, 3000, 0, 5000] }],  //60
 
-		"s-3027-1000-108-0": [{ type: "text", class_position:"tank", sub_type: "message", message_ES: "Espadada Frontal (CUIDADO)", message_RU: "Меч (медленный)" }], // 101 121 122 -> 108
+		"s-3027-1000-108-0": [{ type: "text", class_position: "tank", sub_type: "message", message_ES: "Espadada Frontal (CUIDADO)", message_RU: "Меч (медленный)" }], // 101 121 122 -> 108
 		"s-3027-1000-355-0": [{ type: "text", sub_type: "message", message_ES: "Rompe Mandibula", message_RU: "Потрошение" }],                                 // 102 121 103 -> 355 -> 114
 		"s-3027-1000-135-0": [{ type: "text", sub_type: "message", message_ES: "Espadada Frontal (Lenta)", message_RU: "Меч (медленный)" }],                         //         104 -> 135 -> 130
 		"s-3027-1000-111-0": [{ type: "text", sub_type: "message", message_ES: "Stun Frontal", message_RU: "Стан | Меч" }],                              //         104 -> 111 -> 130
