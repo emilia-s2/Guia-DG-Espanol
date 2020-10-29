@@ -218,6 +218,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3034-1006-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
 		"s-3034-1007-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
 		"s-3034-1008-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
+		"s-3034-1009-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
+        "s-3034-1010-205-0": [{ type: "alias", id: "s-3034-1001-205-0" }],
 		"s-3034-1000-304-0": [
 		   { type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "От него" },
 		   { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 350, 100, 4000] } // Adicionado
