@@ -30,8 +30,9 @@ El módulo Guía de Dungeons cuenta con notificaciones de voz, mensajes en panta
 
 ----
 
-### (Original) Guide in english
-- **[Guide-HSDN](https://github.com/hsdn/tera-guide)**
+### Otras traducciones
+- **[Inglés (English) by HSDN](https://github.com/hsdn/tera-guide)**
+- **[Taiwanese (臺灣話) by michengs](https://github.com/michengs/Dungeon-guide)**
 
 ---
 ## Dependencies
