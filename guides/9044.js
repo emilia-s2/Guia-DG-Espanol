@@ -33,7 +33,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				{ type: "spawn", func: "vector", args: [553, 270, 50, 0, 500, 0, 6000] },
 				{ type: "spawn", func: "vector", args: [553, 90, 50, 180, 500, 0, 6000] },
 				{ type: "spawn", func: "vector", args: [553, 270, 50, 180, 500, 0, 6000] },
-				{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 6, 400, 0, 6000] },
+//				{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 6, 400, 0, 6000] },
 				{ type: "text", sub_type: "alert", delay: 60000, message_ES: "Olas Pronto...", message_RU: "Скоро волны..." }
 			]);
 		}

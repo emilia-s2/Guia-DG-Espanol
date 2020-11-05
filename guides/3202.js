@@ -18,15 +18,15 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3202-1000-105-0": [{ type: "text", sub_type: "message", message_ES: "Gancho | Stun", message_RU: "Удар снизу | Стан" }],
 		"s-3202-1000-106-0": [{ type: "text", sub_type: "message", message_ES: "Stun", message_RU: "Стан" }],
 		// 120 > 114
-		"s-3102-1000-120-0": [
+		"s-3202-1000-120-0": [
 		    { type: "text", sub_type: "message", delay: 300, message_ES: "Stun (Iframe)", message_RU: "Несколько ударов | Стан (AOE)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 0, 8, 425, 100, 3000] }
 		],
-//		"s-3102-1000-114-0": [
+//		"s-3202-1000-114-0": [
 //			{ type: "text", sub_type: "message", message_ES: "Stun (AOE)", message_RU: "Стан (AOE)" },
 
-		"s-3102-1000-111-0": [{ type: "text", sub_type: "message", message_ES: "Salto (Stun)", message_RU: "Прыжок (стан)" }],
-		"s-3102-1000-115-0": [
+		"s-3202-1000-111-0": [{ type: "text", sub_type: "message", message_ES: "Salto (Stun)", message_RU: "Прыжок (стан)" }],
+		"s-3202-1000-115-0": [
 			{ type: "text", sub_type: "message", message_ES: "AOE Bombas (Juntar)", message_RU: "AOE бомбы (вместе)" }
 //			{ type: "text", sub_type: "message", delay: 3000, message_ES: "Gather!", message_RU: "Собраться!" }
 		],
@@ -53,7 +53,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", delay: 1000, args: [true, 553, 180, 0, 8, 415, 0, 3000] }
 		],
 		"s-3202-1000-304-0": [{ type: "text", sub_type: "message", message_ES: "ESCUDO!", message_RU: "ЩИТ!" }],
-		"ab-3102-1000-31021006": [
+		"ab-3202-1000-31021006": [
 		    { type: "text", sub_type: "message", message_ES: "Plague of Exhaustion", message_RU: "Чума/регресс", "class_position": "priest" },
 			{ type: "text", sub_type: "message", message_ES: "Regression", message_RU: "Чума/регресс", "class_position": "mystic" }
 		],	
