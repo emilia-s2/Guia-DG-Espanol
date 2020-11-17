@@ -23,6 +23,7 @@ ID | Nombre de las Dungeons
 3103 | Forbidden Arena [Undying Warlord]
 3203 | Forbidden Arena [Nightmare Undying Warlord]
 9053 |	Kezzel's Gorge (5-Person)
+3036 |Sky Cruiser (Difícil)
 
 ----
 ### Tera-Guide
