@@ -43,4 +43,6 @@ module.exports = {
     "es": "Guardian Blightwood"},
 	7015: {
     "es": "Guardian Balder's Refuge"},
+	3036: {
+    "es": "Sky Cruiser (Dificil)"},
 };
