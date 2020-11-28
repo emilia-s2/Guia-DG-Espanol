@@ -58,8 +58,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		mech_counter--;
 
 		handlers.event([
-			{ type: "spawn", func: "vector", args: [553, 358, 0, 180, 500, 100, 1500] },
-			{ type: "spawn", func: "vector", args: [553, 358, 0, 0, 500, 100, 1500] }
+			{ type: "spawn", func: "vector", args: [553, 358, 0, 180, 1100, 100, 1500] },
+			{ type: "spawn", func: "vector", args: [553, 358, 0, 0, 1100, 100, 1500] }
 		]);
 
 		if (([1401, 1402].includes(skillid) ? (skillid % 2 + enrage) % 2 : skillid % 2) == 0) {
@@ -119,9 +119,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3036-1000-1103-0": [{ type: "func", func: boss_backattack_event }],
 		"s-3036-1000-1106-0": [{ type: "func", func: boss_backattack_event }],
 		"s-3036-1000-1112-0": [{ type: "text", sub_type: "message", message: "Back Move", message_ES: "Movimiento para Atrás" }],
-		"s-3036-1000-1115-0": [{ type: "text", sub_type: "message", delay: 3500, message: "Dodge", message_ES: "Esquiva" }],
+		"s-3036-1000-1115-0": [{ type: "text", sub_type: "message", delay: 3200, message: "Dodge", message_ES: "Iframe" }],
 		"s-3036-1000-1117-0": [{ type: "text", sub_type: "message", message: "Front", message_ES: "Frente" }],
-		"s-3036-1000-1118-0": [{ type: "text", sub_type: "message", message: "Front Cut | Dodge", message_ES: "Corte Frontal | Esquiva" }],
+		"s-3036-1000-1118-0": [{ type: "text", sub_type: "message", message: "Front Cut | Dodge", message_ES: "Corte Frontal | Iframe" }],
 		"s-3036-1000-1302-0": [
 			{ type: "text", sub_type: "message", message: "AOE", message_ES: "AOE" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 100, 6000] }
@@ -149,9 +149,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3036-1000-2103-0": [{ type: "func", func: boss_backattack_event }],
 		"s-3036-1000-2106-0": [{ type: "func", func: boss_backattack_event }],
 		"s-3036-1000-2112-0": [{ type: "text", sub_type: "message", message: "Back Move", message_ES: "Movimiento para Atrás" }],
-		"s-3036-1000-2115-0": [{ type: "text", sub_type: "message", delay: 3500, message: "Dodge", message_ES: "Esquiva" }],
+		"s-3036-1000-2115-0": [{ type: "text", sub_type: "message", delay: 3200, message: "Dodge", message_ES: "Iframe" }],
 		"s-3036-1000-2117-0": [{ type: "text", sub_type: "message", message: "Front", message_ES: "Frente" }],
-		"s-3036-1000-2118-0": [{ type: "text", sub_type: "message", message: "Front Cut | Dodge", message_ES: "Corte Frontal | Esquiva" }],
+		"s-3036-1000-2118-0": [{ type: "text", sub_type: "message", message: "Front Cut | Dodge", message_ES: "Corte Frontal | Iframe" }],
 		"qb-3036-1000-3036039": [{ type: "func", func: boss_tripleattack_event }],
 		"qb-3036-1000-3036040": [{ type: "func", func: boss_tripleattack_event }],
 		"qb-3036-1000-3036041": [{ type: "func", func: boss_tripleattack_event }]
