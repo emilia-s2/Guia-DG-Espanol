@@ -12,7 +12,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "warning", message: "(1)", speech: false, delay: 550 },
 			{ type: "text", sub_type: "warning", message: "(2)", speech: false, delay: 1300 },
 			{ type: "text", sub_type: "warning", message: "(3)", speech: false, delay: 2050 },
-			{ type: "text", sub_type: "message", message: "(4) Dodge!", message_ES: "(4) Iframe!", delay: 2800 }
+			{ type: "text", sub_type: "message", message: "(4) Dodge!", message_ES: "(4) Iframe!", delay: 2650 }
 		],
 		"s-456-1001-107-0": [{ type: "text", sub_type: "alert", message: "Shot", message_ES: "Disparo", speech: false }],
 

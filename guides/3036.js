@@ -119,9 +119,27 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3036-1000-1103-0": [{ type: "func", func: boss_backattack_event }],
 		"s-3036-1000-1106-0": [{ type: "func", func: boss_backattack_event }],
 		"s-3036-1000-1112-0": [{ type: "text", sub_type: "message", message: "Back Move", message_ES: "Movimiento para Atrás" }],
+		"s-3036-1000-1114-0": [
+			{ type: "text", sub_type: "message", message: "Invisible Fire", message_ES: "Fuego Invisible" },
+			{ type: "spawn", func: "vector", args: [553, 90, 150, 0, 1300, 0, 8830] },
+			{ type: "spawn", func: "vector", args: [553, 90, 75, 0, 1300, 0, 8830] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 0, 1300, 0, 8830] },
+			{ type: "spawn", func: "vector", args: [553, 270, 75, 0, 1300, 0, 8830] },
+			{ type: "spawn", func: "vector", args: [553, 270, 150, 0, 1300, 0, 8830] }
+		],
 		"s-3036-1000-1115-0": [{ type: "text", sub_type: "message", delay: 3200, message: "Dodge", message_ES: "Iframe" }],
 		"s-3036-1000-1117-0": [{ type: "text", sub_type: "message", message: "Front", message_ES: "Frente" }],
-		"s-3036-1000-1118-0": [{ type: "text", sub_type: "message", message: "Front Cut | Dodge", message_ES: "Corte Frontal | Iframe" }],
+		"s-3036-1000-1118-0": [
+			{ type: "text", sub_type: "message", message: "Front Cut | Dodge", message_ES: "Corte Frontal | Iframe" },
+			{ type: "spawn", func: "semicircle", args: [0, 60, 553, 0, 0, 15, 60, 0, 2000] },
+			{ type: "spawn", func: "semicircle", args: [0, 55, 553, 0, 0, 15, 160, 0, 2000] },
+			{ type: "spawn", func: "semicircle", args: [0, 45, 553, 0, 0, 10, 250, 0, 2000] },
+			{ type: "spawn", func: "semicircle", args: [0, 45, 553, 0, 0, 10, 340, 0, 2000] },
+			{ type: "spawn", func: "semicircle", args: [300, 360, 553, 0, 0, 15, 60, 0, 2000] },
+			{ type: "spawn", func: "semicircle", args: [305, 360, 553, 0, 0, 15, 160, 0, 2000] },
+			{ type: "spawn", func: "semicircle", args: [310, 360, 553, 0, 0, 10, 250, 0, 2000] },
+			{ type: "spawn", func: "semicircle", args: [315, 360, 553, 0, 0, 10, 340, 0, 2000] }
+		],
 		"s-3036-1000-1302-0": [
 			{ type: "text", sub_type: "message", message: "AOE", message_ES: "AOE" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 100, 6000] }
@@ -137,14 +155,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 2150, message: "IN", message_ES: "ENTRAR" },
 			{ type: "text", sub_type: "message", delay: 3050, message: "All | OUT", message_ES: "Todos | SALIR" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 250, 0, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 450, 0, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 430, 0, 6000] }
 		],
 		"s-3036-1000-1806-0": [
 			{ type: "text", sub_type: "message", message: "IN", message_ES: "ENTRAR" },
 			{ type: "text", sub_type: "message", delay: 2150, message: "Beween", message_ES: "Dentro" },
 			{ type: "text", sub_type: "message", delay: 3050, message: "All | IN", message_ES: "Todos | ENTRAR" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 250, 0, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 450, 0, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 430, 0, 6000] }
 		],
 		"s-3036-1000-2103-0": [{ type: "func", func: boss_backattack_event }],
 		"s-3036-1000-2106-0": [{ type: "func", func: boss_backattack_event }],
