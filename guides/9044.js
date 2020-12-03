@@ -139,12 +139,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-444-1000-2108-0": [{ type: "text", sub_type: "message", message_ES: "Martillo Atras (Stun)", message_RU: "Стан назад | Черенок" }],
 		"s-444-1000-2111-0": [
 			{ type: "text", sub_type: "message", message_ES: "Atras", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 8, 480, 100, 2000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-444-1000-2113-0": [{ type: "text", sub_type: "message", message_ES: "Bait (Esquiva)", message_RU: "Молот (байт)" }],
 		"s-444-1000-2114-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente Golpe", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 356, 260, 10, 320, 100, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 356, 260, 10, 320, 100, 3000] }
 		],
 		"s-444-1000-2115-0": [{ type: "text", sub_type: "message", delay: 234, message_ES: "Knockup", message_RU: "Черкаш (полет)" }],
 		"s-444-1000-2116-0": [
@@ -157,16 +157,16 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		//
 		"s-444-1000-2131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар в вперед | Левый черкаш" },
-						  { type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 4000] },
-						  { type: "spawn", func: "vector", args: [553, 90, 115, 185 ,800, 0, 4000] }, //direito abaixo
-						  { type: "spawn", func: "vector", args: [553, 90, 115, 5, 300, 0, 4000] }, //nao mexe
-						  { type: "spawn", func: "vector", args: [553, 270, 250, 5, 300, 0, 4000] },  //lados esquerdos   250? primero
-						  { type: "spawn", func: "vector", args: [553, 270, 250, 185, 800, 0, 4000] }   //200>110 | 250+ abre 250- fecha
+			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
 	],
 		//
 		"s-444-1000-2137-0": [
 			{ type: "text", sub_type: "message", message_ES: "Martillo Atras", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 8, 480, 100, 2000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-444-1000-2138-0": [{ type: "text", sub_type: "message", delay: 234, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
 		"s-444-1000-2139-0": [
@@ -189,12 +189,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-444-1000-1108-0": [{ type: "text", sub_type: "message", message_ES: "Martillo Atras (Stun)", message_RU: "Стан назад | Черенок" }],
 		"s-444-1000-1111-0": [
 			{ type: "text", sub_type: "message", message_ES: "Atras", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 8, 480, 100, 2000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-444-1000-1113-0": [{ type: "text", sub_type: "message", message_ES: "Bait (Esquiva)", message_RU: "Молот (байт)" }],
 		"s-444-1000-1114-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente Golpe", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 356, 260, 10, 320, 100, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 356, 260, 10, 320, 100, 3000] }
 		],
 		"s-444-1000-1115-0": [{ type: "text", sub_type: "message", delay: 1300, message_ES: "Knockup", message_RU: "Черкаш (полет)" }],
 		"s-444-1000-1116-0": [
@@ -209,15 +209,15 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-444-1000-1131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар вперед | Левый черкаш" },
-						  { type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 4000] },
-						  { type: "spawn", func: "vector", args: [553, 90, 115, 185 ,800, 0, 4000] }, //direito abaixo
-						  { type: "spawn", func: "vector", args: [553, 90, 115, 5, 300, 0, 4000] }, //nao mexe
-						  { type: "spawn", func: "vector", args: [553, 270, 250, 5, 300, 0, 4000] },  //lados esquerdos   250? primero
-						  { type: "spawn", func: "vector", args: [553, 270, 250, 185, 800, 0, 4000] }   //200>110 | 250+ abre 250- fecha
+			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
 	],
 		"s-444-1000-1137-0": [
 			{ type: "text", sub_type: "message", message_ES: "Martillo Atras", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 8, 480, 100, 2000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-444-1000-1138-0": [{ type: "text", sub_type: "message", delay: 1300, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
 		"s-444-1000-1139-0": [
@@ -261,18 +261,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-444-2000-1108-0": [{ type: "text", sub_type: "message", message_ES: "Martillo Atras (Stun)", message_RU: "Стан назад | Удар вперед" }],
 		"s-444-2000-1111-0": [
 			{ type: "text", sub_type: "message", message_ES: "Atras", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 8, 480, 100, 2000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-444-2000-1112-0": [
 			//{ type: "text", sub_type: "message", message_ES: "Perfect Defense", message_RU: "Идеальный блок" },
 			{ type: "text", sub_type: "message", delay: 1240, message_ES: "Defesa Perfecta", message_RU: "Идеальный блок" },
 			//{ type: "text", sub_type: "message", delay: 2040, message_ES: "1" },
-			{ type: "spawn", func: "circle", args: [false, 553, 356, 220, 12, 210, 100, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 356, 220, 12, 210, 100, 3000] }
 		],
 		"s-444-2000-1113-0": [{ type: "text", sub_type: "message", message_ES: "Bait (Esquiva)", message_RU: "Молот (байт)" }],
 		"s-444-2000-1114-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente Slam", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 356, 260, 10, 320, 100, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 356, 260, 10, 320, 100, 3000] }
 		],
 		"s-444-2000-1115-0": [{ type: "text", sub_type: "message", delay: 1300, message_ES: "Knockup", message_RU: "Черкаш (полет)" }],
 		"s-444-2000-1116-0": [
@@ -312,30 +312,30 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		//
 		"s-444-2000-1125-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Derecha Rasguno", message_RU: "Удар вперед | Правый черкаш" },
-		    { type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 4000] },
-		    { type: "spawn", func: "vector", args: [553, 356, 0, 180, 500, 100, 4000] },
-		    { type: "spawn", func: "vector", args: [553, 356, 0, 0, 500, 100, 4000] },
-		    { type: "spawn", func: "vector", args: [553, 90, 200, 0, 500, 100, 4000] },
-		    { type: "spawn", func: "vector", args: [553, 90, 200, 180, 500, 100, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3300] },
+			{ type: "spawn", func: "vector", args: [553, 60, 290, 175 ,800, 0, 3500] }, //Alterado
+			{ type: "spawn", func: "vector", args: [553, 60, 290, -5, 300, 0, 3500] },  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, -5, 300, 0, 3500] },  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, 175, 800, 0, 3500] }  //Alterado
 	],
 		"s-444-2000-1131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар вперед | Левый черкаш" },
-						  { type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 4000] },
-						  { type: "spawn", func: "vector", args: [553, 90, 115, 185 ,800, 0, 4000] }, //direito abaixo
-						  { type: "spawn", func: "vector", args: [553, 90, 115, 5, 300, 0, 4000] }, //nao mexe
-						  { type: "spawn", func: "vector", args: [553, 270, 250, 5, 300, 0, 4000] },  //lados esquerdos   250? primero
-						  { type: "spawn", func: "vector", args: [553, 270, 250, 185, 800, 0, 4000] }   //200>110 | 250+ abre 250- fecha
+			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
 	],
 		//
 		"s-444-2000-1135-0": [
 			//{ type: "text", sub_type: "message", message_ES: "Perfect Defense", message_RU: "Идеальный блок" },
 			{ type: "text", sub_type: "message", delay: 200, message_ES: "Defesa Perfecta", message_RU: "Идеальный блок" },
 			//{ type: "text", sub_type: "message", delay: 1535, message_ES: "1" },
-			{ type: "spawn", func: "circle", args: [false, 553, 356, 220, 12, 210, 100, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 356, 220, 12, 210, 100, 3000] }
 		],
 		"s-444-2000-1137-0": [
 			{ type: "text", sub_type: "message", message_ES: "Martillo Atras", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 8, 480, 100, 2000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-444-2000-1138-0": [{ type: "text", sub_type: "message", delay: 1300, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
 		"s-444-2000-1139-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
@@ -383,7 +383,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-444-2000-2108-0": [{ type: "text", sub_type: "message", message_ES: "Martillo Atras (Stun)", message_RU: "Стан назад | Удар вперед" }],
 		"s-444-2000-2111-0": [
 			{ type: "text", sub_type: "message", message_ES: "Atras", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 8, 480, 100, 2000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-444-2000-2112-0": [
 			//{ type: "text", sub_type: "message", message_ES: "Perfect Defense", message_RU: "Идеальный блок" },
@@ -391,12 +391,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 2700, message_ES: "x2" },
 			//{ type: "text", sub_type: "message", delay: 2800, message_ES: "1" },
 			//{ type: "text", sub_type: "message", delay: 3690, message_ES: "2" },
-			{ type: "spawn", func: "circle", args: [false, 553, 356, 220, 12, 210, 100, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 356, 220, 12, 210, 100, 3000] }
 		],
 		"s-444-2000-2113-0": [{ type: "text", sub_type: "message", message_ES: "Bait (Esquiva)", message_RU: "Молот (байт)" }],
 		"s-444-2000-2114-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente Slam", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 356, 260, 10, 320, 100, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 356, 260, 10, 320, 100, 3000] }
 		],
 		"s-444-2000-2115-0": [{ type: "text", sub_type: "message", delay: 234, message_ES: "Knockup", message_RU: "Черкаш (полет)" }],
 		"s-444-2000-2116-0": [
@@ -436,19 +436,19 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		//
 		"s-444-2000-2125-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Derecha Rasguno", message_RU: "Удар вперед | Правый черкаш" },
-		{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 4000] },
-		{ type: "spawn", func: "vector", args: [553, 356, 0, 180, 500, 100, 4000] },
-		{ type: "spawn", func: "vector", args: [553, 356, 0, 0, 500, 100, 4000] },
-		{ type: "spawn", func: "vector", args: [553, 90, 200, 0, 500, 100, 4000] },
-		{ type: "spawn", func: "vector", args: [553, 90, 200, 180, 500, 100, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3300] },
+			{ type: "spawn", func: "vector", args: [553, 60, 290, 175 ,800, 0, 3500] }, //Alterado
+			{ type: "spawn", func: "vector", args: [553, 60, 290, -5, 300, 0, 3500] },  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, -5, 300, 0, 3500] },  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, 175, 800, 0, 3500] }  //Alterado
 	],
 		"s-444-2000-2131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар вперед | Левый черкаш" },
-						  { type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 4000] },
-						  { type: "spawn", func: "vector", args: [553, 90, 115, 185 ,800, 0, 4000] }, //direito abaixo
-						  { type: "spawn", func: "vector", args: [553, 90, 115, 5, 300, 0, 4000] }, //nao mexe
-						  { type: "spawn", func: "vector", args: [553, 270, 250, 5, 300, 0, 4000] },  //lados esquerdos   250? primero
-						  { type: "spawn", func: "vector", args: [553, 270, 250, 185, 800, 0, 4000] }   //200>110 | 250+ abre 250- fecha
+			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
 	],
 		//
 		"s-444-2000-2135-0": [
@@ -457,11 +457,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 1535, message_ES: "x2" },
 			//{ type: "text", sub_type: "message", delay: 1535, message_ES: "1" },
 			//{ type: "text", sub_type: "message", delay: 2535, message_ES: "2" },
-			{ type: "spawn", func: "circle", args: [false, 553, 356, 220, 12, 210, 100, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 356, 220, 12, 210, 100, 3000] }
 		],
 		"s-444-2000-2137-0": [
 			{ type: "text", sub_type: "message", message_ES: "Martillo Atras", message_RU: "Удар назад" },
-			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 8, 480, 100, 2000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-444-2000-2138-0": [{ type: "text", sub_type: "message", delay: 234, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
 		"s-444-2000-2139-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
