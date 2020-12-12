@@ -10,8 +10,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		// Ress bait / range check
-		"s-3102-1000-107-0": [{ type: "text", sub_type: "message", message_ES: "Lanza Spectral", message_RU: "Спектральный бросок (байт)" }],
-
+		"s-3102-1000-107-0": [{ type: "text", sub_type: "message", message_ES: "Lanza Spectral", message_RU: "Спектральный бросок (байт)" },
+		    { type: "text", sub_type: "message", delay: 1350, message_PT: "Iframe!", message_RU: "Эвейд!" }
+        ],
 		// Basic attacks
 		"s-3102-1000-103-0": [{ type: "text", sub_type: "message", message_ES: "2 Hits | Sangrar", message_RU: "2 удара | Кровоток" }],
 		"s-3102-1000-113-0": [{ type: "text", sub_type: "message", message_ES: "4 Hits Combo", message_RU: "4 удара комба" }],
@@ -20,14 +21,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// 120 > 114
 		"s-3102-1000-120-0": [
 		    { type: "text", sub_type: "message", delay: 300, message_ES: "Stun (Iframe)", message_RU: "Несколько ударов | Стан (AOE)" },
+			{ type: "text", sub_type: "message", delay: 2200, message_PT: "Iframe!", message_RU: "Эвейд!" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 0, 8, 425, 100, 3000] }
 		],
 //		"s-3102-1000-114-0": [
 //			{ type: "text", sub_type: "message", message_ES: "Stun (AOE)", message_RU: "Стан (AOE)" },
 
-		"s-3102-1000-111-0": [{ type: "text", sub_type: "message", message_ES: "Salto (Stun)", message_RU: "Прыжок (стан)" }],
+		"s-3102-1000-111-0": [{ type: "text", sub_type: "message", message_ES: "Salto (Stun)", message_RU: "Прыжок (стан)" },
+			{ type: "text", sub_type: "message", delay: 1750, message_PT: "Iframe!", message_RU: "Эвейд!" }
+		],
 		"s-3102-1000-115-0": [
-			{ type: "text", sub_type: "message", message_ES: "AOE Bombs (Juntar)", message_RU: "AOE бомбы (вместе)" }
+			{ type: "text", sub_type: "message", message_ES: "AOE Bombas (Juntar)", message_RU: "AOE бомбы (вместе)" }
 //			{ type: "text", sub_type: "message", delay: 3000, message_ES: "Gather!", message_RU: "Собраться!" }
 		],
 		"s-3102-1000-112-0": [
