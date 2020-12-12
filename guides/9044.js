@@ -248,11 +248,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		// ---------------------------------------- Not enraged ----------------------------------------
-//		"s-444-2000-1101-0": [
-//			{ type: "text", sub_type: "message", message_ES: "4 Hit Combo", message_RU: "270" },
-//			{ type: "spawn", func: "vector", args: [553, 0, 0, 195, 500, 0, 4000] },
-//			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 3000] }
-//		],
+		"s-444-2000-1101-0": [
+			{ type: "text", sub_type: "message", message_ES: "4 Hit Combo", message_RU: "270" },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 195, 500, 0, 4000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 3000] }
+		],
 		"s-444-2000-1103-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente (Esquiva)", message_RU: "Удар вперед (эвейд)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3000] }
@@ -370,11 +370,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		// ---------------------------------------- Enraged ----------------------------------------
-//		"s-444-2000-2101-0": [
-//			{ type: "text", sub_type: "message", message_ES: "4 Hit combo", message_RU: " 270 " },
-//			{ type: "spawn", func: "vector", args: [553, 0, 0, 195, 500, 0, 4000] },
-//			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 3000] }
-//		],
+		"s-444-2000-2101-0": [
+			{ type: "text", sub_type: "message", message_ES: "4 Hit combo", message_RU: " 270 " },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 195, 500, 0, 4000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 3000] }
+		],
 		"s-444-2000-2103-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente (Esquiva)", message_RU: "Удар вперед (эвейд)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3000] }
