@@ -45,4 +45,6 @@ module.exports = {
     "es": "Sky Cruiser (Dificil)"},
 	9056: {
     "es": "Timescape (Dificil)"},
+	3037: {
+    "es": "Bahaar's (Training)"},
 };
