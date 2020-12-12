@@ -23,7 +23,9 @@ ID | Nombre de las Dungeons
 3103 | Forbidden Arena [Undying Warlord]
 3203 | Forbidden Arena [Nightmare Undying Warlord]
 9053 |	Kezzel's Gorge (5-Person)
-3036 |Sky Cruiser (Difícil)
+3036 | Sky Cruiser (Hard)
+9056	| Timescape (Hard)
+3037	| Bahaar's Sanctum (Training)
 
 ----
 ### Tera-Guide
@@ -81,7 +83,7 @@ proxy(/8) | Descripción de Comandos
 
 ##  
 
-* Cuando el modo Stream se encuentra *Activado* los avisos (mensajes) serán mostrados únicamente en el chat, y todos los marcadores serán desactivados
+* Cuando el modo **Stream** se encuentra *Activado* los avisos (mensajes) serán mostrados únicamente en el chat, y todos los marcadores serán desactivados
 
    ![](https://i.imgur.com/kbRd3Xd.png)
 
