@@ -338,7 +338,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-444-2000-1138-0": [{ type: "text", sub_type: "message", delay: 1300, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
-		"s-444-2000-1139-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
+		"s-444-2000-1139-0": [{ type: "text", sub_type: "message", message_ES: "Martillazo Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
 		"s-444-2000-1140-0": [
 			{ type: "text", sub_type: "message", message_ES: "Olas (DERECHA)", message_RU: "Волны (правая)" },
 			{ type: "func", func: skilld_event, args: [1140] }
@@ -464,7 +464,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-444-2000-2138-0": [{ type: "text", sub_type: "message", delay: 234, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
-		"s-444-2000-2139-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
+		"s-444-2000-2139-0": [{ type: "text", sub_type: "message", message_ES: "Martillazo Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
 		"s-444-2000-2140-0": [
 			{ type: "text", sub_type: "message", message_ES: "Olas (DERECHA)", message_RU: "Волны (правая)" },
 			{ type: "func", func: skilld_event, args: [2140] }

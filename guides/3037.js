@@ -170,11 +170,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3037-1000-2138-0": [{ type: "text", sub_type: "message", delay: 234, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
 		"s-3037-1000-2139-0": [
-			{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" }
-//			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 20, 160, 0, 2000] },
-//			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 12, 220, 0, 2000] },
-//			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 300, 0, 2000] },
-//			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 360, 0, 2000] }
+			{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 20, 160, 0, 2000] },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 12, 220, 0, 2000] },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 300, 0, 2000] },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 360, 0, 2000] }
 		],
 		"s-3037-1000-2140-0": [
 			{ type: "text", sub_type: "message", message_ES: "Olas (DERECHA)", message_RU: "Волны (правая)" },
@@ -221,11 +221,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3037-1000-1138-0": [{ type: "text", sub_type: "message", delay: 1300, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
 		"s-3037-1000-1139-0": [
-			{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" }
-//			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 20, 160, 0, 2000] },
-//			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 12, 220, 0, 2000] },
-//			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 300, 0, 2000] },
-//			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 360, 0, 2000] }
+			{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 20, 160, 0, 2000] },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 12, 220, 0, 2000] },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 300, 0, 2000] },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 360, 0, 2000] }
 		],
 		"s-3037-1000-1140-0": [
 			{ type: "text", sub_type: "message", message_ES: "Olas (DERECHA)", message_RU: "Волны (правая)" },
@@ -248,11 +248,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		// ---------------------------------------- Not enraged ----------------------------------------
-//		"s-3037-2000-1101-0": [
-//			{ type: "text", sub_type: "message", message_ES: "4 Hit Combo", message_RU: "270" },
-//			{ type: "spawn", func: "vector", args: [553, 0, 0, 195, 500, 0, 4000] },
-//			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 3000] }
-//		],
+		"s-3037-2000-1101-0": [
+			{ type: "text", sub_type: "message", message_ES: "4 Hit Combo", message_RU: "270" },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 195, 500, 0, 4000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 3000] }
+		],
 		"s-3037-2000-1103-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente (Esquiva)", message_RU: "Удар вперед (эвейд)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3000] }
@@ -338,7 +338,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-3037-2000-1138-0": [{ type: "text", sub_type: "message", delay: 1300, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
-		"s-3037-2000-1139-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
+		"s-3037-2000-1139-0": [{ type: "text", sub_type: "message", message_ES: "Martillazo  Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
 		"s-3037-2000-1140-0": [
 			{ type: "text", sub_type: "message", message_ES: "Olas (DERECHA)", message_RU: "Волны (правая)" },
 			{ type: "func", func: skilld_event, args: [1140] }
@@ -370,11 +370,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		// ---------------------------------------- Enraged ----------------------------------------
-//		"s-3037-2000-2101-0": [
-//			{ type: "text", sub_type: "message", message_ES: "4 Hit combo", message_RU: " 270 " },
-//			{ type: "spawn", func: "vector", args: [553, 0, 0, 195, 500, 0, 4000] },
-//			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 3000] }
-//		],
+		"s-3037-2000-2101-0": [
+			{ type: "text", sub_type: "message", message_ES: "4 Hit combo", message_RU: " 270 " },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 195, 500, 0, 4000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 3000] }
+		],
 		"s-3037-2000-2103-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente (Esquiva)", message_RU: "Удар вперед (эвейд)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3000] }
@@ -464,7 +464,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-3037-2000-2138-0": [{ type: "text", sub_type: "message", delay: 234, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
-		"s-3037-2000-2139-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
+		"s-3037-2000-2139-0": [{ type: "text", sub_type: "message", message_ES: "Martillazo Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
 		"s-3037-2000-2140-0": [
 			{ type: "text", sub_type: "message", message_ES: "Olas (DERECHA)", message_RU: "Волны (правая)" },
 			{ type: "func", func: skilld_event, args: [2140] }
