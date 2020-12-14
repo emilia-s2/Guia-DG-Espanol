@@ -170,11 +170,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-444-1000-2138-0": [{ type: "text", sub_type: "message", delay: 234, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
 		"s-444-1000-2139-0": [
-			{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" },
-			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 20, 160, 0, 2000] },
+			{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" }
+/*			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 20, 160, 0, 2000] },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 12, 220, 0, 2000] },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 300, 0, 2000] },
-			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 360, 0, 2000] }
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 360, 0, 2000] }*/
 		],
 		"s-444-1000-2140-0": [
 			{ type: "text", sub_type: "message", message_ES: "Olas (DERECHA)", message_RU: "Волны (правая)" },
@@ -221,11 +221,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-444-1000-1138-0": [{ type: "text", sub_type: "message", delay: 1300, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
 		"s-444-1000-1139-0": [
-			{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" },
-			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 20, 160, 0, 2000] },
+			{ type: "text", sub_type: "message", message_ES: "Tumbar (Esquiva)!", message_RU: "Эвейд!" }
+/*			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 20, 160, 0, 2000] },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 12, 220, 0, 2000] },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 300, 0, 2000] },
-			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 360, 0, 2000] }
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 360, 0, 2000] }*/
 		],
 		"s-444-1000-1140-0": [
 			{ type: "text", sub_type: "message", message_ES: "Olas (DERECHA)", message_RU: "Волны (правая)" },
