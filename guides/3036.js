@@ -54,7 +54,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			});
 		}
 
-		dispatch.setTimeout(() => back_print = false, 2500);
+		dispatch.setTimeout(() => back_print = false, 3500);
 	}
 
 	function boss_tripleattack_event() {

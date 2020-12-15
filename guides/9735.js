@@ -9,7 +9,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-735-1000-111-0": [{ type: "text", sub_type: "message", message_ES: "Stun Frontal", message_RU: "Удар назад + вперед" }],
+		"s-735-1000-111-0": [{ type: "text", sub_type: "message", message_ES: "Frente + Atrás", message_RU: "Удар назад + вперед" }],
+		"s-735-1000-104-0": [{ type: "text", sub_type: "message", message_ES: "Stun Frontal", message_RU: "Передний зажим" }],
 		"s-735-1000-112-0": [{ type: "text", sub_type: "message", message_ES: "Ataque Atras", message_RU: "Удар назад" }],
 		"s-735-1000-304-0": [{ type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "От него" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 350, 100, 4000] } // Adicionado
