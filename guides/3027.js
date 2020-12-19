@@ -133,7 +133,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 480, 0, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 3, 1000, 0, 5000] },
 			{ type: "spawn", func: "item", args: [HIGHLIGHT_ITEM, 0, 0, 3800, 1000] },
-			{ type: "text", sub_type: "alert", delay: 3450, message_PT: "ENTRAAA!!", message_RU: "К нему" },
+			{ type: "text", sub_type: "alert", delay: 3450, message_ES: "ENTRAAA!!", message_RU: "К нему" },
 //			{ type: "spawn", func: "marker", args: [false, 180, 100, 3800, 1000, false, ["CENTER", "IN"]] },
 //			{ type: "spawn", func: "marker", args: [false, 0, 100, 3800, 1000, false, ["CENTER", "IN"]] },
 //			{ type: "spawn", func: "marker", args: [false, 90, 100, 3800, 1000, false, ["CENTER", "IN"]] },
