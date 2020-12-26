@@ -21,7 +21,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// 120 > 114
 		"s-3202-1000-120-0": [
 		    { type: "text", sub_type: "message", delay: 400, message_ES: "Stun", message_RU: "Несколько ударов | Стан (AOE)" },
-			{ type: "text", sub_type: "message", delay: 2100, message_ES: "Iframe!", message_RU: "Эвейд!" },
+			{ type: "text", sub_type: "message", delay: 2130, message_ES: "Iframe!", message_RU: "Эвейд!" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 0, 8, 425, 100, 3000] }
 		],
 //		"s-3202-1000-114-0": [
