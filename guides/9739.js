@@ -9,13 +9,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-739-1000-105-0": [{ type: "text", sub_type: "message", message_ES: "Girar + Respiracao", message_RU: "Поворот + дыхание" }],
+		"s-739-1000-105-0": [{ type: "text", sub_type: "message", message_ES: "Girar + Respiración", message_RU: "Поворот + дыхание" }],
 		"s-739-1000-308-0": [
 			{ type: "text", sub_type: "message", message_ES: "Entrar - Salir", message_RU: "К нему > От него" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 7500] }
 		],
 		"s-739-1000-308-1": [{ type: "text", sub_type: "message", message_ES: "Salir", message_RU: "От него" }],
-		"s-739-1000-112-0": [{ type: "text", sub_type: "message", message_ES: "Spray Atras", message_RU: "Волна назад" }],
+		"s-739-1000-112-0": [{ type: "text", sub_type: "message", message_ES: "Spray Atrás", message_RU: "Волна назад" }],
 		"s-739-1000-107-0": [{ type: "text", sub_type: "message", message_ES: "Salto", message_RU: "Прыжок" }],
 		"s-739-1000-306-0": [
 			{ type: "text", sub_type: "message", message_ES: "Salir - Entrar", message_RU: "От него > К нему" },
@@ -50,7 +50,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-739-3001-201-0": [
 		    { type: "text", sub_type: "message", message_ES: "Rugido Fuerte (Stun)", message_RU: "Стан" },
-		    { type: "text", sub_type: "message", delay: 3800, message_ES: "Iframe", message_RU: "Эвейд!" }  
+		    { type: "text", sub_type: "message", delay: 3700, message_ES: "Iframe", message_RU: "Эвейд!" }  
 		],	
 		"s-739-3001-107-0": [{ type: "text", sub_type: "message", message_ES: "Muchos Hits (Garras)", message_RU: "Несколько ударов" }],
 		"s-739-3001-115-0": [

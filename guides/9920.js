@@ -110,10 +110,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// 1 BOSS, SPECIAL ATTACKS
 		"s-920-1000-1300-0": [{ type: "text", sub_type: "message", delay: 400, message_ES: "Jugar al Alto (iframe)", message_RU: "Эвейд!" }],
 		"s-920-1000-1220-0": [{ type: "text", sub_type: "message", message_ES: "Circulos AOE", message_RU: "Эвейд!" },
-		    { type: "text", sub_type: "message", delay: 2900, message_ES: "Iframe", message_RU: "Эвейд!" }
+		    { type: "text", sub_type: "message", delay: 2800, message_ES: "Iframe", message_RU: "Эвейд!" }
 		],
 		"s-920-1000-2220-0": [{ type: "text", sub_type: "message", message_ES: "Circulos AOE", message_RU: "Эвейд!" },
-		    { type: "text", sub_type: "message", delay: 2900, message_ES: "Iframe", message_RU: "Эвейд!" }
+		    { type: "text", sub_type: "message", delay: 2800, message_ES: "Iframe", message_RU: "Эвейд!" }
 		],
 
 
