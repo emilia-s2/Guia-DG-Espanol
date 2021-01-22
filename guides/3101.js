@@ -11,13 +11,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-3101-1000-104-0": [{ type: "text", class_position: "tank", sub_type: "message", message_ES: "Stun Frontal", message_RU: "Стан!" }],
-		"s-3101-1000-107-0": [
-		"s-3101-1000-112-0": [{ type: "text", sub_type: "message", message_ES: "<-Spray IZQUIERDO y DERECHO->", message_RU: "Лево + Право" }],
-		],
-		"s-3101-1000-124-0": [{ type: "text", class_position: "tank", sub_type: "message", message_ES: "Stun Frontal", message_RU: "Стан (фаст)" }],
-		"s-3101-1000-127-0": [{ type: "text", class_position: "dps", sub_type: "message", message_ES: "Empujar Atrás (Rapido)", message_RU: "Полоса (фаст)" },
-			{ type: "text", class_position: "heal", sub_type: "message", message_ES: "Empujar Atrás", message_RU: "Полоса (фаст)" },
+		"s-3101-1000-104-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Стан!" }],
+		"s-3101-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "<-Spray IZQUIERDO y DERECHO->", message_RU: "Лево + Право" }],
+		"s-3101-1000-119-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Spray FRENTE y ATRÁS", message_RU: "Вперед + Назад" }],
+		"s-3101-1000-124-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Стан (фаст)" }],
+		"s-3101-1000-127-0": [{ type: "text", class_position: "dps", sub_type: "message", message_PT: "Empujar Atrás (Rapido)", message_RU: "Полоса (фаст)" },
+			{ type: "text", class_position: "heal", sub_type: "message", message_PT: "Empujar Atrás", message_RU: "Полоса (фаст)" },
 			{ type: "spawn", func: "vector", args: [553, 90, 139, 173, 800, 0, 2000] },  //Adicionado
 			{ type: "spawn", func: "vector", args: [553, 270, 139, -173, 800, 0, 2000] } //Adicionado
 		],
@@ -40,7 +39,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 340, 150, 10, 300, 0, 4000] }  //Adicionado
 		],
 		"s-3101-1000-151-0": [{ type: "text", sub_type: "message", message_ES: "Ataque Stun", message_RU: "Стан!" }],
-		"s-3101-1000-311-0": [
 		"s-3101-1000-313-0": [
 			{ type: "text", sub_type: "message", message_ES: "DENTRO y FUERA (Lento)", message_RU: "Кольцо" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 75, 10, 300, 0, 6000] }
