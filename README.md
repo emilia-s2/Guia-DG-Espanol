@@ -26,6 +26,11 @@ ID | Nombre de las Dungeons
 3036 | Sky Cruiser (Hard)
 9056	| Timescape (Hard)
 3037	| Bahaar's Sanctum (Training)
+9770	| Ruinous Manor (Normal)
+9970	| Ruinous Manor Hard (en Construcción...)
+3101	| Gossamer Vault (Normal)
+3104	| Catalepticon Normal (BETA)
+3204	| Catalepticon Hard (en Construcción...)
 
 ----
 ### Tera-Guide
