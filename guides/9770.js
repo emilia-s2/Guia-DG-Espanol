@@ -1,5 +1,5 @@
 // Ruinous Manor (Normal)
-// made by michengs/Emilia-s2
+// made by WIP/Emilia-s2/HSDN
 
 module.exports = (dispatch, handlers, guide, lang) => {
 	let boss = null;

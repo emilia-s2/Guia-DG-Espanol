@@ -1,4 +1,4 @@
-// Gossamer Vault Normal
+// Gossamer Vault (Normal)
 // made by michengs/Emilia-s2
 
 module.exports = (dispatch, handlers, guide, lang) => {

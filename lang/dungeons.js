@@ -4,11 +4,11 @@
 module.exports = {
 
     9781: {
-	"es": "Velik's Sanctuary Normal"},
+	"es": "Velik's Sanctuary (Normal)"},
 	9739: {
-	"es": "Red Refuge Normal"},
+	"es": "Red Refuge (Normal)"},
 	9735: {
-	"es": "RK-9 Kennel Normal"},
+	"es": "RK-9 Kennel (Normal)"},
 	9920: {
 	"es": "Antaroth's Abyss (Dificil)"},
 	9982: {
@@ -22,11 +22,11 @@ module.exports = {
 	3020: {
 	"es": "Sea of Honor"},
 	3026: {
-	"es": "Corrupted Skynest Normal"},
+	"es": "Corrupted Skynest (Normal)"},
 	3126: {
 	"es": "Corrupted Skynest (Dificil)"},
 	3102: {
-	"es": "Draakon Arena"},
+	"es": "Draakon Arena (Normal)"},
 	3202: {
 	"es": "Draakon Arena (Dificil)"},
 	3027: {
@@ -50,11 +50,11 @@ module.exports = {
 	9770: {
     "es": "Ruinous Manor Normal (BETA)"},
 	9970: {
-    "es": "Guía en Construcción..."},
+    "es": "Ruinous Manor Dificil (BETA)"},
 	3101: {
     "es": "Gossamer Vault Normal"},
 	3104: {
     "es": "Catalepticon Normal (BETA)"},
 	3204: {
-    "es": "Guía en Construcción..."},
+    "es": "Catalepticon Dificil (BETA"},
 };
