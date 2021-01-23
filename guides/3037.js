@@ -1,4 +1,4 @@
-﻿// Bahaar's Sanctum
+﻿// Bahaar's Sanctum (Training)
 //
 // made by michengs
 

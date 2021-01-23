@@ -32,7 +32,7 @@ module.exports.general = {
 			["guia spawnObject, Mostrar marcadores  ON/OFF", "CLPMSG"],
 			["guia dungeons, Lista de todas las dungeons + IDs soportadas", "CLPMSG"],
 			["guia verbose + ID, Guia para alguna dungeon especifica ON/OFF", "CLBMSG"],
-			["guia spawnObject + ID, marcadores para alguna dungeon específica ON/OFF", "CLBMSG"],
+			["guia spawnObject + ID, marcadores para alguna dungeon específica ON/OFF", "CLBMSG"]
 		],
 		red: "Rojo",
 		green: "Verde",
@@ -62,6 +62,6 @@ module.exports.general = {
 		enterdg: "Bienvenido a",
 		enterspdg: "Bienvenido a",
 		enteresdg: "Bienvenido a",
-		fordungeon: "Para",
-		},
+		fordungeon: "Para"
+		}
 	};
