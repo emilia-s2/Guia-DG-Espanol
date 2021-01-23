@@ -15,10 +15,10 @@ ID | Nombre de las Dungeons
 3103 | Forbidden Arena [Undying Warlord]
 3037	| Bahaar's Sanctum (Training)
 9770	| Ruinous Manor (Normal)
-9970	| Ruinous Manor Hard (en Construcción...)
+9970	| Ruinous Manor (Hard)
 3101	| Gossamer Vault (Normal)
-3104	| Catalepticon Normal (BETA)
-3204	| Catalepticon Hard (en Construcción...)
+3104	| Catalepticon (Normal)
+3204	| Catalepticon (Hard)
 
 ----
 ### Tera-Guide
