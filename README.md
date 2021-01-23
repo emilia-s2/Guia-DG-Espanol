@@ -6,25 +6,13 @@ ID | Nombre de las Dungeons
 --- | ---
 7011 | Guardian Blightwood
 7015 | Guardian Balder's Refuge
-9781 | Velik's Sanctuary 
-9735 | RK-9 Kennel 
-3034 | RK-9 Kennel (Hard) 
-9920 | Antaroth's Abyss (Hard) 
-9982 | Grotto of Lost Souls (Hard) 
 9044 | Bahaar's Sanctum 
-3201 | Gossamer Vault (Hard) 
 3023 | Akalath Quarantine 
 3020 | Sea of Honor 
 3026 | Corrupted Skynest 
 3126 | Corrupted Skynest (Hard) 
-3102 | Draakon Arena 
-3202 | Draakon Arena (Hard) 
-3027 | Forbidden Arena [Hagufna]
+3102 | Draakon Arena  
 3103 | Forbidden Arena [Undying Warlord]
-3203 | Forbidden Arena [Nightmare Undying Warlord]
-9053 |	Kezzel's Gorge (5-Person)
-3036 | Sky Cruiser (Hard)
-9056	| Timescape (Hard)
 3037	| Bahaar's Sanctum (Training)
 9770	| Ruinous Manor (Normal)
 9970	| Ruinous Manor Hard (en Construcción...)
