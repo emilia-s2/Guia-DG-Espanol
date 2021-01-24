@@ -18,7 +18,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [true, 553, 180, -50, 10, 380, 0, 2000] }
 		],
 		"s-3104-1000-107-0": [
-			{ type: "text", sub_type: "message", message: "Line Forward + Side Lines", message_ES: "Línea en Medio + Líneas Laterales" },
+			{ type: "text", sub_type: "alert", message: "Line Forward + Side Lines", message_ES: "Líneas en Medio y Laterales + PIZZA" },
 			{ type: "spawn", func: "vector", args: [553, 90, 50, 0, 1000, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 50, 0, 1000, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 90, 50, 180, 1000, 0, 2000] },
@@ -34,7 +34,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 70, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 290, 500, 0, 2000] }
 		],
-		"s-3104-1000-114-0": [{ type: "text", sub_type: "message", message: "Inner + Outer AOEs", message_ES: "AOEs Dentro y Fuera" }],
+		"s-3104-1000-114-0": [{ type: "text", sub_type: "message", message: "Inner + Outer AOEs", message_ES: "AOEs Dentro y Fuera + GIRO" }],
 		"s-3104-1000-116-0": [
 			{ type: "text", sub_type: "message", message: "Line Forward", message_ES: "Línea en Medio" },
 			{ type: "spawn", func: "vector", args: [553, 90, 50, 0, 1000, 0, 2000] },
