@@ -64,8 +64,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "marker", args: [false, 340, 150, 0, 2000, true, null], delay: 1500 }
 		],
 		"s-3104-1000-156-0": [{ type: "text", sub_type: "message", message: "Get Skulls", message_ES: "Cabezas" }],
-		"s-3104-1000-157-0": [{ type: "text", sub_type: "message", message: "Gather!", message_ES: "Juntar!", delay: 5000 }],
-		"s-3104-1000-158-0": [{ type: "text", sub_type: "message", message: "Gather!", message_ES: "Juntar!", delay: 5000 }],
+		"s-3104-1000-157-0": [{ type: "text", sub_type: "alert", message: "Gather!", message_ES: "Juntar!", delay: 5000 }],
+		"s-3104-1000-158-0": [{ type: "text", sub_type: "alert", message: "Gather!", message_ES: "Juntar!", delay: 5000 }],
 		"s-3104-1000-159-0": [{ type: "text", sub_type: "message", message: "AOE", message_ES: "АОЕ" }]
 	};
 };
