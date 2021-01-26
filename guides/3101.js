@@ -32,10 +32,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3101-1000-132-0": [{ type: "text", sub_type: "message", message_ES: "<-Spray IZQUIERDO y DERECHO->", message_RU: "Лево + Право (фаст)" }],
 		"s-3101-1000-133-0": [{ type: "text", sub_type: "message", delay: 0, message_ES: "Salto", message_RU: "Прыжок (фаст)" },
-		{ type: "text", sub_type: "message", delay: 1400, message_ES: "Iframe", message_RU: "Iframe!" }
+		    { type: "text", sub_type: "message", delay: 1400, message_ES: "Iframe", message_RU: "Iframe!" }
 		],
 		"s-3101-1000-138-0": [{ type: "text", sub_type: "message", delay: 0, message_ES: "Salto", message_RU: "Прыжок (фаст)" },
-		{ type: "text", sub_type: "message", delay: 1400, message_ES: "Iframe", message_RU: "Iframe!" }
+		    { type: "text", sub_type: "message", delay: 1400, message_ES: "Iframe", message_RU: "Iframe!" }
 		],
 		"s-3101-1000-148-0": [{ type: "text", sub_type: "message", message_ES: "Poder de la Mano DERECHA (volando)", message_RU: "Правая рука (подлет)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 20, 150, 10, 320, 0, 4000] }  //Adicionado
@@ -55,8 +55,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	// 2 BOSS
 	"nd-3101-2000": [
-		{ type: "stop_timers" },
-		{ type: "despawn_all" }
+		    { type: "stop_timers" },
+		    { type: "despawn_all" }
         ],
 		"h-3101-2000-81": [{ type: "text", sub_type: "message", message_ES: "80%", message_RU: "Дебафф" }],
 		"h-3101-2000-76": [{ type: "text", sub_type: "message", message_ES: "75%", message_RU: "Камни" }],
@@ -66,7 +66,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_ES: "Juntar Time", message_RU: "Камни (вместе)!!!" },
 		],
 		"s-3101-2000-230-0": [{ type: "text", sub_type: "message", message_ES: "AOE", message_RU: "AOE!!" },
-						{ type: "text", sub_type: "message", delay: 1300, message_ES: "Iframe", message_RU: "Iframe!" }
+			{ type: "text", sub_type: "message", delay: 1300, message_ES: "Iframe", message_RU: "Iframe!" }
 		],
 		"s-3101-2000-231-0": [
 			{ type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "От него" },

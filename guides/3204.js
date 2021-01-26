@@ -6,9 +6,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	let combo_count = 0;
 
+	dispatch.hook("S_ABNORMALITY_BEGIN", 4, event => {
+		if (event.id === 31040001)
+			handlers.marker({ id: event.target, color: "yellow", sub_delay: 1000000 });
+	});
+
 	return {
-		"ns-3204-1000": [{ type: "func", func: () => combo_count = 0 }],
-		"nd-3204-1000": [
+		"ns-3104-1000": [{ type: "func", func: () => combo_count = 0 }],
+		"nd-3104-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
@@ -50,7 +55,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 180, -50, 120, 500, 0, 2000], delay: 1500 },
 			{ type: "spawn", func: "vector", args: [553, 180, -50, 240, 500, 0, 2000], delay: 1500 },
 			{ type: "func", func: () => combo_count++ },
-			{ type: "spawn", func: "marker", args: [false, 0, 150, 0, 3000, true, null], check_func: () => combo_count > 1, delay: 2500 }
+			{ type: "spawn", func: "marker", args: [false, 0, 150, 0, 3000, true, null], check_func: () => combo_count == 2, delay: 2500 }
 		],
 		"s-3204-1000-112-0": [{ type: "text", sub_type: "message", message: "Wave Forward", message_ES: "Empujar a Frente" },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 70, 500, 0, 2000] },
@@ -88,6 +93,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3204-1000-156-0": [{ type: "text", sub_type: "message", message: "Get Skulls", message_ES: "Cabezas" }],
 		"s-3204-1000-157-0": [{ type: "text", sub_type: "alert", message: "Gather!", message_ES: "Juntar!", delay: 5000 }],
 		"s-3204-1000-158-0": [{ type: "text", sub_type: "alert", message: "Gather!", message_ES: "Juntar!", delay: 5000 }],
-		"s-3204-1000-159-0": [{ type: "text", sub_type: "message", message: "AOE", message_ES: "АОЕ" }]
+		"s-3204-1000-159-0": [
+			{ type: "text", sub_type: "message", message: "AOE", message_RU: "АОЕ" },
+			{ type: "marker_remove_all" }
+		]
 	};
 };

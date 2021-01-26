@@ -26,16 +26,16 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-970-3000-1304-0": [{ type: "text", sub_type: "message", message_ES: "Prepararse! (para dentro y fuera)", message_RU: "Готовность!" }],
 		"s-970-3000-1303-0": [{ type: "text", sub_type: "message", message_ES: "Prepararse! (para dentro y fuera)", message_RU: "Готовность!" }],
 		"s-970-3000-2113-0": [{ type: "text", sub_type: "message", message_ES: "SALIR | ENTRAR", message_RU: "От него > К нему" },
-	        	{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 300, 0, 5000] }
+	        { type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 300, 0, 5000] }
 		],		
 		"s-970-3000-1113-0": [{ type: "text", sub_type: "message", message_ES: "SALIR | ENTRAR", message_RU: "От него > К нему" }, 
-		        { type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 300, 0, 5000] }
+		    { type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 300, 0, 5000] }
         ],
 		"s-970-3000-2116-0": [{ type: "text", sub_type: "message", message_ES: "ENTRAR | SALIR", message_RU: "К нему > От него" },
-		        { type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 300, 0, 5000] }
+		    { type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 300, 0, 5000] }
 		],		
 		"s-970-3000-1116-0": [{ type: "text", sub_type: "message", message_ES: "ENTRAR | SALIR", message_RU: "К нему > От него" }, 
-		        { type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 300, 0, 5000] }
+		    { type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 300, 0, 5000] }
 		],		
 		"s-970-3000-1318-0": [{ type: "text", sub_type: "message", message_ES: "Obtener Cráneo Rojo!", message_RU: "Взять красную голову!" }],
 		"s-970-3000-1317-0": [{ type: "text", sub_type: "message", message_ES: "Obtener Cráneo Rojo!", message_RU: "Взять красную голову!" }],
