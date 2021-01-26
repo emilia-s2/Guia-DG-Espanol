@@ -35,7 +35,7 @@ const DefaultSettings = {
 };
 
 module.exports = function MigrateSettings(from_ver, to_ver, settings) {
-	if (from_ver === undefined) return Object.assign(Object.assign({}, DefaultSettings), settings);
+	if (from_ver === undefined) return { ...DefaultSettings, ...settings };
 	else if (from_ver === null) return DefaultSettings;
 	else {
 		from_ver = Number(from_ver);
@@ -85,10 +85,28 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
 						settings[option] = oldsettings[option];
 				}
 				return settings;
+				
+				case 1.19:
+				remove([
+					"guides/3027.js",
+					"guides/3034.js",
+					"guides/3036.js",
+					"guides/3201.js",
+					"guides/3202.js",
+					"guides/3203.js",
+					"guides/9053.js",
+					"guides/9056.js",
+					"guides/9735.js",
+					"guides/9739.js",
+					"guides/9781.js",
+					"guides/9920.js",
+					"guides/9982.js"
+				]);
+				break;
 		}
 
 		for (const option in oldsettings) {
-			if (settings[option])
+			if (settings[option] !== undefined)
 				settings[option] = oldsettings[option];
 		}
 
