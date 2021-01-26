@@ -81,7 +81,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3104-1000-156-0": [{ type: "text", sub_type: "message", message: "Get Skulls", message_ES: "Cabezas" }],
 		"s-3104-1000-157-0": [{ type: "text", sub_type: "alert", message: "Gather!", message_ES: "Juntar!", delay: 5000 }],
 		"s-3104-1000-158-0": [{ type: "text", sub_type: "alert", message: "Gather!", message_ES: "Juntar!", delay: 5000 }],
-		"s-3204-1000-159-0": [
+		"s-3104-1000-159-0": [
 			{ type: "text", sub_type: "message", message: "AOE", message_RU: "АОЕ" },
 			{ type: "marker_remove_all" }
 		]

@@ -12,8 +12,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	});
 
 	return {
-		"ns-3104-1000": [{ type: "func", func: () => combo_count = 0 }],
-		"nd-3104-1000": [
+		"ns-3204-1000": [{ type: "func", func: () => combo_count = 0 }],
+		"nd-3204-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
