@@ -3,7 +3,7 @@
 const DefaultSettings = {
 	"enabled": true,
 	"stream": false,
-	"lNotice": true,
+	"lNotice": false,
 	"gNotice": false,
 	"spawnObject": true,
 	"speech": {
