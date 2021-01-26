@@ -37,9 +37,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	};
 
 	// NULL % 2 = 0
-	//    1 % 2 = 1
-	//    0 % 2 = 0
-	//    2 % 2 = 0
+	//	  1 % 2 = 1
+	//	  0 % 2 = 0
+	//	  2 % 2 = 0
 
 	function spawn_marker(out) {
 		if (!boss_ent) return;
@@ -201,7 +201,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			boss_offset = 10;
 			handlers.event([
 				{ type: "spawn", func: "vector", args: [553, 0, 0, 180, 840, 200, 8000] }, // Alterado 190>180 Rotaçao
-				{ type: "spawn", func: "vector", args: [553, 0, 0, 0, 840, 200, 8000] }   // Alterado 10>0 Rotaçao
+				{ type: "spawn", func: "vector", args: [553, 0, 0, 0, 840, 200, 8000] }	  // Alterado 10>0 Rotaçao
 			]);
 		}
 
@@ -292,7 +292,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"120-0": [{ type: "text", sub_type: "message", message_ES: "JUNTAR", message_RU: "Яростный рев" }],
 		"145-0": [{ type: "text", sub_type: "message", message_ES: "Pies (Stun)", message_RU: "Стан" }],
-//	    "157-0": [{ type: "text", sub_type: "message", message_ES: "Change", message_RU: "Смена" }],
+//		"157-0": [{ type: "text", sub_type: "message", message_ES: "Change", message_RU: "Смена" }],
 		"103-0": [
 			{ type: "text", sub_type: "message", message_ES: "Cola (Vuela!!)", message_RU: "Хвост (полет)" },
 			{ type: "text", sub_type: "message", message_ES: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
@@ -339,7 +339,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		"206-0": [{ type: "text", sub_type: "message", message_ES: "Salto Atras", message_RU: "Прыжок назад" }],
 //		"206-2": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 350, 0, 3000] }],
-        "164-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }], 
+		"164-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }], 
 		"165-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }],
 		"137-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar + Explosion Ampla (50metros)", message_RU: "Опрокидывание" }],
 		"138-0": [{ type: "text", sub_type: "message", message_ES: "Explosion Ampla!!", message_RU: "AOE" }],

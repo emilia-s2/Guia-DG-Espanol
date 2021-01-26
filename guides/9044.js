@@ -158,10 +158,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-444-1000-2131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар в вперед | Левый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }	 //Alterado
 	],
 		//
 		"s-444-1000-2137-0": [
@@ -210,10 +210,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-444-1000-1131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар вперед | Левый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }	 //Alterado
 	],
 		"s-444-1000-1137-0": [
 			{ type: "text", sub_type: "message", message_ES: "Martillo Atras", message_RU: "Удар назад" },
@@ -314,17 +314,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_ES: "Frente | Derecha Rasguno", message_RU: "Удар вперед | Правый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3300] },
 			{ type: "spawn", func: "vector", args: [553, 60, 290, 175 ,800, 0, 3500] }, //Alterado
-			{ type: "spawn", func: "vector", args: [553, 60, 290, -5, 300, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 290, 95, -5, 300, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 290, 95, 175, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 60, 290, -5, 300, 0, 3500] },	//Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, -5, 300, 0, 3500] },	//Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, 175, 800, 0, 3500] }	//Alterado
 	],
 		"s-444-2000-1131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар вперед | Левый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }	 //Alterado
 	],
 		//
 		"s-444-2000-1135-0": [
@@ -438,17 +438,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_ES: "Frente | Derecha Rasguno", message_RU: "Удар вперед | Правый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3300] },
 			{ type: "spawn", func: "vector", args: [553, 60, 290, 175 ,800, 0, 3500] }, //Alterado
-			{ type: "spawn", func: "vector", args: [553, 60, 290, -5, 300, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 290, 95, -5, 300, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 290, 95, 175, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 60, 290, -5, 300, 0, 3500] },	//Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, -5, 300, 0, 3500] },	//Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, 175, 800, 0, 3500] }	//Alterado
 	],
 		"s-444-2000-2131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар вперед | Левый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }	 //Alterado
 	],
 		//
 		"s-444-2000-2135-0": [

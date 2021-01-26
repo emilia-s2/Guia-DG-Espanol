@@ -158,10 +158,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3037-1000-2131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар в вперед | Левый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }	 //Alterado
 	],
 		//
 		"s-3037-1000-2137-0": [
@@ -210,10 +210,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3037-1000-1131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар вперед | Левый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }	 //Alterado
 	],
 		"s-3037-1000-1137-0": [
 			{ type: "text", sub_type: "message", message_ES: "Martillo Atras", message_RU: "Удар назад" },
@@ -314,17 +314,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_ES: "Frente | Derecha Rasguno", message_RU: "Удар вперед | Правый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3300] },
 			{ type: "spawn", func: "vector", args: [553, 60, 290, 175 ,800, 0, 3500] }, //Alterado
-			{ type: "spawn", func: "vector", args: [553, 60, 290, -5, 300, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 290, 95, -5, 300, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 290, 95, 175, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 60, 290, -5, 300, 0, 3500] },	//Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, -5, 300, 0, 3500] },	//Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, 175, 800, 0, 3500] }	//Alterado
 	],
 		"s-3037-2000-1131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар вперед | Левый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }	 //Alterado
 	],
 		//
 		"s-3037-2000-1135-0": [
@@ -338,7 +338,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-3037-2000-1138-0": [{ type: "text", sub_type: "message", delay: 1300, message_ES: "Knockup (Bait)", message_RU: "Черкаш (полет)" }],
-		"s-3037-2000-1139-0": [{ type: "text", sub_type: "message", message_ES: "Martillazo  Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
+		"s-3037-2000-1139-0": [{ type: "text", sub_type: "message", message_ES: "Martillazo	 Tumbar (Esquiva)!", message_RU: "Эвейд!" }],
 		"s-3037-2000-1140-0": [
 			{ type: "text", sub_type: "message", message_ES: "Olas (DERECHA)", message_RU: "Волны (правая)" },
 			{ type: "func", func: skilld_event, args: [1140] }
@@ -438,17 +438,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_ES: "Frente | Derecha Rasguno", message_RU: "Удар вперед | Правый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3300] },
 			{ type: "spawn", func: "vector", args: [553, 60, 290, 175 ,800, 0, 3500] }, //Alterado
-			{ type: "spawn", func: "vector", args: [553, 60, 290, -5, 300, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 290, 95, -5, 300, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 290, 95, 175, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 60, 290, -5, 300, 0, 3500] },	//Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, -5, 300, 0, 3500] },	//Alterado
+			{ type: "spawn", func: "vector", args: [553, 290, 95, 175, 800, 0, 3500] }	//Alterado
 	],
 		"s-3037-2000-2131-0": [
 			{ type: "text", sub_type: "message", message_ES: "Frente | Izquierda Rasguno", message_RU: "Удар вперед | Левый черкаш" },
 			{ type: "spawn", func: "circle", args: [false, 553, 358, 340, 6, 630, 100, 3300] },
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },  //Alterado
-			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },    //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },   //Alterado
-			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }  //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 186 ,800, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 90, 115, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 6, 300, 0, 3500] },	 //Alterado
+			{ type: "spawn", func: "vector", args: [553, 270, 250, 186, 800, 0, 3500] }	 //Alterado
 	],
 		//
 		"s-3037-2000-2135-0": [

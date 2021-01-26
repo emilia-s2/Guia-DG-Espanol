@@ -137,9 +137,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// AoE 313 314
 		"s-3103-1000-313-0": [{ type: "text", sub_type: "message", message_ES: "AOE", message_RU: "AOE" }],
 		"s-3103-1000-314-0": [
-		    { type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "Выйти" },
+			{ type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "Выйти" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 470, 0, 4000] }
-	    ],
+		],
 
 		// Debuff
 		"ae-0-0-31031011": [{ type: "text", sub_type: "alert", message_ES: "Debuff Stack", message_RU: "Дебафф (стаки)" }],

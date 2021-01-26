@@ -37,9 +37,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	};
 
 	// NULL % 2 = 0
-	//    1 % 2 = 1
-	//    0 % 2 = 0
-	//    2 % 2 = 0
+	//	  1 % 2 = 1
+	//	  0 % 2 = 0
+	//	  2 % 2 = 0
 
 	function spawn_marker(out) {
 		if (!boss_ent) return;
@@ -175,7 +175,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			]);
 		}
 
-		if ([212, 214].includes(skillid)) { // Fire claw (141,  142)
+		if ([212, 214].includes(skillid)) { // Fire claw (141,	142)
 			boss_offset = 10;
 
 			handlers.event([
@@ -188,8 +188,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			boss_offset = -10;
 
 			handlers.event([
-				{ type: "spawn", func: "vector", args: [553, 0, 0, 180, 840, 200, 11000] },  // Alterado 170>180 Rotaçao
-				{ type: "spawn", func: "vector", args: [553, 0, 0, 360, 840, 200, 11000] }   // Alterado 350>360 Rotaçao
+				{ type: "spawn", func: "vector", args: [553, 0, 0, 180, 840, 200, 11000] },	 // Alterado 170>180 Rotaçao
+				{ type: "spawn", func: "vector", args: [553, 0, 0, 360, 840, 200, 11000] }	 // Alterado 350>360 Rotaçao
 			]);
 		}
 
@@ -326,7 +326,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		"206-0": [{ type: "text", sub_type: "message", message_ES: "Salto Atras", message_RU: "Прыжок назад" }],
 //		"206-2": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 350, 0, 3000] }],
-        "164-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }], 
+		"164-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }], 
 		"165-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }], 
 		"137-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar + Explosion Ampla (50metros)", message_RU: "Опрокидывание" }],
 		"138-0": [{ type: "text", sub_type: "message", message_ES: "Explosion Ampla!!", message_RU: "AOE" }],

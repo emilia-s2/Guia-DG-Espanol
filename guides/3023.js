@@ -76,8 +76,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "semicircle", args: [90, 280, 553, 0, 0, 15, 160, 100, 2000] }, //alterado 270>280  | 20>15
 			{ type: "spawn", func: "semicircle", args: [90, 275, 553, 0, 0, 10, 220, 100, 2000] }, //alterado 280>275  | 12>10
 			{ type: "spawn", func: "semicircle", args: [90, 270, 553, 0, 0, 10, 340, 100, 2000] }, //alterado 300>340  | 270>285
-		    { type: "spawn", func: "vector", args: [553, 90, 150, 90, 150, 0, 2000] },   //Adicionado
-			{ type: "spawn", func: "vector", args: [553, 270, 150, 270, 150, 0, 2000] }  //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 90, 150, 90, 150, 0, 2000] },	 //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 270, 150, 270, 150, 0, 2000] }	 //Adicionado
 		],
 		"s-3023-1000-116-0": [
 			{ type: "text", sub_type: "message", message_ES: "Explosion", message_RU: "Кайа", class_position: "dps" },
@@ -100,17 +100,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 335, 0, 5000] } // Alterado 320>335 abrir
 		],
 		"s-3023-1000-3119-0": [ // red inside
-            { type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "ОТ НЕГО", check_func: () => { return debuff === 1 }, delay: 500 },
-            { type: "text", sub_type: "message", message_ES: "ENTRAR", message_RU: "К НЕМУ", check_func: () => { return debuff === 2 }, delay: 500 },
-            { type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 270, 0, 4000] },
-            { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 650, 0, 4000] }
-        ],
-        "s-3023-1000-3220-0": [ // blue inside
-            { type: "text", sub_type: "message", message_ES: "ENTRAR", message_RU: "К НЕМУ", check_func: () => { return debuff === 1 }, delay: 500 },
-            { type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "ОТ НЕГО", check_func: () => { return debuff === 2 }, delay: 500 },
-            { type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 270, 0, 4000] },
-            { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 650, 0, 4000] }
-        ],
+			{ type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "ОТ НЕГО", check_func: () => { return debuff === 1 }, delay: 500 },
+			{ type: "text", sub_type: "message", message_ES: "ENTRAR", message_RU: "К НЕМУ", check_func: () => { return debuff === 2 }, delay: 500 },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 270, 0, 4000] },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 650, 0, 4000] }
+		],
+		"s-3023-1000-3220-0": [ // blue inside
+			{ type: "text", sub_type: "message", message_ES: "ENTRAR", message_RU: "К НЕМУ", check_func: () => { return debuff === 1 }, delay: 500 },
+			{ type: "text", sub_type: "message", message_ES: "SALIR", message_RU: "ОТ НЕГО", check_func: () => { return debuff === 2 }, delay: 500 },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 270, 0, 4000] },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 650, 0, 4000] }
+		],
 
 		// 2 BOSS
 		"nd-3023-2000": [
@@ -129,7 +129,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 90, 80, 10, 1000, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 80, 350, 1000, 0, 3000] }
 		],
-		"s-3023-2000-182-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar  (Pisar)", message_RU: "Опрокид" }],
+		"s-3023-2000-182-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar	(Pisar)", message_RU: "Опрокид" }],
 		"s-3023-2000-185-0": [
 			{ type: "text", sub_type: "message", message_ES: "Explosion", message_RU: "Кайа", class_position: "dps" },
 			{ type: "text", sub_type: "message", message_ES: "Explosion", message_RU: "Кайа", class_position: "tank" },

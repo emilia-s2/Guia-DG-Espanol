@@ -17,7 +17,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-620-1000-120-0": [{ type: "text", sub_type: "message", message_ES: "Ola de Fuego", message_RU: "no se russo :c sorry" }],
 		"s-620-1000-121-0": [{ type: "text", sub_type: "message", message_ES: "Repeler (iframe)", message_RU: "no se russo :c sorry" }],
 		"s-620-1000-119-0": [{ type: "text", sub_type: "message", message_ES: "Explosion | Entrar", message_RU: "no se russo :c sorry" },
-		    { type: "spawn", func: "circle", args: [false, 553, 0, 8, 14, 216, 100, 6000] }  
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 8, 14, 216, 100, 6000] }	 
 		],
 		"s-620-1000-108-0": [{ type: "text", sub_type: "message", message_ES: "Ataque (Atras)", message_RU: "no se russo :c sorry" }],
 		"s-620-1000-103-0": [{ type: "text", sub_type: "message", message_ES: "Stun Frontal", message_RU: "no se russo :c sorry" }],
