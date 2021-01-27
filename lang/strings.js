@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // Available strings for different languages
 module.exports.general = {
@@ -7,7 +7,7 @@ module.exports.general = {
 	es: {
 		 unknowncommand: "Comando desconocido, Para ver todos los comandos proba (guia help)",
 		 helpheader: "Use el comando \"guia help\" para mas informaciones",
-	     helpbody: [
+		 helpbody: [
 			["guia cr, Mensaje Color ROJO", "CRMSG"],
 			["guia co, Mensaje Color NARANJA", "COMSG"],
 			["guia cy, Mensaje Color AMARILLO", "CYMSG"],
@@ -25,11 +25,11 @@ module.exports.general = {
 			["guia gui, Mostrar ventana de personalización GUI", "CYMSG"],
 			["guia voice, convierte los mensajes de texto a voz ON/OFF", "COMSG"],
 			["guia 1~10, Configurar velocidad de voz", "COMSG"],
-			["guia stream, Modo stream (mensajem solo en chat) ON/OFF", "COMSG"],
+			["guia stream, Modo stream (mensajes solo en chat) ON/OFF", "COMSG"],
 			["guia lNotice, Mensajes mostradas en Take notice (parte inferior) ON/OFF", "CGMSG"],
 			["guia gNotice, Mensajes mostradas en (chat de party) ON/OFF", "CGMSG"],
 			["guide male~female, Cambiar la voz entre masculino e feminino (se disponible)", "CGMSG"],
-			["guia spawnObject, Mostrar marcadores  ON/OFF", "CLPMSG"],
+			["guia spawnObject, Mostrar marcadores	ON/OFF", "CLPMSG"],
 			["guia dungeons, Lista de todas las dungeons + IDs soportadas", "CLPMSG"],
 			["guia verbose + ID, Guia para alguna dungeon especifica ON/OFF", "CLBMSG"],
 			["guia spawnObject + ID, marcadores para alguna dungeon específica ON/OFF", "CLBMSG"]
