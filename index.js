@@ -9,7 +9,7 @@ module.exports.NetworkMod = function(mod) {
 		});
 		mod.settings.language = "es";
 	} catch (e) {
-		mod.error("Aviso! \Dependencia módulo \"tera-guide-core \" necessário para TERA-Guide no está instalado!\por favor descargue e instale: https://github.com/hsdn/tera-guide-core");
+		mod.error("Aviso!\Dependencia módulo \"tera-guide-core\" necessário para TERA-Guide no está instalado!\por favor descargue y instale: https://github.com/hsdn/tera-guide-core");
 		throw e;
 	}
 };
