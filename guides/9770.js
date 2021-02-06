@@ -57,7 +57,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-770-3000-1317-0": [{ type: "text", sub_type: "message", message_ES: "OBTENER CRÁNEO ROJO!", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1319-0": [{ type: "text", sub_type: "message", message_ES: "OBTENER CRÁNEO ROJO", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1322-0": [{ type: "text", sub_type: "message", message_ES:"Iframe los Estándares!", message_RU: "nao sei russo :c desculpa" }],
-		"s-770-3000-1311-0": [{ type: "text", sub_type: "message", message_ES: "Juntar Para Cleanse, message_RU: "nao sei russo :c desculpa" }],
+		"s-770-3000-1311-0": [{ type: "text", sub_type: "message", message_ES: "Juntar Para Cleanse", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1120-0": [{ type: "text", sub_type: "message", message_ES: "Cabeças Disparar", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-2120-0": [{ type: "text", sub_type: "message", message_ES: "Cabeças Disparar", message_RU: "nao sei russo :c desculpa" }],
 	};
