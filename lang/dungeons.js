@@ -33,4 +33,8 @@ module.exports = {
 	"es": "Catalepticon (Normal)"},
 	3204: {
 	"es": "Catalepticon (Dificil)"},
+	3106: {
+	"es": "Killing Grounds"},
+	3206: {
+	"es": "Crimson Killing Grounds"},	
 };
