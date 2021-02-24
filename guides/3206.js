@@ -29,7 +29,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3206-1000-205-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "Giro" }],
 		"s-3206-1000-206-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "Giro" }],
 		"s-3206-1000-207-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "Giro" }],
-		"s-3106-1000-209-0": [
+		"s-3206-1000-209-0": [
 			{ type: "text", sub_type: "message", message: "Stomp (Knockdown)", message_ES: "Pisar (Tumbar)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 0, 10, 400, 0, 2500] }
 		],
