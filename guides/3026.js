@@ -308,7 +308,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 260, 500, 0, 2000] }
 		],
 		"118-0": [{ type: "text", sub_type: "message", message_ES: "Jugar al Alto (iframe)", message_RU: "Прыжок" }],
-		"118-1": [{ type: "text", sub_type: "message", message_ES: "Iframe", message_RU: "Эвейд!", delay: 600 }],
+		"118-1": [{ type: "text", sub_type: "message", message_ES: "Iframe", message_RU: "Эвейд!", delay: 650 }],
 
 		// AOE лед (большой)
 		"104-0": [
