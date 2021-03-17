@@ -3,16 +3,16 @@
         "LICENSE": "3a6951431f77f106f39ebc87cc32cb6aee7371cc168ec1862d2ce8775875c8f1",
         "guides/3020.js": "7229cc58589a87db68a9839208d2c930830bbe4eb7e754e27671af18511a256c",
         "guides/3023.js": "7c6a856c31ffac8106c5e86dd30ad14a359d704dcb27eaf19aebf817111aa1fb",
-        "guides/3026.js": "b80e04c2fac581a9d2e83fa66bf1c895ae6d3cd385a40c959aa7117c59a9c5b2",
+        "guides/3026.js": "b9c7efb7f3803469fbc8f9dc07a98ecf01458e124beddb0578802e224a4d048b",
         "guides/3037.js": "3aa86ba0611aa1230f6db65fe26783310d34a00ae26cf6694d84d56411fba2f7",
         "guides/3101.js": "8fbaa29371040a3e314478e92b8cd2dc9558eaf0697672d0af991aa6585235bb",
         "guides/3102.js": "bbfaf1b86ac24bdbe3ea8b882cde29dfcc41bf1e21a44afd9f73b205d730c55a",
         "guides/3103.js": "4761b7b0ae08aa75ff053aec4cb989af93c334b19f9c339e3b74a5b6ba159d18",
-        "guides/3104.js": "0ec95f69b2f109db9c2c71d45c9428d79a06b9e9c900ad0ca3ac8dd049cd239c",
-        "guides/3106.js": "f67ba0a89cf862beb787d75072b437f7034b2c35dc1193ce4a9af3b7f4902b66",
+        "guides/3104.js": "dc00801bd3dc8c60ebdbb7b8f02736fee1a3c88f0f85bae377c7783e1a81b593",
+        "guides/3106.js": "63d5d4333497f1281de082cc45ee299420acacb58028522d1142fc7f17bdfa03",
         "guides/3126.js": "e72107a3f9c57e4a7d30b5a7c3b8b16047d8fc046264846863c52eb203685c0e",
-        "guides/3204.js": "ff644e01f158b7d25c40b110869ac287302e2d6250c954ee5a22f665ef1d3198",
-        "guides/3206.js": "01f43e323f8cc36eccd201e08f3d5aef2898d2492d4d377c8ccac9ff75082506",
+        "guides/3204.js": "5e5e75111b22966cf6dee1ea0c133f07d20002a87933b954a1d7f66dbddc19a7",
+        "guides/3206.js": "4dafed033d3565b10efa572ba074b29c68a63e2d2be21d4f75c4e1c1c5b92bc8",
         "guides/7011.js": "6436c711147bf183e931e90a3cb06492051e22966bc3058ab88a250e17dd2570",
         "guides/7015.js": "754f596278d197c88319adc00fd04b184ad383b202fb8886f9ec04f50b9c2d34",
         "guides/9044.js": "c6d05e82acf8aa3414aea3507750be329ca751062851300b5b242c666ad8855d",
@@ -26,6 +26,7 @@
     },
     "defs": {
         "S_ABNORMALITY_BEGIN": 4,
-        "S_ABNORMALITY_END": 1
+        "S_ABNORMALITY_END": 1,
+        "S_USER_EFFECT": 1
     }
 }
