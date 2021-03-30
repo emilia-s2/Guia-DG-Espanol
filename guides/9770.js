@@ -24,7 +24,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 0, 10, -406, 400, 0, 3500] }
 		],
 	
-	// 2-3 BOSS
+	// 3 BOSS
 		"nd-770-3000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
@@ -37,6 +37,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-770-3000-1103-0": [{ type: "text", sub_type: "message", message_ES: "Cola Golpe", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1301-0": [{ type: "text", sub_type: "message", message_ES: "Círculos Explosivos", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-2301-0": [{ type: "text", sub_type: "message", message_ES: "Círculos Explosivos", message_RU: "nao sei russo :c desculpa" }],
+		"s-770-3000-1106-0": [{ type: "text", sub_type: "message", message_ES: "Empuje Frontal", message_RU: "Передний удар" }],
+		"s-770-3000-2106-0": [{ type: "text", sub_type: "message", message_ES: "Empuje Frontal", message_RU: "Передний удар" }],
 		"s-770-3000-1110-0": [{ type: "text", sub_type: "message", message_ES: "Cola AOE (Salte para Frente)", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-2110-0": [{ type: "text", sub_type: "message", message_ES: "Cola AOE (Salte para Frente)", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1304-0": [{ type: "text", sub_type: "message", message_ES: "Prepararse! (para dentro y fuera)", message_RU: "nao sei russo :c desculpa" }],
@@ -56,7 +58,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-770-3000-1318-0": [{ type: "text", sub_type: "message", message_ES: "OBTENER CRÁNEO ROJO!", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1317-0": [{ type: "text", sub_type: "message", message_ES: "OBTENER CRÁNEO ROJO!", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1319-0": [{ type: "text", sub_type: "message", message_ES: "OBTENER CRÁNEO ROJO", message_RU: "nao sei russo :c desculpa" }],
-		"s-770-3000-1322-0": [{ type: "text", sub_type: "message", message_ES:"Iframe los Estándares!", message_RU: "nao sei russo :c desculpa" }],
+		"s-770-3000-1322-0": [{ type: "text", sub_type: "message", message_ES:"Iframe los PATTERNS!", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1311-0": [{ type: "text", sub_type: "message", message_ES: "Juntar Para Cleanse", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1120-0": [{ type: "text", sub_type: "message", message_ES: "Cabeças Disparar", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-2120-0": [{ type: "text", sub_type: "message", message_ES: "Cabeças Disparar", message_RU: "nao sei russo :c desculpa" }],
