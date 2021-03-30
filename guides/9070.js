@@ -8,6 +8,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let bossBuffs = [];
 	let count = -1;
 	let shining = true;
+	let print = true;
 
 	const bossActions = {
 		213: { truth: "Truth - Break shield", lie: "Lie - Puddles (run away)" }, // "My shield will save me!" (shield)
@@ -28,7 +29,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	}
 
 	function boss_message_event(skillid) {
-		if (skillid.includes([213, 212, 218])) {
+		if ([213, 212, 218].includes(skillid) && print) {
 			handlers.text({
 				sub_type: "message",
 				message: is_telling_truth() ? bossActions[skillid].truth : bossActions[skillid].lie,
@@ -82,9 +83,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		}
 	};
 
-	dispatch.hook("S_ABNORMALITY_BEGIN", 4, abnormality_change.bind(null, true));
-	dispatch.hook("S_ABNORMALITY_END", 1, abnormality_change.bind(null, false));
-	// dispatch.hook("S_DUNGEON_EVENT_GAGE", 1, gage_change.bind(null, true));
+	try {
+		dispatch.hook("S_ABNORMALITY_BEGIN", 4, abnormality_change.bind(null, true));
+		dispatch.hook("S_ABNORMALITY_END", 1, abnormality_change.bind(null, false));
+		dispatch.hook("S_DUNGEON_EVENT_GAGE", 1, gage_change.bind(null, true));
+	} catch (_) {
+		print = false;
+	}
 
 	return {
 		"ns-470-1000": [{ type: "func", func: start_boss_event }],
@@ -101,8 +106,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-470-1000-2114-0": [{ type: "text", sub_type: "message", message: "Line", message_ES: "Línea" }],
 		"s-470-1000-3106-0": [{ type: "text", sub_type: "message", message: "100" }],
 
-		// "s-470-1000-3213-0": [{ type: "func", func: boss_message_event, args: [213] }],
-		// "s-470-1000-3212-0": [{ type: "func", func: boss_message_event, args: [212] }],
-		// "s-470-1000-3218-0": [{ type: "func", func: boss_message_event, args: [218] }]
+		"s-470-1000-3213-0": [{ type: "func", func: boss_message_event, args: [213] }],
+		"s-470-1000-3212-0": [{ type: "func", func: boss_message_event, args: [212] }],
+		"s-470-1000-3218-0": [{ type: "func", func: boss_message_event, args: [218] }]
 	};
 };
