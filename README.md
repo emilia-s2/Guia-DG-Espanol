@@ -19,6 +19,9 @@ ID | Nombre de las Dungeons
 3101	| Gossamer Vault (Normal)
 3104	| Catalepticon (Normal)
 3204	| Catalepticon (Hard)
+3106 | Killing Grounds
+3206 | Crimson Killing Grounds
+9070 | Manglemire
 
 ----
 ### Tera-Guide
