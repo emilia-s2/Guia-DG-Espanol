@@ -36,7 +36,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 0, 8, 425, 100, 3000] }
 		],
 		"s-3102-1000-1114-0": [
-			{ type: "text", sub_type: "message", delay: 100, message_ES: "Iframe!", message_RU: "Эвейд!" }
+			{ type: "text", sub_type: "message", delay: 140, message_ES: "Iframe!", message_RU: "Эвейд!" }
 		],
 		"s-3102-1000-2114-0": [
 			{ type: "text", sub_type: "message", delay: 230, message_ES: "Iframe!", message_RU: "Эвейд!" }
@@ -119,7 +119,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 120, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 240, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 300, 450, 0, 4000] },
-			{ type: "text", sub_type: "message", delay: 1850, message_ES: "Esquiva!", message_RU: "Эвейд!" }
+			{ type: "text", sub_type: "message", delay: 1800, message_ES: "Esquiva!", message_RU: "Эвейд!" }
 		],
 		"s-3102-1000-1122-0": [{ type: "spawn", func: "marker", args: [false, 0, 200, 500, 2000, true, null] }],
 		"s-3102-1000-1123-0": [
@@ -140,7 +140,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 120, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 240, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 300, 450, 0, 4000] },
-			{ type: "text", sub_type: "message", delay: 1850, message_ES: "Esquiva!", message_RU: "Эвейд!" }
+			{ type: "text", sub_type: "message", delay: 1550, message_ES: "Esquiva!", message_RU: "Эвейд!" }
 		],
 		"s-3102-1000-2124-0": [
 			{ type: "text", sub_type: "message", message_ES: "Pizza", message_RU: "Пицца" },
@@ -148,7 +148,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 120, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 240, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 300, 450, 0, 4000] },
-			{ type: "text", sub_type: "message", delay: 1700, message_ES: "Esquiva!", message_RU: "Эвейд!" }
+			{ type: "text", sub_type: "message", delay: 1550, message_ES: "Esquiva!", message_RU: "Эвейд!" }
 		],		
 		"s-3102-1000-1125-0": [{ type: "spawn", func: "marker", args: [false, 0, 200, 500, 3000, true, null] }],
 		"s-3102-1000-1126-0": [
