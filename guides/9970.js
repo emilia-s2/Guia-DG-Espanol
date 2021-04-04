@@ -44,7 +44,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-970-3000-1317-0": [{ type: "text", sub_type: "message", message_ES: "Obtener Cráneo Rojo!", message_RU: "Взять красную голову!" }],
 		"s-970-3000-1319-0": [{ type: "text", sub_type: "message", message_ES: "Obtener Cráneo Rojo!", message_RU: "Взять красную голову!" }],
 		"s-970-3000-1322-0": [{ type: "text", sub_type: "message", message_ES: "Iframe los PATTERNS!", message_RU: "Эвейд!" }],
-		"s-970-3000-1311-0": [{ type: "text", sub_type: "message", message_ES: "Juntar para Cleanse", message_RU: "Очищение" }]
+		"s-970-3000-1311-0": [{ type: "text", sub_type: "message", message_ES: "Juntar para Cleanse", message_RU: "Очищение" }],
 		"s-970-3000-1120-0": [{ type: "text", sub_type: "message", message_ES: "Cabezas Disparar", message_RU: "Головы" }],
 		"s-970-3000-2120-0": [{ type: "text", sub_type: "message", message_ES: "Cabezas Disparar", message_RU: "Головы" }]
 	};
