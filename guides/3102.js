@@ -119,7 +119,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 120, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 240, 450, 0, 4000] },
 			{ type: "spawn", func: "vector", args: [912, 0, 50, 300, 450, 0, 4000] },
-			{ type: "text", sub_type: "message", delay: 1800, message_ES: "Esquiva!", message_RU: "Эвейд!" }
+			{ type: "text", sub_type: "message", delay: 1720, message_ES: "Esquiva!", message_RU: "Эвейд!" }
 		],
 		"s-3102-1000-1122-0": [{ type: "spawn", func: "marker", args: [false, 0, 200, 500, 2000, true, null] }],
 		"s-3102-1000-1123-0": [
