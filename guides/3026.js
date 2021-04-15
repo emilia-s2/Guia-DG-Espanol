@@ -271,51 +271,102 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		}
 	}
 
-	const skills = {
-		"112-0": [{ type: "text", sub_type: "message", message_ES: "Mano de HIELO (Fuera)", message_RU: "Лед (полоса)" }],
-		"110-0": [{ type: "text", sub_type: "message", message_ES: "Mano de FUEGO (Fuera)", message_RU: "Огонь (лужа)" }],
-		"108-0": [
+	return {
+		"s-3026-1000-1112-0": [{ type: "text", sub_type: "message", message_ES: "Mano de HIELO (Fuera)", message_RU: "Лед (полоса)" }],
+		"s-3026-1000-2112-0": [{ type: "text", sub_type: "message", message_ES: "Mano de HIELO (Fuera)", message_RU: "Лед (полоса)" }],
+		"s-3026-1000-1110-0": [{ type: "text", sub_type: "message", message_ES: "Mano de FUEGO (Fuera)", message_RU: "Огонь (лужа)" }],
+		"s-3026-1000-2110-0": [{ type: "text", sub_type: "message", message_ES: "Mano de FUEGO (Fuera)", message_RU: "Огонь (лужа)" }],
+		"s-3026-1000-1108-0": [
 			{ type: "text", sub_type: "message", message_ES: "Giro a la Derecha (Derribo!!)", message_RU: "Поворот вправо (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
-		"158-0": [
+		"s-3026-1000-2108-0": [
 			{ type: "text", sub_type: "message", message_ES: "Giro a la Derecha (Derribo!!)", message_RU: "Поворот вправо (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
-		"109-0": [
+		"s-3026-1000-1158-0": [
+			{ type: "text", sub_type: "message", message_ES: "Giro a la Derecha (Derribo!!)", message_RU: "Поворот вправо (откид)" },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
+		],
+		"s-3026-1000-2158-0": [
+			{ type: "text", sub_type: "message", message_ES: "Giro a la Derecha (Derribo!!)", message_RU: "Поворот вправо (откид)" },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
+		],
+		"s-3026-1000-1109-0": [
 			{ type: "text", sub_type: "message", message_ES: "Giro a la Izquierda (Derribo!!)", message_RU: "Поворот влево (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
-		"159-0": [
+		"s-3026-1000-2109-0": [
 			{ type: "text", sub_type: "message", message_ES: "Giro a la Izquierda (Derribo!!)", message_RU: "Поворот влево (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
-		"120-0": [{ type: "text", sub_type: "message", message_ES: "JUNTAR", message_RU: "Яростный рев" }],
-		"145-0": [{ type: "text", sub_type: "message", message_ES: "Pies (Stun)", message_RU: "Стан" }],
-		"103-0": [
+		"s-3026-1000-1159-0": [
+			{ type: "text", sub_type: "message", message_ES: "Giro a la Izquierda (Derribo!!)", message_RU: "Поворот влево (откид)" },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
+		],
+		"s-3026-1000-2159-0": [
+			{ type: "text", sub_type: "message", message_ES: "Giro a la Izquierda (Derribo!!)", message_RU: "Поворот влево (откид)" },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
+		],
+		"s-3026-1000-1120-0": [{ type: "text", sub_type: "message", message_ES: "JUNTAR", message_RU: "Яростный рев" }],
+		"s-3026-1000-2120-0": [{ type: "text", sub_type: "message", message_ES: "JUNTAR", message_RU: "Яростный рев" }],
+		"s-3026-1000-1145-0": [{ type: "text", sub_type: "message", message_ES: "Pies (Stun)", message_RU: "Стан" }],
+		"s-3026-1000-2145-0": [{ type: "text", sub_type: "message", message_ES: "Pies (Stun)", message_RU: "Стан" }],
+		"s-3026-1000-1103-0": [
 			{ type: "text", sub_type: "message", message_ES: "Cola (Vuela!!)", message_RU: "Хвост (полет)" },
 			{ type: "text", sub_type: "message", message_ES: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
 			{ type: "spawn", func: "semicircle", args: [140, 260, 553, 0, 0, 10, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 135, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 260, 500, 0, 2000] }
 		],
-		"153-0": [
+		"s-3026-1000-2103-0": [
+			{ type: "text", sub_type: "message", message_ES: "Cola (Vuela!!)", message_RU: "Хвост (полет)" },
+			{ type: "text", sub_type: "message", message_ES: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
+			{ type: "spawn", func: "semicircle", args: [140, 260, 553, 0, 0, 10, 500, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 135, 500, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 260, 500, 0, 2000] }
+		],
+		"s-3026-1000-1153-0": [
 			{ type: "text", sub_type: "message", message_ES: "Cola (Vuela!!)", message_RU: "Хвост (полет!!)" },
 			{ type: "text", sub_type: "message", message_ES: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
 			{ type: "spawn", func: "semicircle", args: [140, 260, 553, 0, 0, 10, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 135, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 260, 500, 0, 2000] }
 		],
-		"118-0": [{ type: "text", sub_type: "message", message_ES: "Jugar al Alto (iframe)", message_RU: "Прыжок" }],
-		"118-1": [{ type: "text", sub_type: "message", message_ES: "Iframe", message_RU: "Эвейд!", delay: 615 }],
+		"s-3026-1000-2153-0": [
+			{ type: "text", sub_type: "message", message_ES: "Cola (Vuela!!)", message_RU: "Хвост (полет!!)" },
+			{ type: "text", sub_type: "message", message_ES: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
+			{ type: "spawn", func: "semicircle", args: [140, 260, 553, 0, 0, 10, 500, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 135, 500, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 260, 500, 0, 2000] }
+		],
+		"s-3026-1000-1118-0": [{ type: "text", sub_type: "message", message_ES: "Jugar al Alto (iframe)", message_RU: "Прыжок" }],
+		"s-3026-1000-2118-0": [{ type: "text", sub_type: "message", message_ES: "Jugar al Alto (iframe)", message_RU: "Прыжок" }],
+		"s-3026-1000-1118-1": [{ type: "text", sub_type: "message", message_ES: "Iframe", message_RU: "Эвейд!", delay: 615 }],
+		"s-3026-1000-2118-1": [{ type: "text", sub_type: "message", message_ES: "Iframe", message_RU: "Эвейд!", delay: 625 }],
 
 		// AOE лед (большой)
-		"104-0": [
+		"s-3026-1000-1104-0": [
 			{ type: "text", sub_type: "message", message_ES: "Magia de HIELO (GRANDE)", message_RU: "Ледяные лужи" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 0, 5000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 73, 8, 520, 0, 6500] }
+		],
+		"s-3026-1000-2104-0": [
+			{ type: "text", sub_type: "message", message_ES: "Magia de HIELO (GRANDE)", message_RU: "Ледяные лужи" },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 73, 8, 520, 0, 6500] }
 		],
 		// AOE огонь (большой)
-		"105-0": [
+		"s-3026-1000-1105-0": [
+			{ type: "text", sub_type: "message", message_ES: "AOE de FUEGO (GRANDE)", message_RU: "Огненные бомбы" },
+			{ type: "spawn", func: "circle", args: [false, 553, 135, 500, 10, 270, 0, 3000] },
+			{ type: "spawn", func: "circle", args: [false, 553, 315, 500, 10, 270, 0, 3250] },
+			{ type: "spawn", func: "circle", args: [false, 553, 45, 500, 10, 270, 0, 3500] },
+			{ type: "spawn", func: "circle", args: [false, 553, 235, 500, 10, 270, 0, 3750] },
+			{ type: "spawn", func: "circle", args: [false, 553, 90, 500, 10, 270, 0, 4000] },
+			{ type: "spawn", func: "circle", args: [false, 553, 270, 500, 10, 270, 0, 4250] },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 500, 10, 270, 0, 4500] },
+			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 10, 270, 0, 4750] }
+		],
+		"s-3026-1000-2105-0": [
 			{ type: "text", sub_type: "message", message_ES: "AOE de FUEGO (GRANDE)", message_RU: "Огненные бомбы" },
 			{ type: "spawn", func: "circle", args: [false, 553, 135, 500, 10, 270, 0, 3000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 315, 500, 10, 270, 0, 3250] },
@@ -327,29 +378,28 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 10, 270, 0, 4750] }
 		],
 		// AOE лед (малый)
-		"154-0": [
+		"s-3026-1000-1154-0": [
 			{ type: "text", sub_type: "message", message_ES: "Magia de HIELO (Pequeno)", message_RU: "Ледяной шторм" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 0, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 73, 8, 520, 0, 6500] }
+		],
+		"s-3026-1000-2154-0": [
+			{ type: "text", sub_type: "message", message_ES: "Magia de HIELO (Pequeno)", message_RU: "Ледяной шторм" },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 73, 8, 520, 0, 6500] }
 		],
 		// AOE огонь (малый)
-		"155-0": [{ type: "text", sub_type: "message", message_ES: "AOE de FUEGO (Pequeno)", message_RU: "Огненный столб (опрокид)" }
-//			{ type: "text", sub_type: "message", delay: 1200, message_ES: "Esquiva", message_RU: "Эвейд" }
-		],
+		"s-3026-1000-1155-0": [{ type: "text", sub_type: "message", message_ES: "AOE de FUEGO (Pequeno)", message_RU: "Огненный столб (опрокид)" }],
+		"s-3026-1000-2155-0": [{ type: "text", sub_type: "message", message_ES: "AOE de FUEGO (Pequeno)", message_RU: "Огненный столб (опрокид)" }],
 
-		"206-0": [{ type: "text", sub_type: "message", message_ES: "Salto Atras", message_RU: "Прыжок назад" }],
-//		"206-2": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 350, 0, 3000] }],
-		"164-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }], 
-		"165-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }],
-		"137-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar + Explosión Ampla (50metros)", message_RU: "Опрокидывание" }],
-		"138-0": [{ type: "text", sub_type: "message", message_ES: "Explosión (Esquiva)", message_RU: "AOE", delay: 1700 }],
-//		"139-0": [
-//			{ type: "text", sub_type: "message", message_ES: "[Temperatura] 60+ TODOS (HIELO)", message_RU: "60° (Огонь всем)" }
-//			{ type: "text", sub_type: "message", delay: 4000, message_ES: "Lower the temp", message_RU: "Снизить температуру" }
-//		],
-//		"140-0": [
-//			{ type: "text", sub_type: "message", message_ES: "[Temperatura] 40- TODOS (FUEGO)", message_RU: "40° (Лед всем)" }
-//			{ type: "text", sub_type: "message", delay: 4000, message_ES: "Raise the temp", message_RU: "Повысить температуру" }
-//		],
+		"s-3026-1000-1206-0": [{ type: "text", sub_type: "message", message_ES: "Salto Atras", message_RU: "Прыжок назад" }],
+		"s-3026-1000-2206-0": [{ type: "text", sub_type: "message", message_ES: "Salto Atras", message_RU: "Прыжок назад" }],
+		"s-3026-1000-1164-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }], 
+		"s-3026-1000-2164-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }],
+		"s-3026-1000-1165-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }],
+		"s-3026-1000-2165-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }],
+		"s-3026-1000-1137-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar + Explosión Ampla (50metros)", message_RU: "Опрокидывание" }],
+		"s-3026-1000-2137-0": [{ type: "text", sub_type: "message", message_ES: "Tumbar + Explosión Ampla (50metros)", message_RU: "Опрокидывание" }],
+		"s-3026-1000-1138-0": [{ type: "text", sub_type: "message", message_ES: "Explosión (Esquiva)", message_RU: "AOE", delay: 1720 }],
+		"s-3026-1000-2138-0": [{ type: "text", sub_type: "message", message_ES: "Explosión (Esquiva)", message_RU: "AOE", delay: 1720 }],
 
 		"die": [{ type: "func", func: debuff_removed }],
 		"nd-3026-1000": [
@@ -369,17 +419,4 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"am-3026-1000-31260001": [{ type: "func", func: skilld_event, args: [31260001] }], // красный
 		"am-3026-1000-31260002": [{ type: "func", func: skilld_event, args: [31260002] }] // синий
 	};
-
-	const object = {};
-
-	for (const [key, value] of Object.entries(skills)) {
-		if (key.length === 5) {
-			object[`s-3026-1000-1${key}`] = value;
-			object[`s-3026-1000-2${key}`] = value;
-		} else {
-			object[key] = value;
-		}
-	}
-
-	return object;
 };
