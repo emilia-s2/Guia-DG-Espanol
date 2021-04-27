@@ -20,6 +20,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		"qb-3104-1000-32042000": [
 			{ type: "text", sub_type: "message", message: "Arrows", message_ES: "Flechas" },
+			{ type: "text", sub_type: "alert", message: "Esquiva", message_ES: "Esquiva", delay: 1450 },
 			{ type: "func", func: () => combo_count = 0 }
 		],
 		"h-3104-1000-35": [{ type: "text", sub_type: "message", message: "35%", message_ES: "35%" }],

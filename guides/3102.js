@@ -39,13 +39,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 140, message_ES: "Iframe!", message_RU: "Эвейд!" }
 		],
 		"s-3102-1000-2114-0": [
-			{ type: "text", sub_type: "message", delay: 230, message_ES: "Iframe!", message_RU: "Эвейд!" }
+			{ type: "text", sub_type: "message", delay: 220, message_ES: "Iframe!", message_RU: "Эвейд!" }
 		],
 		"s-3102-1000-1111-0": [{ type: "text", sub_type: "message", message_ES: "Salto (Stun)", message_RU: "Прыжок (стан)" },
 			{ type: "text", sub_type: "message", delay: 1800, message_ES: "Iframe!", message_RU: "Эвейд!" }
 		],
 		"s-3102-1000-2111-0": [{ type: "text", sub_type: "message", message_ES: "Salto (Stun)", message_RU: "Прыжок (стан)" },
-			{ type: "text", sub_type: "message", delay: 1800, message_ES: "Iframe!", message_RU: "Эвейд!" }
+			{ type: "text", sub_type: "message", delay: 1750, message_ES: "Iframe!", message_RU: "Эвейд!" }
 		],
 		"s-3102-1000-1115-0": [
 			{ type: "text", sub_type: "message", message_ES: "AOE Bombas (Juntar)", message_RU: "AOE бомбы (вместе)" }
