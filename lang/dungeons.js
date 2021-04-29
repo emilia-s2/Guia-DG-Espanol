@@ -38,5 +38,7 @@ module.exports = {
 	3206: {
 	"es": "Crimson Killing Grounds"},
 	9070: {
-	"es": "Manglemire"},	
+	"es": "Manglemire"},
+	3034: {
+	"es": "RK-9 Kennel (Dificil)"},
 };
