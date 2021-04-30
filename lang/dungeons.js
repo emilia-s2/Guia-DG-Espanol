@@ -41,4 +41,6 @@ module.exports = {
 	"es": "Manglemire"},
 	3034: {
 	"es": "RK-9 Kennel (Dificil)"},
+	3041: {
+	"es": "Damned Citadel"},
 };
