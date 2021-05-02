@@ -21,7 +21,9 @@ ID | Nombre de las Dungeons
 3204	| Catalepticon (Hard)
 3106 | Killing Grounds
 3206 | Crimson Killing Grounds
-9070 | Manglemire
+3034 | Rampaging RK-9 Kennel
+3041 | Damned Citadel
+3030 |* *Commander's Residence - BETA*
 
 ----
 ### Tera-Guide
