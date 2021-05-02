@@ -43,4 +43,6 @@ module.exports = {
 	"es": "Rampaging RK-9 Kennel"},
 	3041: {
 	"es": "Damned Citadel"},
+	3030: {
+	"es": "Commander's Residence - BETA"},
 };
