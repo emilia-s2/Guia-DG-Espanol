@@ -1,4 +1,4 @@
-// RK-9 Kennel (Dificil)
+// Rampaging RK-9 Kennel
 //
 // made by michengs / HSDN
 
