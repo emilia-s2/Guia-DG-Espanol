@@ -5,8 +5,8 @@
 module.exports = (dispatch, handlers, guide, lang) => {
 	let print_test = true;
 	return {
-		// 1 Maknakh
 		
+		// 1 Maknakh
 		"nd-3030-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
@@ -17,10 +17,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3030-1000-120-0": [{ type: "text", sub_type: "message", message_PT: "Empujar Frente", message_RU: "não sei russo :c" }],
 		"s-3030-1000-104-0": [{ type: "text", sub_type: "message", message_PT: "Fuego Frente", message_RU: "não sei russo :c" }],
 		"s-3030-1000-113-0": [{ type: "text", sub_type: "message", message_PT: "Círculo AOE Frente", message_RU: "não sei russo :c" }],
-		"s-3030-1000-108-0": [{ type: "text", sub_type: "message", message_PT: "Espinas  Frontal", message_RU: "não sei russo :c" }],
+		"s-3030-1000-108-0": [{ type: "text", sub_type: "message", message_PT: "Espinas	Frontal", message_RU: "não sei russo :c" }],
 		"s-3030-1000-305-0": [{ type: "text", sub_type: "message", message_PT: "Círculo AOE Frente", message_RU: "não sei russo :c" }],
 		"s-3030-1000-301-0": [{ type: "text", sub_type: "message", message_PT: "Hit Frontal | Stun", message_RU: "não sei russo :c" }],
-		"s-3030-1000-307-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Stun", message_RU: "não sei russo :c" }],
+		"s-3030-1000-307-0": [{ type: "text", sub_type: "message", message_PT: "Cola Stun", message_RU: "não sei russo :c" }],
 		"s-3030-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "Salto", message_RU: "não sei russo :c" }],
 		"s-3030-1000-105-0": [{ type: "text", sub_type: "message", message_PT: "Fuego Frontal", message_RU: "não sei russo :c" }],
 		"am-3030-1000-99000580": [{ type: "text", sub_type: "message", message_PT: "Hit Espinas ", message_RU: "não sei russo :c" }],
@@ -34,19 +34,19 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "despawn_all" }
 		],	
 		"s-3030-2000-309-0":  [
-            { type: "text", sub_type: "message", message: "Círculos AOE | Stun", check_func: () => print_test },
-            { type: "func", func: () => print_test = false },
-            { type: "func", func: () => print_test = true, delay: 4000 }
+			{ type: "text", sub_type: "message", message: "Círculos AOE | Stun", check_func: () => print_test },
+			{ type: "func", func: () => print_test = false },
+			{ type: "func", func: () => print_test = true, delay: 4000 }
 		],
 		"s-3030-2000-302-0":  [
-            { type: "text", sub_type: "message", message: "Círculo Stun Frente Combo", check_func: () => print_test },
-            { type: "func", func: () => print_test = false },
-            { type: "func", func: () => print_test = true, delay: 6000 }
+			{ type: "text", sub_type: "message", message: "Círculo Stun Frente Combo", check_func: () => print_test },
+			{ type: "func", func: () => print_test = false },
+			{ type: "func", func: () => print_test = true, delay: 6000 }
 		],
 		"s-3030-2000-105-0":  [
-            { type: "text", sub_type: "message", message: "Laser Frontal (Stun)", check_func: () => print_test },
-            { type: "func", func: () => print_test = false },
-            { type: "func", func: () => print_test = true, delay: 15000 }
+			{ type: "text", sub_type: "message", message: "Laser Frontal (Stun)", check_func: () => print_test },
+			{ type: "func", func: () => print_test = false },
+			{ type: "func", func: () => print_test = true, delay: 15000 }
 		],
 		"s-3030-2000-103-0": [{ type: "text", sub_type: "message", message_PT: "Hit Frontal", message_RU: "não sei russo :c" }],
 		"s-3030-2000-101-0": [{ type: "text", sub_type: "message", message_PT: "Garras Frente", message_RU: "não sei russo :c" }],
