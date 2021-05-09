@@ -1,4 +1,4 @@
-// Commander's Residence - BETA
+// Commander's Residence
 //
 // made by Emilia-s2
 
@@ -11,7 +11,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-3030-1000-117-0": [{ type: "text", sub_type: "message", message_PT: "Mano Izquierda Ataque", message_RU: "não sei russo :c" }],
 		"s-3030-1000-114-0": [{ type: "text", sub_type: "message", message_PT: "Empujar (Repeler)", message_RU: "não sei russo :c" }],
 		"s-3030-1000-303-0": [{ type: "text", sub_type: "message", message_PT: "Meteoritos AOE", message_RU: "não sei russo :c" }],
 		"s-3030-1000-120-0": [{ type: "text", sub_type: "message", message_PT: "Empujar Frente", message_RU: "não sei russo :c" }],
@@ -37,11 +36,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Círculos AOE | Stun", check_func: () => print_test },
 			{ type: "func", func: () => print_test = false },
 			{ type: "func", func: () => print_test = true, delay: 4000 }
-		],
-		"s-3030-2000-302-0":  [
-			{ type: "text", sub_type: "message", message: "Círculo Stun Frente Combo", check_func: () => print_test },
-			{ type: "func", func: () => print_test = false },
-			{ type: "func", func: () => print_test = true, delay: 6000 }
 		],
 		"s-3030-2000-105-0":  [
 			{ type: "text", sub_type: "message", message: "Laser Frontal (Stun)", check_func: () => print_test },

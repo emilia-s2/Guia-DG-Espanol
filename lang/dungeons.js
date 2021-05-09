@@ -44,5 +44,5 @@ module.exports = {
 	3041: {
 	"es": "Damned Citadel"},
 	3030: {
-	"es": "Commander's Residence - BETA"},
+	"es": "Commander's Residence"},
 };
