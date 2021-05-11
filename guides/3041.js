@@ -28,8 +28,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3041-1000-125-0": [{ type: "text", sub_type: "message", message: "Hit | Frontal Stun", message_ES: "Golpe Frente | Stun" }],
 		"s-3041-1000-126-0": [
 			{ type: "text", sub_type: "message", message: "Frontal Stun", message_ES: "Frente Stun" },
-			{ type: "spawn", func: "vector", args: [553, 35, 250, 10, 400, 0, 2000] },
-			{ type: "spawn", func: "vector", args: [553, 325, 250, 350, 400, 0, 2000] }
+			{ type: "spawn", func: "vector", args: [553, 60, 220, 20, 500, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 300, 220, 340, 500, 0, 2000] }
 		],
 		"s-3041-1000-129-0": [{ type: "text", sub_type: "message", message: "Somersault | Back Hit", message_ES: "Salto Mortal | Golpe Atrás" }],
 		"s-3041-1000-130-0": [
@@ -67,8 +67,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3041-2000-125-0": [{ type: "text", sub_type: "message", message: "Hit | Frontal Stun", message_ES: "Golpe Frente | Stun" }],
 		"s-3041-2000-126-0": [
 			{ type: "text", sub_type: "message", message: "Frontal Stun", message_ES: "Frente Stun" },
-			{ type: "spawn", func: "vector", args: [553, 35, 250, 10, 400, 0, 2000] },
-			{ type: "spawn", func: "vector", args: [553, 325, 250, 350, 400, 0, 2000] }
+			{ type: "spawn", func: "vector", args: [553, 60, 220, 20, 500, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 300, 220, 340, 500, 0, 2000] }
 		],
 		"s-3041-2000-129-0": [{ type: "text", sub_type: "message", message: "Somersault | Back Hit", message_ES: "Salto Mortal | Golpe Atrás" }],
 		"s-3041-2000-130-0": [
@@ -96,7 +96,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3041-2000-148-0": [
 			{ type: "text", sub_type: "message", message: "Stun (AoE)", message_ES: "Stun (АоЕ)" },
-			{ type: "spawn", func: "circle", args: [true, 553, 180, 50, null, 250, 0, 2000] }
+			{ type: "spawn", func: "circle", args: [true, 553, 180, 20, null, 250, 0, 2000] }
 		],
 		"s-3041-2000-151-0": [
 			{ type: "text", sub_type: "message", message: "Throws Combo | Stun (AoE)", message_ES: "Lanzar Combo | Stun" },
@@ -104,7 +104,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3041-2000-152-0": [
 			{ type: "text", sub_type: "message", message: "Stun (AoE)", message_ES: "Stun (AoE)" },
-			{ type: "spawn", func: "circle", args: [true, 553, 0, 0, null, 250, 0, 2000] }
+			{ type: "spawn", func: "circle", args: [true, 553, 180, 20, null, 250, 0, 2000] }
 		],
 		"s-3041-2000-301-0": [{ type: "text", sub_type: "message", message: "Circles (Target)", message_ES: "Círculos (Objetivo)" }],
 		"s-3041-2000-340-0": [
