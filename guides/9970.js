@@ -21,12 +21,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-970-3000-1103-0": [{ type: "text", sub_type: "message", message_ES: "Coletazo Atrás", message_RU: "Хвост" },
 			{ type: "spawn", func: "vector", args: [553, 283, 127, 180, 500, 0, 1400] },
 			{ type: "spawn", func: "vector", args: [553, 77, 127, 180, 500, 0, 1400] },
-			{ type: "spawn", func: "vector", args: [553, 165, 488, 270, 200, 0, 1400] },
+			{ type: "spawn", func: "vector", args: [553, 165, 488, 270, 200, 0, 1400] }
 		],
 		"s-970-3000-2103-0": [{ type: "text", sub_type: "message", message_ES: "Coletazo Atrás ", message_RU: "Хвост" },
 			{ type: "spawn", func: "vector", args: [553, 283, 127, 180, 500, 0, 1400] },
 			{ type: "spawn", func: "vector", args: [553, 77, 127, 180, 500, 0, 1400] },
-			{ type: "spawn", func: "vector", args: [553, 165, 488, 270, 200, 0, 1400] },
+			{ type: "spawn", func: "vector", args: [553, 165, 488, 270, 200, 0, 1400] }
 		],
 		"s-970-3000-1301-0": [{ type: "text", sub_type: "message", message_ES: "Círculos Explosivos", message_RU: "Круги" }],
 		"s-970-3000-2301-0": [{ type: "text", sub_type: "message", message_ES: "Círculos Explosivos", message_RU: "Круги" }],
@@ -35,12 +35,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-970-3000-1110-0": [{ type: "text", sub_type: "message", message_ES: "Cola AOE (Frente Seguro)", message_RU: "Хвост АОЕ (прыгать вперед)" },
 			{ type: "spawn", func: "semicircle", args: [26, 340, 553, 0, 0, 7, 630, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 4, 40, 338, 600, 0, 3000] },
-			{ type: "spawn", func: "vector", args: [553, -4, 40, -338, 600, 0, 3000] },
+			{ type: "spawn", func: "vector", args: [553, -4, 40, -338, 600, 0, 3000] }
 		],	
 		"s-970-3000-2110-0": [{ type: "text", sub_type: "message", message_ES: "Cola AOE (Frente Seguro)", message_RU: "Хвост АОЕ (прыгать вперед)" },
 			{ type: "spawn", func: "semicircle", args: [26, 340, 553, 0, 0, 7, 630, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 4, 40, 338, 600, 0, 3000] },
-			{ type: "spawn", func: "vector", args: [553, -4, 40, -338, 600, 0, 3000] },
+			{ type: "spawn", func: "vector", args: [553, -4, 40, -338, 600, 0, 3000] }
 		],	
 		"s-970-3000-1304-0": [{ type: "text", sub_type: "message", message_ES: "Prepararse! (Dentro y Fuera)", message_RU: "Готовность!" }],
 		"s-970-3000-1303-0": [{ type: "text", sub_type: "message", message_ES: "Prepararse! (Dentro y Fuera)", message_RU: "Готовность!" }],

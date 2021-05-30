@@ -31,7 +31,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_ES: "Derecha SLASH", message_RU: "Правая полоса", class_position: "tank" },
 			{ type: "text", sub_type: "message", message_ES: "Izquierda SLASH", message_RU: "Правая полоса", class_position: "heal" },
 			{ type: "text", sub_type: "message", message_ES: "Izquierda SLASH", message_RU: "Правая полоса", class_position: "dps" },
-00
+			{ type: "spawn", func: "vector", args: [553, 90, 200, 180, 500, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 90, 200, 0, 300, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 270, 20, 180, 500, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 270, 20, 0, 300, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 354, 302, 90, 200, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 184, 502, 90, 200, 0, 2000] }
+		],
 		"s-3023-1000-112-0": [
 			{ type: "text", sub_type: "message", message_ES: "Izquierda SLASH", message_RU: "Правая полоса", class_position: "tank" },
 			{ type: "text", sub_type: "message", message_ES: "Derecha SLASH", message_RU: "Правая полоса", class_position: "heal" },

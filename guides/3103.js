@@ -6,6 +6,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let timer1 = null;
 	let print_target = true;
 	let in_bait = false;
+	let gettingserious = false; // ~70% attacks unlocked like Flip Kick Stun
 
 	function back_kick_event(skillid) {
 		if ([107, 310].includes(skillid)) { // Bait/Back Flip
@@ -45,6 +46,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			}, 65000);
 		}
 	}
+	
+		function roundhouse() {
+		if (gettingserious) {
+			handlers.text({sub_type: "alert", message_ES: "Patada Circular en Breve (Stun)", message_RU: "Удар с разворота > стан"});
+			return;
+		}
+		handlers.text({sub_type: "message", message_ES: "Patada Circular", message_RU: "Удар с разворота"});
+	}
 
 	return {
 		"nd-3103-1000": [
@@ -53,7 +62,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		//"s-3103-1000-101-0": [{ type: "text", class_position: "tank", sub_type: "message", message_ES: "Punch", message_RU: "Серия ударов" }],
-		"s-3103-1000-113-0": [{ type: "text", class_position: "tank", sub_type: "message", message_ES: "Patada circular", message_RU: "Удар с разворота" }],
+		"s-3103-1000-113-0": [{ type: "func", func: roundhouse, class_position: "tank" }],
 		"s-3103-1000-111-0": [{ type: "text", class_position: "tank", sub_type: "message", message_ES: "Tumbar", message_RU: "Опрокид" }],
 		"s-3103-1000-120-0": [{ type: "text", class_position: "tank", sub_type: "message", message_ES: "Tumbar", message_RU: "Опрокид" }],
 		//"s-3103-1000-102-0": [{ type: "text", class_position: "tank", sub_type: "message", message_ES: "Combo", message_RU: "Комба" }], // 102 153/154 115/116

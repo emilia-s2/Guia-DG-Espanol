@@ -24,6 +24,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "func", func: () => combo_count = 0 }
 		],
 		"h-3104-1000-35": [{ type: "text", sub_type: "message", message: "35%", message_ES: "35%" }],
+		"qb-3104-1000-32041000": [{ type: "text", sub_type: "alert", message: "combo Pizza em Breve", message_ES: "Combo Pizza en Breve" }],
 
 		"s-3104-1000-104-0": [
 			{ type: "text", sub_type: "message", message: "Stun (AOE)", message_ES: "Stun (AOE)" },
@@ -31,7 +32,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [true, 553, 180, -50, 10, 380, 0, 2000] }
 		],
 		"s-3104-1000-107-0": [
-			{ type: "text", sub_type: "alert", message: "Line Forward + Side Lines", message_ES: "Líneas en Medio y Laterales + PIZZA" },
+			{ type: "text", sub_type: "message", message: "Line Forward + Side Lines", message_ES: "Líneas en Medio y Laterales + PIZZA" },
 			{ type: "spawn", func: "vector", args: [553, 90, 50, 0, 1000, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 50, 0, 1000, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 90, 50, 180, 1000, 0, 2000] },

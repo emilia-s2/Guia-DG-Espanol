@@ -6,6 +6,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	return {
 		// PHASE 1
+		"nd-3041-1000": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" }
+		],
 		"s-3041-1000-106-0": [{ type: "text", sub_type: "message", message: "Push", message_ES: "Empujar" }],
 		"s-3041-1000-110-0": [{ type: "text", sub_type: "message", message: "Throw Front (Stun)", message_ES: "Lanzar Frente (Stun)" }],
 		"s-3041-1000-116-0": [ // 116 - 117 - 118
@@ -45,6 +49,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		// PHASE 2
+		"nd-3041-2000": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" }
+		],
 		"s-3041-2000-106-0": [{ type: "text", sub_type: "message", message: "Push", message_ES: "Empujar" }],
 		"s-3041-2000-110-0": [{ type: "text", sub_type: "message", message: "Throw Front (Stun)", message_ES: "Lanzar Frente (Stun)" }],
 		"s-3041-2000-116-0": [ // 116 - 117 - 118
