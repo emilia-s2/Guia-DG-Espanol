@@ -7,11 +7,14 @@
         "guides/3030.js": "ce672da44df94ab5c81f70a787e4f99bf602cd707a8a0275b105319f2f42435d",
         "guides/3034.js": "c5e44ce34a074ecaa025927134fa2f2aa20e0054cca12172452d1b6bfe935c33",
         "guides/3037.js": "3aa86ba0611aa1230f6db65fe26783310d34a00ae26cf6694d84d56411fba2f7",
+        "guides/3040.js": "0a95dca53e30833da4fd3e5e772969bf2cf53b930c8ca8964f96a9366b6e05df",
         "guides/3041.js": "e6a062dacf5ea006418537e38d5b641c4928b546155418229e70057dfaf15504",
+        "guides/3042.js": "fd30227366ee4506e050f3595a651b3464b021caef19404d719644f6eebe79c6",
+        "guides/3043.js": "a9348cde226a6314881afd4a740ae8675c44bc543d7e531e2a8c519c30c31f5a",
         "guides/3101.js": "8fbaa29371040a3e314478e92b8cd2dc9558eaf0697672d0af991aa6585235bb",
         "guides/3102.js": "e415e33f6e7b83910a51829274ecddd80124e8f17d84bb185d0313db6a38124b",
         "guides/3103.js": "b6d65293f970b8283ef93ba4123d705626c04903b6646b55271724fed5e17ea3",
-        "guides/3104.js": "648b62e1f6c314d628b92713b59e861e0b65bf2749a623b8e23cb62caeba7240",
+        "guides/3104.js": "a9aa326608cbb9589be0e8709401ce8c37dccf96a8d6a0070bebe0ca35fd3ab3",
         "guides/3106.js": "ff4116121d004337d85a9fbff4e073e5c45b5165adddac4e8034e4de386f1392",
         "guides/3126.js": "5a7193dbcdaeb067265c8dd8742135358b29da088ec7061d499bb79ab8f12561",
         "guides/3204.js": "5885f33691e8261afebc5094947b7e3ca2c02437d30152653fab171077c08626",
@@ -19,19 +22,17 @@
         "guides/7011.js": "6436c711147bf183e931e90a3cb06492051e22966bc3058ab88a250e17dd2570",
         "guides/7015.js": "754f596278d197c88319adc00fd04b184ad383b202fb8886f9ec04f50b9c2d34",
         "guides/9044.js": "c6d05e82acf8aa3414aea3507750be329ca751062851300b5b242c666ad8855d",
-        "guides/9070.js": "d91b1ead50a2e765f21598c6aae320f8ef22963d71525bcbf40adc1f92f4b313",
         "guides/9770.js": "e4f30f40485af80094daefa7c5b19ac8ddc3d07d484b22c6937b6ef45e786a64",
         "guides/9970.js": "086cebdf748fd3f1c6f28dbf956ad56d8fd1e5bdd4c63a357be3fc76211d74bb",
         "index.js": "4872ecfb78e51b305f1b57f37db5fd6ee3fec07e31b7325c1a40fd6dcfe90f12",
-        "lang/dungeons.js": "0be4542e7447c17a85e7fd09e3361433245c495542664bc90b0ecc0f26743be2",
+        "lang/dungeons.js": "10f8a1385935db57e39791c3100b94717ad4e0bc0b9d841fc2638245c727cbd2",
         "lang/strings.js": "24ef14d9b3af4180000f173271d61112058a22b3cf2cfe008b02f743cc7d46dd",
-        "module.json": "27f71838b4bf327b90a20bddf7372d5f6bfd7aef0d0322e3387877065ea9a7f8",
-        "settings_migrator.js": "0247782b71c49eb3108fe2a7c6fe9b1e7c29b439106957d545df66f5318455b9"
+        "module.json": "e7454a8e1147982efeb1e4d9ee8da4af808bc421e69ee271d643cb011511a41a",
+        "settings_migrator.js": "fe9af13b905f12121b33c7f1ada5ac9cbd6164de5c1205bbd832e0444174d45a"
     },
     "defs": {
         "S_ABNORMALITY_BEGIN": 4,
         "S_ABNORMALITY_END": 1,
-        "S_DUNGEON_EVENT_GAGE": [1,60350],
         "S_USER_EFFECT": 1
     }
 }

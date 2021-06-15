@@ -86,7 +86,7 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
 				}
 				return settings;
 				
-				case 1.19:
+				case 1.20:
 				remove([
 					"guides/3027.js",
 					"guides/3034.js",
@@ -100,7 +100,8 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
 					"guides/9739.js",
 					"guides/9781.js",
 					"guides/9920.js",
-					"guides/9982.js"
+					"guides/9982.js",
+					"guides/9070.js"
 				]);
 				break;
 		}

@@ -37,12 +37,16 @@ module.exports = {
 	"es": "Killing Grounds"},
 	3206: {
 	"es": "Crimson Killing Grounds"},
-	9070: {
-	"es": "Manglemire"},
 	3034: {
 	"es": "Rampaging RK-9 Kennel"},
 	3041: {
 	"es": "Damned Citadel"},
 	3030: {
 	"es": "Commander's Residence"},
+	3042: {
+	"es": "Gardan's Trial"},
+	3043: {
+	"es": "Harnovog's Trial"},
+	3040: {
+	"es": "Lumikan's Trial"},	
 };
