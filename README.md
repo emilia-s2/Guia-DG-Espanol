@@ -23,7 +23,10 @@ ID | Nombre de las Dungeons
 3206 | Crimson Killing Grounds
 3034 | Rampaging RK-9 Kennel
 3041 | Damned Citadel
-3030 |* *Commander's Residence - BETA*
+3030 | Commander's Residence
+3042 | Gardan's Trial
+3043 | Harnovog's Trial
+3040 | Lumikan's Trial
 
 ----
 ### Tera-Guide
