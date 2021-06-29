@@ -254,7 +254,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		}
 
 		if (!debuff_tracker_started) {
-			dispatch.hook("S_ABNORMALITY_BEGIN", 4, abnormality_change.bind(null, true));
+			dispatch.hook("S_ABNORMALITY_BEGIN", dispatch._mod.majorPatchVersion >= 107 ? 5 : 4, abnormality_change.bind(null, true));
 			dispatch.hook("S_ABNORMALITY_END", 1, abnormality_change.bind(null, false));
 
 			debuff_tracker_started = true;

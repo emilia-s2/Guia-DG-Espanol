@@ -6,7 +6,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	let combo_count = 0;
 
-	dispatch.hook("S_ABNORMALITY_BEGIN", 4, event => {
+	dispatch.hook("S_ABNORMALITY_BEGIN", dispatch._mod.majorPatchVersion >= 107 ? 5 : 4, event => {
 		if (event.id === 31040001)
 			handlers.marker({ id: event.target, color: "yellow", sub_delay: 1000000 });
 	});
