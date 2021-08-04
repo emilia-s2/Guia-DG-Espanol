@@ -4,49 +4,33 @@
 module.exports = {
 	
 	9044: {
-	"es": "Bahaar's Sanctum"},
+	"pt": "Bahaar's Sanctum"},
 	3023: {
-	"es": "Akalath Quarantine"},
-	3020: {
-	"es": "Sea of Honor"},
-	3026: {
-	"es": "Corrupted Skynest (Normal)"},
-	3126: {
-	"es": "Corrupted Skynest (Dificil)"},
+	"pt": "Akalath Quarantine"},
 	3102: {
-	"es": "Draakon Arena (Normal)"},
-	3103: {
-	"es": "Forbidden Arena [Undying Warlord]"},
+	"pt": "Draakon Arena"},
 	7011: {
-	"es": "Guardian Blightwood"},
+	"pt": "Guardian Blightwood"},
 	7015: {
-	"es": "Guardian Balder's Refuge"},
+	"pt": "Guardian Balder's Refuge"},
 	3037: {
-	"es": "Bahaar's (Training)"},
-	9770: {
-	"es": "Ruinous Manor (Normal)"},
-	9970: {
-	"es": "Ruinous Manor (Dificil)"},
-	3101: {
-	"es": "Gossamer Vault (Normal)"},
-	3104: {
-	"es": "Catalepticon (Normal)"},
-	3204: {
-	"es": "Catalepticon (Dificil)"},
-	3106: {
-	"es": "Killing Grounds"},
-	3206: {
-	"es": "Crimson Killing Grounds"},
-	3034: {
-	"es": "Rampaging RK-9 Kennel"},
+	"pt": "Bahaar's (Treino)"},
 	3041: {
-	"es": "Damned Citadel"},
+	"pt": "Damned Citadel"},
 	3030: {
-	"es": "Commander's Residence"},
+	"pt": "Commander's Residence"},
 	3042: {
-	"es": "Gardan's Trial"},
+	"pt": "Gardan's Trial"},
 	3043: {
-	"es": "Harnovog's Trial"},
+	"pt": "Harnovog's Trial"},
 	3040: {
-	"es": "Lumikan's Trial"},	
+	"pt": "Lumikan's Trial"},
+	3044: {
+	"pt": "Stormed Citadel"},
+	3105: {
+	"pt": "Fusion Laboratory"},
+	3205: {
+	"pt": "Cursed Fusion Laboratory"},
+	9982: {
+	"pt": "Grotto of Lost Souls (Dificil)"},
 };
