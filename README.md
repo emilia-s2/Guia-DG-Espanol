@@ -6,29 +6,22 @@ ID | Nombre de las Dungeons
 --- | ---
 7011 | Guardian Blightwood
 7015 | Guardian Balder's Refuge
-9044 | Bahaar's Sanctum 
-3023 | Akalath Quarantine 
-3020 | Sea of Honor 
-3026 | Corrupted Skynest 
-3126 | Corrupted Skynest (Hard) 
-3102 | Draakon Arena  
-3103 | Forbidden Arena [Undying Warlord]
-3037	| Bahaar's Sanctum (Training)
-9770	| Ruinous Manor (Normal)
-9970	| Ruinous Manor (Hard)
-3101	| Gossamer Vault (Normal)
-3104	| Catalepticon (Normal)
-3204	| Catalepticon (Hard)
-3106 | Killing Grounds
-3206 | Crimson Killing Grounds
-3034 | Rampaging RK-9 Kennel
-3041 | Damned Citadel
-3030 | Commander's Residence
 3042 | Gardan's Trial
 3043 | Harnovog's Trial
 3040 | Lumikan's Trial
+3030 | Commander's Residence
+3023 | Akalath Quarantine 
+3102 | Draakon Arena 
+3037	| Bahaar's Sanctum (Training)
+3041 | Damned Citadel
+3044	| Stormed Citadel
+9044 | Bahaar's Sanctum 
+9982 | Grotto of Lost Souls (Difícil)
+3105 | Fusion Laboratory
+3205 | Cursed Fusion Laboratory
 
 ----
+
 ### Tera-Guide
 El módulo Guía de Dungeons cuenta con notificaciones de voz, mensajes en pantalla y marcadores de área de ataques y mecánicas de los bosses. Disponible  en idioma *Español*. 
 
@@ -36,7 +29,6 @@ El módulo Guía de Dungeons cuenta con notificaciones de voz, mensajes en panta
 
 ### Otras traducciones
 - **[Inglés (English) by HSDN](https://github.com/hsdn/tera-guide)**
-- **[Taiwanese (臺灣話) by michengs](https://github.com/michengs/Dungeon-guide)**
 
 ---
 ## Dependencies
