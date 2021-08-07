@@ -1,25 +1,6 @@
 {
     "files": {
-        "LICENSE": "3a6951431f77f106f39ebc87cc32cb6aee7371cc168ec1862d2ce8775875c8f1",
-        "guides/3023.js": "7c6a856c31ffac8106c5e86dd30ad14a359d704dcb27eaf19aebf817111aa1fb",
-        "guides/3030.js": "472e51ffe679921a10bcfcd49a5fa523ad9d4a0163c1d2afe40877a6caa9725a",
-        "guides/3037.js": "3aa86ba0611aa1230f6db65fe26783310d34a00ae26cf6694d84d56411fba2f7",
-        "guides/3040.js": "5ae7a98758bd7eee274a06221d86897ed27d25290e796243ceefa39b95f04161",
-        "guides/3041.js": "e6a062dacf5ea006418537e38d5b641c4928b546155418229e70057dfaf15504",
-        "guides/3042.js": "e2ef55f9dd5d9fcbae9295371e2f770e8a39ec2af0ecdf71fa4362154f4c2c16",
-        "guides/3043.js": "a9348cde226a6314881afd4a740ae8675c44bc543d7e531e2a8c519c30c31f5a",
-        "guides/3044.js": "a3a8fd1d764aa70b6a27454a33d87b753dee01719584ea2666d3feee0a0052ba",
-        "guides/3102.js": "e415e33f6e7b83910a51829274ecddd80124e8f17d84bb185d0313db6a38124b",
-        "guides/3105.js": "1ade4353ccc5c2b5d6c606783c544a085e25c7b0e515dbb0e76caca298197cff",
-        "guides/3205.js": "3f817c04e807e8dd645985e97b203a1b4f58e8f2323fd9cf705fd865adc0861f",
-        "guides/7011.js": "6436c711147bf183e931e90a3cb06492051e22966bc3058ab88a250e17dd2570",
-        "guides/7015.js": "754f596278d197c88319adc00fd04b184ad383b202fb8886f9ec04f50b9c2d34",
-        "guides/9044.js": "c6d05e82acf8aa3414aea3507750be329ca751062851300b5b242c666ad8855d",
-        "guides/9982.js": "9aa613900c83bd922a87bb8f6c4368d8b37f825c1808ed0d29a1370faaec3c19",
-        "index.js": "4872ecfb78e51b305f1b57f37db5fd6ee3fec07e31b7325c1a40fd6dcfe90f12",
-        "lang/dungeons.js": "f400a190501a2d3a43c00dc4bd02783129fb23db4050cca3eb0748745fb2dbd5",
-        "lang/strings.js": "24ef14d9b3af4180000f173271d61112058a22b3cf2cfe008b02f743cc7d46dd",
-        "module.json": "fe30bcc60f565d27a3b8326a233dddaa984bf7a1da0cc555add2132bb8bf9ee1",
-        "settings_migrator.js": "c3ee11e047eda5c5aa8476f0f72139b4b3b53716cb2afcac524a4ef70a6ac695"
+        "module.json": "769d22308513b25596092e9bc662588ba50ccc5c46365dfcd0adf30a423390de"
+
     }
 }
